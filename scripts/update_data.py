@@ -14,7 +14,7 @@ USER_AGENT = (
 )
 
 
-def wait_until(page, pred, timeout_ms=45000):
+def wait_until(page, pred, timeout_ms):
     elapsed = 0
     while elapsed < timeout_ms:
         if pred():
@@ -29,12 +29,10 @@ def save_payload(kind, world, payload):
     ids = data.get("WorldID") or []
     if not ids or int(ids[0]) != world:
         raise RuntimeError(f"Unexpected WorldID for {kind} {world}: {ids[:3]}")
-
     key = "GuildData" if kind == "guild" else "PlayerData"
     rows = data.get(key)
     if not isinstance(rows, list):
         raise RuntimeError(f"Missing {key} for {world}")
-
     (OUT / f"{kind}_{world}.json").write_text(
         json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8"
     )
@@ -43,6 +41,7 @@ def save_payload(kind, world, payload):
 
 
 def capture_world(browser, world):
+    result = {"guilds": None, "players": None, "errors": []}
     context = browser.new_context(locale="ja-JP", user_agent=USER_AGENT)
     page = context.new_page()
     payloads = {}
@@ -78,48 +77,47 @@ def capture_world(browser, world):
     page.on("requestfailed", on_failed)
     page.on("response", on_response)
 
-    url = f"https://tamamo.dev/Rankings?world={world}&ranking=2&display=3"
-    print("OPEN", url)
-    page.goto(url, wait_until="domcontentloaded", timeout=90000)
+    try:
+        url = f"https://tamamo.dev/Rankings?world={world}&ranking=2&display=3"
+        print("OPEN", url)
+        page.goto(url, wait_until="domcontentloaded", timeout=90000)
+        if wait_until(page, lambda: "guild" in payloads, 30000):
+            result["guilds"] = save_payload("guild", world, payloads["guild"])
+        else:
+            message = f"guild ranking not captured for {world}; seen={seen}"
+            print("FAIL", message)
+            result["errors"].append(message)
+            return result
 
-    if not wait_until(page, lambda: "guild" in payloads, 30000):
+        print("SWITCH TO PLAYER")
+        page.get_by_text("プレイヤー", exact=True).first.click(timeout=10000)
+        print("PLAYER URL", page.url)
+        if wait_until(page, lambda: "player" in payloads, 45000):
+            result["players"] = save_payload("player", world, payloads["player"])
+        else:
+            message = f"player ranking not captured for {world}; seen={seen}"
+            print("FAIL", message)
+            result["errors"].append(message)
+    except Exception as exc:
+        message = f"world {world}: {type(exc).__name__}: {exc}"
+        print("FAIL", message)
+        result["errors"].append(message)
+    finally:
         context.close()
-        raise RuntimeError(f"guild ranking not captured for {world}; seen={seen}")
 
-    guild_count = save_payload("guild", world, payloads["guild"])
-
-    print("SWITCH TO PLAYER")
-    page.get_by_text("プレイヤー", exact=True).first.click(timeout=10000)
-    print("PLAYER URL", page.url)
-
-    if not wait_until(page, lambda: "player" in payloads, 45000):
-        try:
-            disabled = page.locator("#search-exec").is_disabled(timeout=3000)
-            print("SEARCH DISABLED", disabled)
-        except Exception:
-            pass
-        print("CURRENT URL", page.url)
-        context.close()
-        raise RuntimeError(f"player ranking not captured for {world}; seen={seen}")
-
-    player_count = save_payload("player", world, payloads["player"])
-    context.close()
-    return guild_count, player_count
+    return result
 
 
 summary = {"updated_at_utc": None, "worlds": {}}
+all_errors = []
 
 with sync_playwright() as p:
     browser = p.chromium.launch(headless=True)
-
     for world in WORLDS:
         print(f"=== WORLD {world} ===")
-        guild_count, player_count = capture_world(browser, world)
-        summary["worlds"][str(world)] = {
-            "guilds": guild_count,
-            "players": player_count,
-        }
-
+        result = capture_world(browser, world)
+        summary["worlds"][str(world)] = result
+        all_errors.extend(result["errors"])
     browser.close()
 
 summary["updated_at_utc"] = datetime.now(timezone.utc).isoformat()
@@ -127,3 +125,6 @@ summary["updated_at_utc"] = datetime.now(timezone.utc).isoformat()
     json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8"
 )
 print(json.dumps(summary, ensure_ascii=False, indent=2))
+
+if all_errors:
+    raise RuntimeError("Ranking acquisition incomplete: " + " | ".join(all_errors))
