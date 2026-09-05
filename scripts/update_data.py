@@ -42,10 +42,10 @@ def save_payload(kind, world, payload):
     return len(rows)
 
 
-def capture_ranking(browser, world, ranking, kind):
+def capture_world(browser, world):
     context = browser.new_context(locale="ja-JP", user_agent=USER_AGENT)
     page = context.new_page()
-    captured = {}
+    payloads = {}
     seen = []
 
     def on_response(response):
@@ -53,32 +53,46 @@ def capture_ranking(browser, world, ranking, kind):
             return
         seen.append(response.url)
         print("FOUND", response.status, response.url)
-        if response.status != 200:
-            return
-        if f"ranking={ranking}" not in response.url or "display=3" not in response.url:
+        if response.status != 200 or "display=3" not in response.url:
             return
         try:
-            captured["payload"] = response.json()
+            if "ranking=2" in response.url:
+                payloads["guild"] = response.json()
+            elif "ranking=1" in response.url:
+                payloads["player"] = response.json()
         except Exception as exc:
             print("RESPONSE ERROR", repr(exc))
 
     page.on("response", on_response)
-    url = f"https://tamamo.dev/Rankings?world={world}&ranking={ranking}&display=3"
+    url = f"https://tamamo.dev/Rankings?world={world}&ranking=2&display=3"
     print("OPEN", url)
     page.goto(url, wait_until="domcontentloaded", timeout=90000)
 
-    if not wait_until(page, lambda: "payload" in captured):
-        try:
-            body = page.locator("body").inner_text(timeout=5000)
-            print("PAGE BODY", body[:2000])
-        except Exception:
-            pass
+    if not wait_until(page, lambda: "guild" in payloads):
         context.close()
-        raise RuntimeError(f"{kind} ranking not captured for {world}; seen={seen}")
+        raise RuntimeError(f"guild ranking not captured for {world}; seen={seen}")
 
-    count = save_payload(kind, world, captured["payload"])
+    guild_count = save_payload("guild", world, payloads["guild"])
+
+    print("SWITCH TO PLAYER")
+    page.get_by_text("プレイヤー", exact=True).first.click(timeout=10000)
+    page.wait_for_timeout(1000)
+
+    if "player" not in payloads:
+        print("RUN SEARCH")
+        try:
+            page.get_by_role("button", name="検索", exact=True).click(timeout=10000)
+        except Exception:
+            page.get_by_text("検索", exact=True).last.click(timeout=10000)
+
+    if not wait_until(page, lambda: "player" in payloads):
+        print("CURRENT URL", page.url)
+        context.close()
+        raise RuntimeError(f"player ranking not captured for {world}; seen={seen}")
+
+    player_count = save_payload("player", world, payloads["player"])
     context.close()
-    return count
+    return guild_count, player_count
 
 
 summary = {"updated_at_utc": None, "worlds": {}}
@@ -88,13 +102,11 @@ with sync_playwright() as p:
 
     for world in WORLDS:
         print(f"=== WORLD {world} ===")
-        summary["worlds"][str(world)] = {}
-        summary["worlds"][str(world)]["guilds"] = capture_ranking(
-            browser, world, 2, "guild"
-        )
-        summary["worlds"][str(world)]["players"] = capture_ranking(
-            browser, world, 1, "player"
-        )
+        guild_count, player_count = capture_world(browser, world)
+        summary["worlds"][str(world)] = {
+            "guilds": guild_count,
+            "players": player_count,
+        }
 
     browser.close()
 
