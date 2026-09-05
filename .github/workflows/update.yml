@@ -23,9 +23,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install playwright
           playwright install --with-deps chromium
-      - name: Browser test W177 guild ranking
+      - name: Fetch W177-W180 guild and player rankings
         run: python scripts/update_data.py
-      - name: Commit captured data
+      - name: Commit refreshed ranking data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
