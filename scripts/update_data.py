@@ -38,7 +38,10 @@ with sync_playwright() as p:
 
     raw_headers = bootstrap.request.all_headers()
     blocked = {"host", "content-length"}
-    headers = {k: v for k, v in raw_headers.items() if k.lower() not in blocked}
+    headers = {
+        k: v for k, v in raw_headers.items()
+        if not k.startswith(":") and k.lower() not in blocked
+    }
     print("REUSED HEADER NAMES", sorted(headers.keys()))
 
     for world in WORLDS:
