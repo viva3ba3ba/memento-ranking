@@ -1,31 +1,50 @@
 #!/usr/bin/env python3
-import json,time
-from datetime import datetime,timezone
+import json
 from pathlib import Path
-from urllib.request import Request,urlopen
-BASE='https://api.tamamo.dev/getRanking/{world}?ranking={ranking}&display=3'
-WORLDS=(1177,1178,1179,1180)
-HEADERS={'accept':'application/json, text/plain, */*','origin':'https://tamamo.dev','referer':'https://tamamo.dev/','user-agent':'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/152 Safari/537.36'}
-def fetch_json(url,tries=3):
-    last=None
-    for i in range(tries):
+from playwright.sync_api import sync_playwright
+
+WORLD = 1177
+URL = f"https://tamamo.dev/Rankings?world={WORLD}&ranking=2&display=3"
+out = Path("data")
+out.mkdir(exist_ok=True)
+
+with sync_playwright() as p:
+    browser = p.chromium.launch(headless=True)
+    context = browser.new_context(
+        locale="ja-JP",
+        user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36",
+    )
+    page = context.new_page()
+    found = []
+
+    def on_response(response):
+        if "getRanking" not in response.url:
+            return
+        print("FOUND", response.status, response.url)
+        if f"getRanking/{WORLD}" not in response.url or "ranking=2" not in response.url:
+            return
         try:
-            with urlopen(Request(url,headers=HEADERS),timeout=30) as r:
-                return json.loads(r.read().decode('utf-8'))
-        except Exception as e:
-            last=e;time.sleep(2*(i+1))
-    raise last
-def validate(o,w,key):
-    d=o.get('data') or {};ids=d.get('WorldID') or []
-    if not ids or int(ids[0])!=w or not isinstance(d.get(key),list):
-        raise RuntimeError(f'invalid response for {w} {key}')
-out=Path('data');out.mkdir(exist_ok=True)
-summary={'updated_at_utc':datetime.now(timezone.utc).isoformat(),'worlds':{}}
-for w in WORLDS:
-    g=fetch_json(BASE.format(world=w,ranking=2));validate(g,w,'GuildData')
-    p=fetch_json(BASE.format(world=w,ranking=1));validate(p,w,'PlayerData')
-    (out/f'guild_{w}.json').write_text(json.dumps(g,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
-    (out/f'player_{w}.json').write_text(json.dumps(p,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
-    summary['worlds'][str(w)]={'guilds':len(g['data']['GuildData']),'players':len(p['data']['PlayerData'])}
-(out/'status.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2),encoding='utf-8')
-print(json.dumps(summary,ensure_ascii=False,indent=2))
+            payload = response.json()
+            data = payload.get("data") or {}
+            ids = data.get("WorldID") or []
+            guilds = data.get("GuildData")
+            if ids and int(ids[0]) == WORLD and isinstance(guilds, list):
+                (out / f"guild_{WORLD}.json").write_text(
+                    json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8"
+                )
+                found.append(len(guilds))
+                print(f"SAVED W177 guilds={len(guilds)}")
+        except Exception as exc:
+            print("RESPONSE ERROR", repr(exc))
+
+    page.on("response", on_response)
+    print("OPEN", URL)
+    page.goto(URL, wait_until="domcontentloaded", timeout=90000)
+    page.wait_for_timeout(15000)
+    print("TITLE", page.title())
+    print("FINAL URL", page.url)
+    browser.close()
+
+if not found:
+    raise RuntimeError("W177 getRanking response was not captured")
+print("SUCCESS", found[-1])
