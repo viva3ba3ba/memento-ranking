@@ -14,7 +14,7 @@ USER_AGENT = (
 )
 
 
-def wait_until(page, pred, timeout_ms=30000):
+def wait_until(page, pred, timeout_ms=45000):
     elapsed = 0
     while elapsed < timeout_ms:
         if pred():
@@ -48,8 +48,19 @@ def capture_world(browser, world):
     payloads = {}
     seen = []
 
+    def relevant(url):
+        return f"getRanking/{world}" in url
+
+    def on_request(request):
+        if relevant(request.url):
+            print("REQUEST", request.method, request.url)
+
+    def on_failed(request):
+        if relevant(request.url):
+            print("REQUEST FAILED", request.url, request.failure)
+
     def on_response(response):
-        if f"getRanking/{world}" not in response.url:
+        if not relevant(response.url):
             return
         seen.append(response.url)
         print("FOUND", response.status, response.url)
@@ -63,12 +74,15 @@ def capture_world(browser, world):
         except Exception as exc:
             print("RESPONSE ERROR", repr(exc))
 
+    page.on("request", on_request)
+    page.on("requestfailed", on_failed)
     page.on("response", on_response)
+
     url = f"https://tamamo.dev/Rankings?world={world}&ranking=2&display=3"
     print("OPEN", url)
     page.goto(url, wait_until="domcontentloaded", timeout=90000)
 
-    if not wait_until(page, lambda: "guild" in payloads):
+    if not wait_until(page, lambda: "guild" in payloads, 30000):
         context.close()
         raise RuntimeError(f"guild ranking not captured for {world}; seen={seen}")
 
@@ -76,16 +90,17 @@ def capture_world(browser, world):
 
     print("SWITCH TO PLAYER")
     page.get_by_text("プレイヤー", exact=True).first.click(timeout=10000)
-    page.wait_for_timeout(1000)
+    print("PLAYER URL", page.url)
 
-    if "player" not in payloads:
-        print("RUN SEARCH")
+    # The site locks its search control while the ranking request is being handled.
+    # Leave the page alone and allow that normal request to finish instead of
+    # reloading or issuing a second search.
+    if not wait_until(page, lambda: "player" in payloads, 45000):
         try:
-            page.get_by_role("button", name="検索", exact=True).click(timeout=10000)
+            disabled = page.locator("#search-exec").is_disabled(timeout=3000)
+            print("SEARCH DISABLED", disabled)
         except Exception:
-            page.get_by_text("検索", exact=True).last.click(timeout=10000)
-
-    if not wait_until(page, lambda: "player" in payloads):
+            pass
         print("CURRENT URL", page.url)
         context.close()
         raise RuntimeError(f"player ranking not captured for {world}; seen={seen}")
