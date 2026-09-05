@@ -7,6 +7,11 @@ from playwright.sync_api import sync_playwright
 WORLDS = [1177, 1178, 1179, 1180]
 OUT = Path("data")
 OUT.mkdir(exist_ok=True)
+USER_AGENT = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) "
+    "Chrome/152.0.0.0 Safari/537.36"
+)
 
 
 def wait_until(page, pred, timeout_ms=45000):
@@ -38,7 +43,7 @@ def save_payload(kind, world, payload):
 
 
 def capture_world(browser, world):
-    context = browser.new_context(locale="ja-JP")
+    context = browser.new_context(locale="ja-JP", user_agent=USER_AGENT)
     page = context.new_page()
     payloads = {}
     seen = []
