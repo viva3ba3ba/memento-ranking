@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import json
+import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 from playwright.sync_api import sync_playwright
@@ -42,6 +43,19 @@ def save_payload(kind, world, payload):
     return len(rows)
 
 
+def fetch_json(url):
+    req = urllib.request.Request(
+        url,
+        headers={
+            "Accept": "*/*",
+            "User-Agent": USER_AGENT,
+            "Referer": "https://tamamo.dev/",
+        },
+    )
+    with urllib.request.urlopen(req, timeout=30) as response:
+        return json.loads(response.read().decode("utf-8"))
+
+
 summary = {"updated_at_utc": None, "worlds": {}}
 
 with sync_playwright() as p:
@@ -81,43 +95,9 @@ with sync_playwright() as p:
             "guild", world, guild_payload["value"]
         )
 
-        # Do not reload/navigate after the first successful page load. A reload can
-        # trigger Cloudflare's bot verification on GitHub-hosted runners. Instead,
-        # request the player endpoint from JavaScript inside the already accepted
-        # browser session, preserving the site's normal Origin/Referer context.
         player_api = f"https://api.tamamo.dev/getRanking/{world}?ranking=1&display=3"
-        print("FETCH PLAYER IN EXISTING SESSION", player_api)
-        result = page.evaluate(
-            """async (url) => {
-                try {
-                    const r = await fetch(url, {
-                        method: 'GET',
-                        headers: { 'accept': '*/*' },
-                        credentials: 'include',
-                        cache: 'no-store'
-                    });
-                    const text = await r.text();
-                    return {ok: r.ok, status: r.status, text};
-                } catch (e) {
-                    return {ok: false, status: 0, error: String(e), text: ''};
-                }
-            }""",
-            player_api,
-        )
-
-        if not result.get("ok"):
-            raise RuntimeError(
-                f"Player fetch failed for {world}: status={result.get('status')} "
-                f"error={result.get('error')} body={result.get('text', '')[:500]}"
-            )
-
-        try:
-            player_payload = json.loads(result["text"])
-        except Exception as exc:
-            raise RuntimeError(
-                f"Player response was not JSON for {world}: {result.get('text', '')[:500]}"
-            ) from exc
-
+        print("FETCH PLAYER API", player_api)
+        player_payload = fetch_json(player_api)
         summary["worlds"][str(world)]["players"] = save_payload(
             "player", world, player_payload
         )
