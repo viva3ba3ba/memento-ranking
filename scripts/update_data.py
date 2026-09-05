@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 import json
-import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 from playwright.sync_api import sync_playwright
@@ -15,7 +14,7 @@ USER_AGENT = (
 )
 
 
-def wait_until(page, pred, timeout_ms=25000):
+def wait_until(page, pred, timeout_ms=30000):
     elapsed = 0
     while elapsed < timeout_ms:
         if pred():
@@ -43,19 +42,43 @@ def save_payload(kind, world, payload):
     return len(rows)
 
 
-def fetch_json(url):
-    req = urllib.request.Request(
-        url,
-        headers={
-            "Accept": "*/*",
-            "Accept-Language": "ja,en;q=0.9,en-GB;q=0.8,en-US;q=0.7",
-            "Origin": "https://tamamo.dev",
-            "Referer": "https://tamamo.dev/",
-            "User-Agent": USER_AGENT,
-        },
-    )
-    with urllib.request.urlopen(req, timeout=30) as response:
-        return json.loads(response.read().decode("utf-8"))
+def capture_ranking(browser, world, ranking, kind):
+    context = browser.new_context(locale="ja-JP", user_agent=USER_AGENT)
+    page = context.new_page()
+    captured = {}
+    seen = []
+
+    def on_response(response):
+        if f"getRanking/{world}" not in response.url:
+            return
+        seen.append(response.url)
+        print("FOUND", response.status, response.url)
+        if response.status != 200:
+            return
+        if f"ranking={ranking}" not in response.url or "display=3" not in response.url:
+            return
+        try:
+            captured["payload"] = response.json()
+        except Exception as exc:
+            print("RESPONSE ERROR", repr(exc))
+
+    page.on("response", on_response)
+    url = f"https://tamamo.dev/Rankings?world={world}&ranking={ranking}&display=3"
+    print("OPEN", url)
+    page.goto(url, wait_until="domcontentloaded", timeout=90000)
+
+    if not wait_until(page, lambda: "payload" in captured):
+        try:
+            body = page.locator("body").inner_text(timeout=5000)
+            print("PAGE BODY", body[:2000])
+        except Exception:
+            pass
+        context.close()
+        raise RuntimeError(f"{kind} ranking not captured for {world}; seen={seen}")
+
+    count = save_payload(kind, world, captured["payload"])
+    context.close()
+    return count
 
 
 summary = {"updated_at_utc": None, "worlds": {}}
@@ -66,44 +89,12 @@ with sync_playwright() as p:
     for world in WORLDS:
         print(f"=== WORLD {world} ===")
         summary["worlds"][str(world)] = {}
-        context = browser.new_context(locale="ja-JP", user_agent=USER_AGENT)
-        page = context.new_page()
-        guild_payload = {}
-        seen_urls = []
-
-        def on_response(response, world=world):
-            if f"getRanking/{world}" not in response.url:
-                return
-            seen_urls.append(response.url)
-            print("FOUND", response.status, response.url)
-            if response.status != 200 or "display=3" not in response.url:
-                return
-            if "ranking=2" not in response.url:
-                return
-            try:
-                guild_payload["value"] = response.json()
-            except Exception as exc:
-                print("GUILD RESPONSE ERROR", repr(exc))
-
-        page.on("response", on_response)
-
-        guild_url = f"https://tamamo.dev/Rankings?world={world}&ranking=2&display=3"
-        print("OPEN", guild_url)
-        page.goto(guild_url, wait_until="domcontentloaded", timeout=90000)
-        if not wait_until(page, lambda: "value" in guild_payload):
-            raise RuntimeError(f"Guild ranking not captured for {world}; seen={seen_urls}")
-
-        summary["worlds"][str(world)]["guilds"] = save_payload(
-            "guild", world, guild_payload["value"]
+        summary["worlds"][str(world)]["guilds"] = capture_ranking(
+            browser, world, 2, "guild"
         )
-
-        player_api = f"https://api.tamamo.dev/getRanking/{world}?ranking=1&display=3"
-        print("FETCH PLAYER API", player_api)
-        player_payload = fetch_json(player_api)
-        summary["worlds"][str(world)]["players"] = save_payload(
-            "player", world, player_payload
+        summary["worlds"][str(world)]["players"] = capture_ranking(
+            browser, world, 1, "player"
         )
-        context.close()
 
     browser.close()
 
