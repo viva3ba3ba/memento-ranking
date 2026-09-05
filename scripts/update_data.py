@@ -13,7 +13,7 @@ USER_AGENT = (
     "Chrome/152.0.0.0 Safari/537.36"
 )
 
-def wait_until(page, pred, timeout_ms=20000):
+def wait_until(page, pred, timeout_ms=25000):
     elapsed = 0
     while elapsed < timeout_ms:
         if pred():
@@ -68,30 +68,21 @@ with sync_playwright() as p:
                 print("RESPONSE ERROR", repr(exc))
 
         page.on("response", on_response)
+
         guild_url = f"https://tamamo.dev/Rankings?world={world}&ranking=2&display=3"
         print("OPEN", guild_url)
         page.goto(guild_url, wait_until="domcontentloaded", timeout=90000)
-
-        if not wait_until(page, lambda: 2 in captured, 25000):
+        if not wait_until(page, lambda: 2 in captured):
             raise RuntimeError(f"Guild ranking not captured for {world}; seen={seen_urls}")
-
         summary["worlds"][str(world)]["guilds"] = captured[2]
-
-        clickable = page.locator("button, a, [role=button]")
-        try:
-            texts = clickable.all_inner_texts()
-            print("CLICKABLE TEXTS", [t.strip() for t in texts if t.strip()][:120])
-        except Exception as exc:
-            print("CLICKABLE TEXTS ERROR", repr(exc))
 
         clicked = False
         for label in ["プレイヤー", "個人"]:
-            candidates = [
+            for loc in [
                 page.get_by_role("button", name=label, exact=True),
                 page.get_by_role("link", name=label, exact=True),
                 page.get_by_text(label, exact=True),
-            ]
-            for loc in candidates:
+            ]:
                 try:
                     if loc.count() > 0:
                         loc.first.click(timeout=8000)
@@ -102,13 +93,25 @@ with sync_playwright() as p:
                     print("CLICK ERROR", label, repr(exc))
             if clicked:
                 break
-
         if not clicked:
             raise RuntimeError(f"Player tab/button not found for {world}")
 
-        if not wait_until(page, lambda: 1 in captured, 25000):
+        page.wait_for_timeout(1500)
+        print("AFTER CLICK URL", page.url)
+
+        # The SPA changes the URL to ranking=1 but sometimes does not refetch.
+        # Reload after the UI selection so the selected ranking is restored from app state.
+        print("RELOAD PLAYER PAGE")
+        page.reload(wait_until="domcontentloaded", timeout=90000)
+
+        if not wait_until(page, lambda: 1 in captured):
             print("PLAYER CAPTURE FAILED; current URL", page.url)
             print("SEEN getRanking URLS", seen_urls)
+            try:
+                body = page.locator("body").inner_text(timeout=5000)
+                print("BODY AFTER PLAYER RELOAD", body[:12000])
+            except Exception as exc:
+                print("BODY READ ERROR", repr(exc))
             raise RuntimeError(f"Player ranking not captured for {world}")
 
         summary["worlds"][str(world)]["players"] = captured[1]
