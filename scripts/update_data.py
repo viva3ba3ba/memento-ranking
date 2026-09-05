@@ -7,11 +7,6 @@ from playwright.sync_api import sync_playwright
 WORLDS = [1177, 1178, 1179, 1180]
 OUT = Path("data")
 OUT.mkdir(exist_ok=True)
-USER_AGENT = (
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-    "AppleWebKit/537.36 (KHTML, like Gecko) "
-    "Chrome/152.0.0.0 Safari/537.36"
-)
 
 
 def wait_until(page, pred, timeout_ms=45000):
@@ -43,7 +38,7 @@ def save_payload(kind, world, payload):
 
 
 def capture_world(browser, world):
-    context = browser.new_context(locale="ja-JP", user_agent=USER_AGENT)
+    context = browser.new_context(locale="ja-JP")
     page = context.new_page()
     payloads = {}
     seen = []
@@ -92,9 +87,6 @@ def capture_world(browser, world):
     page.get_by_text("プレイヤー", exact=True).first.click(timeout=10000)
     print("PLAYER URL", page.url)
 
-    # The site locks its search control while the ranking request is being handled.
-    # Leave the page alone and allow that normal request to finish instead of
-    # reloading or issuing a second search.
     if not wait_until(page, lambda: "player" in payloads, 45000):
         try:
             disabled = page.locator("#search-exec").is_disabled(timeout=3000)
