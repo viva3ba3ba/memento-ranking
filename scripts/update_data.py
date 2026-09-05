@@ -48,8 +48,10 @@ def fetch_json(url):
         url,
         headers={
             "Accept": "*/*",
-            "User-Agent": USER_AGENT,
+            "Accept-Language": "ja,en;q=0.9,en-GB;q=0.8,en-US;q=0.7",
+            "Origin": "https://tamamo.dev",
             "Referer": "https://tamamo.dev/",
+            "User-Agent": USER_AGENT,
         },
     )
     with urllib.request.urlopen(req, timeout=30) as response:
