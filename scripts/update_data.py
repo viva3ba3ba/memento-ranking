@@ -90,9 +90,11 @@ def capture_world(browser, world):
             return result
 
         print("SWITCH TO PLAYER")
-        page.get_by_text("プレイヤー", exact=True).first.click(timeout=10000)
+       page.wait_for_load_state("networkidle")
+page.wait_for_timeout(3000)
+page.get_by_text("プレイヤー", exact=True).first.click(timeout=10000)
         print("PLAYER URL", page.url)
-        if wait_until(page, lambda: "player" in payloads, 45000):
+        if wait_until(page, lambda: "player" in payloads, 120000):
             result["players"] = save_payload("player", world, payloads["player"])
         else:
             message = f"player ranking not captured for {world}; seen={seen}"
