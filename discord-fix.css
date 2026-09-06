@@ -1,0 +1,25 @@
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+.char,.char *{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+@media (max-width:900px),(hover:none) and (pointer:coarse){
+  .table:has(.players){overflow:visible;border:0}
+  .players{display:block;width:100%;min-width:0;background:transparent}
+  .players thead{display:none}
+  .players tbody{display:grid;gap:10px;width:100%}
+  .players .playerCard{display:grid;width:100%;min-width:0;grid-template-columns:42px 52px minmax(0,1fr) minmax(0,1fr);grid-template-areas:"rank world name guild" "power power power power" "deck deck deck deck";gap:7px 6px;padding:10px;background:var(--p);border:1px solid var(--line);border-radius:12px}
+  .players .playerCard td{display:block;min-width:0;padding:4px;border:0;overflow:hidden}
+  .players .playerRank{grid-area:rank;display:grid!important;place-items:center;border-radius:8px;background:var(--p2);font-size:18px;font-weight:800}
+  .players .playerWorld{grid-area:world;align-self:center;color:var(--ex);font-size:13px;font-weight:800}
+  .players .playerName{grid-area:name;align-self:center;white-space:normal;overflow-wrap:anywhere;font-size:14px;font-weight:800;line-height:1.25}
+  .players .playerGuild{grid-area:guild;align-self:center;white-space:normal;overflow-wrap:anywhere;color:var(--muted);font-size:13px;line-height:1.25}
+  .players .playerPower{grid-area:power!important;width:100%;text-align:left;padding:7px 8px!important;background:#111722;border-radius:8px!important;font-size:15px;font-weight:800;line-height:20px}
+  .players .playerPower:before{content:"戦闘力 ";color:var(--muted);font-size:12px}
+  .players .playerPower br{display:none}
+  .players .playerPower small{margin-left:6px;font-size:12px}
+  .players .playerDeck{grid-area:deck;width:100%;padding:0!important;overflow:visible!important}
+  .players .deck{display:grid;width:100%;min-width:0;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px;align-items:start}
+  .players .char{position:static;width:100%;min-width:0;max-width:none;height:84px;min-height:84px;margin:0;padding:4px 3px;display:grid;grid-template-rows:54px 12px 10px;place-items:center;align-content:center;gap:1px;overflow:hidden}
+  .players .charImg,.players .charFallback{display:block;width:min(54px,100%);max-width:54px;height:54px;margin:0 auto;border-radius:7px;object-fit:cover}
+  .players .char .lv,.players .char .rarity{position:static;inset:auto;display:block;width:100%;height:auto;margin:0;padding:0;overflow:hidden;background:transparent;text-align:center;white-space:nowrap}
+  .players .char .lv{color:#fff;font-size:10px;font-weight:800;line-height:12px}
+  .players .char .rarity{color:#f7db7c;font-size:9px;font-weight:700;line-height:10px}
+}
