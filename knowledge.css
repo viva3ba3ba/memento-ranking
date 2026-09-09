@@ -233,15 +233,42 @@
   background-attachment: fixed;
   color: #2f2938;
   font-weight: 600;
-  text-shadow: -1px 0 rgba(255,255,255,.88), 0 1px rgba(255,255,255,.88), 1px 0 rgba(255,255,255,.88), 0 -1px rgba(255,255,255,.88);
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.48);
 }
-.knowledgeHead, .knowledgeBranches .branch, .knowledgeEntry, .knowledgePage .term {
-  background: rgba(255,255,255,.03) !important;
+.knowledgeHead,
+.knowledgeBranches .branch,
+.knowledgeEntry,
+.knowledgePage .term {
+  background: rgba(255, 255, 255, 0.03) !important;
   backdrop-filter: blur(1.5px);
   border: 2px solid #554761 !important;
   box-shadow: none !important;
 }
-.knowledgeAction, .zoomLink { background: rgba(255,255,255,.03) !important; color: #241e2c !important; border-color: #554761 !important; font-weight: 900; }
-.knowledgeHead h2, .knowledgeEntry h3, .knowledgeEntry h4 { color: #241e2c !important; font-weight: 900; }
-.knowledgeEntry p, .knowledgeEntry li, .knowledgePage .term span, .knowledgeAuthor, .zoomHint { color: #50475b !important; font-weight: 700; }
-@media (max-width: 700px) { .knowledgePage { background-attachment: scroll; background-position: 58% center; } }
+.knowledgeAction,
+.zoomLink {
+  background: rgba(255, 255, 255, 0.03) !important;
+  color: #241e2c !important;
+  border-color: #554761 !important;
+  font-weight: 900;
+}
+.knowledgeHead h2,
+.knowledgeEntry h3,
+.knowledgeEntry h4 {
+  color: #241e2c !important;
+  font-weight: 900;
+}
+.knowledgeEntry p,
+.knowledgeEntry li,
+.knowledgePage .term span,
+.knowledgeAuthor,
+.zoomHint {
+  color: #50475b !important;
+  font-weight: 700;
+}
+@media (max-width: 700px) {
+  .knowledgePage {
+    background-image: url("site-theme-bg-mobile.jpg");
+    background-attachment: scroll;
+    background-position: center top;
+  }
+}
