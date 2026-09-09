@@ -13,7 +13,8 @@
     <title>メメントモリ W177–180 統合ランキング</title>
     <link rel="stylesheet" href="dashboard.css?v=49" />
     <link rel="stylesheet" href="discord-fix.css?v=49" />
-    <link rel="stylesheet" href="site-auth.css?v=49" />
+    <link rel="stylesheet" href="site-auth.css?v=50" />
+    <link rel="stylesheet" href="knowledge.css?v=50" />
     <script src="site-auth.js?v=49" defer></script>
   </head>
   <body>
@@ -29,7 +30,8 @@
         <button id="tg" class="active">🏰 ギルド戦力</button
         ><button id="tp">👤 個人戦力</button
         ><a href="formations.html">⚔ みんなの編成</a
-        ><a class="termsButton" href="#termsMenu">📖 ギルバト用語・略語</a>
+        ><a class="termsButton" href="#termsMenu">📖 ギルバト用語・略語</a
+        ><a class="knowledgeButton" href="#knowledgeMenu">💧 知識の泉</a>
       </nav>
       <section id="guildSection">
         <div class="controls">
@@ -395,7 +397,364 @@
         <div class="termItem"><b>WS</b><span>ウィスケルケー</span></div>
       </div>
     </section>
-    <script src="dashboard.js?v=49"></script>
-    <script src="character-detail.js?v=49"></script>
+    <section class="knowledgePage" id="knowledgeMenu">
+      <header class="knowledgeHead">
+        <h2>知識の泉</h2>
+        <a class="knowledgeAction knowledgeClose" href="#top">閉じる</a>
+      </header>
+      <div class="knowledgeBranches">
+        <a class="branch" href="#knowledgeBasic">ギルバト知識</a>
+        <a class="branch" href="#knowledgeIntermediate">ギルバト知識中級編</a>
+        <a class="branch" href="#knowledgeShop"
+          >ショップの交換及び購入について</a
+        >
+        <a class="branch" href="#knowledgeSubParty">サブパについて</a>
+        <a class="branch" href="#knowledgeExchange">情報交換</a>
+        <a class="branch" href="#knowledgeLinks">おすすめサイト、ページ</a>
+      </div>
+    </section>
+
+    <section class="knowledgePage" id="knowledgeBasic">
+      <header class="knowledgeHead">
+        <h2>ギルバト知識</h2>
+        <a class="knowledgeAction knowledgeClose" href="#top">閉じる</a>
+      </header>
+      <div class="content">
+        <a class="knowledgeAction knowledgeBack" href="#knowledgeMenu">← 知識の泉へ戻る</a>
+        <div class="knowledgeList">
+          <article class="knowledgeEntry">
+            <h3>疲弊度の違いと狙い目</h3>
+            <h4>進行側の疲弊</h4>
+            <p>
+              進行側はKO数に応じてスピード・攻撃力・防御力が低下し、このように疲弊します。上限は100のため、100以上はデバフが入りません。
+            </p>
+            <div class="evidenceGrid one">
+              <a class="zoomLink" href="#knowledgeImage1"
+                ><img
+                  src="knowledge-assets/1-1.png"
+                  alt="進行側の疲弊表"
+                /><span class="zoomHint">疲弊表をタップして拡大</span></a
+              >
+            </div>
+            <h4>防衛側の疲弊</h4>
+            <p>
+              防衛側は上限が200になり、進行側と同様に上限以上はデバフが入りません。
+            </p>
+            <div class="evidenceGrid">
+              <a class="zoomLink" href="#knowledgeImage2"
+                ><img
+                  src="knowledge-assets/2-1.png"
+                  alt="防衛側の疲弊表・前半"
+                /><span class="zoomHint">タップして拡大</span></a
+              ><a class="zoomLink" href="#knowledgeImage2"
+                ><img
+                  src="knowledge-assets/2-2.png"
+                  alt="防衛側の疲弊表・後半"
+                /><span class="zoomHint">タップして拡大</span></a
+              >
+            </div>
+          </article>
+
+          <article class="knowledgeEntry">
+            <h3>高戦力に攻められ、30キープ指示の場合</h3>
+            <p>
+              デバフが100前後になるまでメインなどの強い編成を入れず、最小編成で耐えて調整することで無駄な敗北が減ります。移動している人が頑張っても2つが限界で、3つ以上は同時に弄れません。
+            </p>
+            <div class="evidenceGrid one">
+              <a class="zoomLink" href="#knowledgeImage3"
+                ><img
+                  src="knowledge-assets/3-1.png"
+                  alt="30キープ時の拠点情報"
+                /><span class="zoomHint">拠点情報をタップして拡大</span></a
+              >
+            </div>
+          </article>
+
+          <article class="knowledgeEntry">
+            <h3>理解度の高いギルド同士の対決</h3>
+            <p>
+              理解度の高いギルド同士の対決では、序盤は中間層とランカーのサブ同士の戦いになります。そのため、下の画像のような展開が10～20分近く行われます。
+            </p>
+            <div class="evidenceGrid">
+              <a class="zoomLink" href="#knowledgeImage4"
+                ><img
+                  src="knowledge-assets/4-1.png"
+                  alt="対戦展開1"
+                /><span class="zoomHint">タップして拡大</span></a
+              ><a class="zoomLink" href="#knowledgeImage4"
+                ><img
+                  src="knowledge-assets/4-2.png"
+                  alt="対戦展開2"
+                /><span class="zoomHint">タップして拡大</span></a
+              ><a class="zoomLink" href="#knowledgeImage4"
+                ><img
+                  src="knowledge-assets/4-3.png"
+                  alt="対戦展開3"
+                /><span class="zoomHint">タップして拡大</span></a
+              ><a class="zoomLink" href="#knowledgeImage4"
+                ><img
+                  src="knowledge-assets/4-4.png"
+                  alt="対戦展開4"
+                /><span class="zoomHint">タップして拡大</span></a
+              >
+            </div>
+          </article>
+
+          <article class="knowledgeEntry">
+            <h3>防衛時の配置の形</h3>
+            <h4>上に5体を固めている時</h4>
+            <p>
+              この形は、相手のリアルタイム参加者が20人前後の時に、相手へデバフを使わせたい場合に使います。基本的には先置きでの使用が多く、終盤に相手へデバフを使わせたい場合もこの形になる可能性があります。
+            </p>
+            <h4>メリット</h4>
+            <p>
+              相手は強い編成で攻撃すると撃ち抜いてしまう可能性があるため、早い時間には使えず、デバフを入れながら少しずつしか進めません。上が抜かれないため、下のデバフも削られません。
+            </p>
+            <h4>デメリット</h4>
+            <p>
+              一定の時間になった時にすべて下げないと、強いメイン編成にすべて倒されてしまいます。
+            </p>
+            <div class="evidenceGrid one">
+              <a class="zoomLink" href="#knowledgeImage5"
+                ><img
+                  src="knowledge-assets/5-1.png"
+                  alt="上に5体を固めた配置"
+                /><span class="zoomHint">配置画像をタップして拡大</span></a
+              >
+            </div>
+            <h4>間隔を空けて5体を置いている時</h4>
+            <p>
+              進行されている防衛の際は、基本的にこの形です。2体置きなら約20間隔、3体置きなら約14間隔で配置しています。多くのギルドが、この2つの配置を採用しています。
+            </p>
+            <div class="evidenceGrid">
+              <a class="zoomLink" href="#knowledgeImage6"
+                ><img
+                  src="knowledge-assets/6-1.png"
+                  alt="間隔を空けた配置1"
+                /><span class="zoomHint">タップして拡大</span></a
+              ><a class="zoomLink" href="#knowledgeImage6"
+                ><img
+                  src="knowledge-assets/6-2.png"
+                  alt="間隔を空けた配置2"
+                /><span class="zoomHint">タップして拡大</span></a
+              >
+            </div>
+          </article>
+
+          <article class="knowledgeEntry">
+            <h3>ギルバトの本質</h3>
+            <ul>
+              <li><b>進行側：</b>時間を奪うゲーム</li>
+              <li><b>防衛側：</b>時間を守るゲーム</li>
+            </ul>
+            <p>
+              防衛側は1分1秒でも耐えることで、ギリギリに来る人が間に合って勝つケースや、間に合わず負けるケースが出てきます。進行側は常に時間を奪う進行を行います。そのため、進行側は5体で進行して時間を奪い、防衛側は最小編成で時間を守ります。
+            </p>
+            <h4>なぜ一番強い編成は最後なのか？</h4>
+            <p>
+              理由は2つあります。1つ目は、最後は進行側もデバフがなくなる可能性があること。2つ目は、相手が強い編成を序盤～中盤で使った場合、一番強い編成を抜けない可能性があることです。そのため、ギルド最強ランカーのメイン編成が先に出た側は、かなり劣勢になっている場合がほとんどです。
+            </p>
+            <h4>なぜ進行側が有利なのか？</h4>
+            <p>
+              進行側は全編成にスピードバフ10％が付くことと、デバフの入り方が防衛側と大きく異なるためです。
+            </p>
+            <h4>序盤に強い編成を使わず、どう落とすのか？</h4>
+            <p>
+              デバフを入れれば、よほど戦力差がなければ落とせます。進行側・防衛側ともにMAXデバフが入れば、5倍・6倍の戦力の編成も倒せます。
+            </p>
+          </article>
+
+          <article class="knowledgeEntry">
+            <h3>強いギルドはどんなギルド？</h3>
+            <ul>
+              <li><b>リアルタイム参加者が多い：</b>使える編成数が多いため。</li>
+              <li>
+                <b>メンバーの理解度が高い：</b
+                >少ないデバフで効率よく相手を倒せるため。
+              </li>
+              <li>
+                <b>移動係や指揮官のレベルが高い：</b
+                >編成の重複へ対応し、その都度移動しながら臨機応変に指示できるため。
+              </li>
+              <li>
+                <b>戦闘力以上の強さを持つメンバーがいる：</b
+                >例として、戦闘力3億の人が2億のメイン編成に勝てる編成を2～3個以上持つ場合や、戦闘力1億の人が7000万のメイン編成に勝てる編成を2～3個以上持つ場合です。
+              </li>
+              <li>
+                <b>編成数が多い：</b
+                >強い5体編成が多いほどギルバトでは有利になります。
+              </li>
+            </ul>
+            <p>
+              例えば、総編成数が51対50で、デバフ数・戦力が同じ場合、両者が完璧に動いても50編成側は51編成側の最後のメイン編成を止められず、陥落または防衛失敗になる可能性があります。デバフは残っていても5体編成がなく、相手のメイン編成をあと少しで倒せないケースは非常に多くあります。そのため、同程度の戦闘力のメイン編成に勝てる5体編成は、多いほど有利です。
+            </p>
+          </article>
+
+          <article class="knowledgeEntry">
+            <h3>さいごに</h3>
+            <p>
+              知識を身につけるかどうかは自由です。楽しく遊ぶことが一番大切です😊
+            </p>
+            <p>
+              理解度が広がれば別の楽しさも生まれ、うまくいけば今より楽しめる人も増えます😊
+            </p>
+            <p>
+              一番大切なのはリアルを優先し、メメントモリで楽しくワイワイ遊ぶことです。課金もリアルタイム参加も、無理なく楽しみましょう😊
+            </p>
+          </article>
+        </div>
+        <div class="knowledgeAuthor">作成者：颯</div>
+      </div>
+    </section>
+    <section class="page imageViewer" id="knowledgeImage1">
+      <header class="knowledgeHead">
+        <h2>進行側の疲弊表</h2>
+        <a class="knowledgeAction knowledgeClose" href="#knowledgeBasic">戻る</a>
+      </header>
+      <div class="zoomGallery">
+        <img
+          src="knowledge-assets/1-1.png"
+          alt="ギルバト知識1の拡大画像"
+        />
+      </div>
+    </section>
+    <section class="page imageViewer" id="knowledgeImage2">
+      <header class="knowledgeHead">
+        <h2>防衛側の疲弊表</h2>
+        <a class="knowledgeAction knowledgeClose" href="#knowledgeBasic">戻る</a>
+      </header>
+      <div class="zoomGallery">
+        <img
+          src="knowledge-assets/2-1.png"
+          alt="ギルバト知識2の拡大画像1"
+        /><img
+          src="knowledge-assets/2-2.png"
+          alt="ギルバト知識2の拡大画像2"
+        />
+      </div>
+    </section>
+    <section class="page imageViewer" id="knowledgeImage3">
+      <header class="knowledgeHead">
+        <h2>30キープ時の拠点情報</h2>
+        <a class="knowledgeAction knowledgeClose" href="#knowledgeBasic">戻る</a>
+      </header>
+      <div class="zoomGallery">
+        <img
+          src="knowledge-assets/3-1.png"
+          alt="ギルバト知識3の拡大画像"
+        />
+      </div>
+    </section>
+    <section class="page imageViewer" id="knowledgeImage4">
+      <header class="knowledgeHead">
+        <h2>ギルド同士の対戦展開</h2>
+        <a class="knowledgeAction knowledgeClose" href="#knowledgeBasic">戻る</a>
+      </header>
+      <div class="zoomGallery">
+        <img
+          src="knowledge-assets/4-1.png"
+          alt="ギルバト知識4の拡大画像1"
+        /><img
+          src="knowledge-assets/4-2.png"
+          alt="ギルバト知識4の拡大画像2"
+        /><img
+          src="knowledge-assets/4-3.png"
+          alt="ギルバト知識4の拡大画像3"
+        /><img
+          src="knowledge-assets/4-4.png"
+          alt="ギルバト知識4の拡大画像4"
+        />
+      </div>
+    </section>
+    <section class="page imageViewer" id="knowledgeImage5">
+      <header class="knowledgeHead">
+        <h2>上に5体を固めた配置</h2>
+        <a class="knowledgeAction knowledgeClose" href="#knowledgeBasic">戻る</a>
+      </header>
+      <div class="zoomGallery">
+        <img
+          src="knowledge-assets/5-1.png"
+          alt="ギルバト知識5の拡大画像"
+        />
+      </div>
+    </section>
+    <section class="page imageViewer" id="knowledgeImage6">
+      <header class="knowledgeHead">
+        <h2>間隔を空けた配置</h2>
+        <a class="knowledgeAction knowledgeClose" href="#knowledgeBasic">戻る</a>
+      </header>
+      <div class="zoomGallery">
+        <img
+          src="knowledge-assets/6-1.png"
+          alt="ギルバト知識6の拡大画像1"
+        /><img
+          src="knowledge-assets/6-2.png"
+          alt="ギルバト知識6の拡大画像2"
+        />
+      </div>
+    </section>
+    <section class="knowledgePage" id="knowledgeIntermediate">
+      <header class="knowledgeHead">
+        <h2>ギルバト知識中級編</h2>
+        <a class="knowledgeAction knowledgeClose" href="#top">閉じる</a>
+      </header>
+      <div class="content">
+        <a class="knowledgeAction knowledgeBack" href="#knowledgeMenu">← 知識の泉へ戻る</a>
+        <div class="term">
+          <b>ギルバト知識中級編</b><span>ここに内容を掲載します。</span>
+        </div>
+      </div>
+    </section>
+    <section class="knowledgePage" id="knowledgeShop">
+      <header class="knowledgeHead">
+        <h2>ショップの交換及び購入について</h2>
+        <a class="knowledgeAction knowledgeClose" href="#top">閉じる</a>
+      </header>
+      <div class="content">
+        <a class="knowledgeAction knowledgeBack" href="#knowledgeMenu">← 知識の泉へ戻る</a>
+        <div class="term">
+          <b>ショップの交換及び購入について</b
+          ><span>ここに内容を掲載します。</span>
+        </div>
+      </div>
+    </section>
+    <section class="knowledgePage" id="knowledgeSubParty">
+      <header class="knowledgeHead">
+        <h2>サブパについて</h2>
+        <a class="knowledgeAction knowledgeClose" href="#top">閉じる</a>
+      </header>
+      <div class="content">
+        <a class="knowledgeAction knowledgeBack" href="#knowledgeMenu">← 知識の泉へ戻る</a>
+        <div class="term">
+          <b>サブパについて</b><span>ここに内容を掲載します。</span>
+        </div>
+      </div>
+    </section>
+    <section class="knowledgePage" id="knowledgeExchange">
+      <header class="knowledgeHead">
+        <h2>情報交換</h2>
+        <a class="knowledgeAction knowledgeClose" href="#top">閉じる</a>
+      </header>
+      <div class="content">
+        <a class="knowledgeAction knowledgeBack" href="#knowledgeMenu">← 知識の泉へ戻る</a>
+        <div class="term">
+          <b>情報交換</b><span>ここに内容を掲載します。</span>
+        </div>
+      </div>
+    </section>
+    <section class="knowledgePage" id="knowledgeLinks">
+      <header class="knowledgeHead">
+        <h2>おすすめサイト、ページ</h2>
+        <a class="knowledgeAction knowledgeClose" href="#top">閉じる</a>
+      </header>
+      <div class="content">
+        <a class="knowledgeAction knowledgeBack" href="#knowledgeMenu">← 知識の泉へ戻る</a>
+        <div class="term">
+          <b>おすすめサイト、ページ</b><span>ここに内容を掲載します。</span>
+        </div>
+      </div>
+    </section>
+    <script src="dashboard.js?v=50"></script>
+    <script src="character-detail.js?v=50"></script>
   </body>
 </html>
