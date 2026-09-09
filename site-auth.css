@@ -13,6 +13,7 @@
   color: #fff;
   font-family: system-ui, "Yu Gothic UI", sans-serif;
   text-shadow: none !important;
+  -webkit-text-stroke: 0 !important;
 }
 #siteAuthGate[hidden] {
   display: none !important;
