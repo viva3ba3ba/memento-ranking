@@ -581,8 +581,8 @@ html {
   --p: rgba(255, 255, 255, 0.03);
   --p2: rgba(255, 255, 255, 0.03);
   --line: #554761;
-  --text: #2f2938;
-  --muted: #50475b;
+  --text: #101010;
+  --muted: #242424;
   --gm: #684a00;
   --ex: #184f78;
   --el: #1e6841;
@@ -602,7 +602,9 @@ dialog,
   background-attachment: fixed;
   color: var(--text);
   font-weight: 600;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.48);
+  text-shadow: none;
+  -webkit-text-stroke: 0.55px rgba(255, 255, 255, 0.96);
+  paint-order: stroke fill;
 }
 .head,
 nav,
@@ -619,7 +621,7 @@ th,
 .termsBranch,
 .termItem {
   background: rgba(255, 255, 255, 0.03) !important;
-  backdrop-filter: blur(1.5px);
+  backdrop-filter: none;
   box-shadow: none !important;
   border-color: var(--line) !important;
 }
@@ -642,7 +644,7 @@ nav a,
   color: var(--text) !important;
   border: 2px solid var(--line) !important;
   box-shadow: none !important;
-  backdrop-filter: blur(1.5px);
+  backdrop-filter: none;
 }
 h1,
 h2,
@@ -653,7 +655,7 @@ button,
 nav a,
 .rank,
 .termsBranch {
-  color: #241e2c !important;
+  color: #050505 !important;
   font-weight: 900 !important;
 }
 small,
