@@ -268,7 +268,8 @@
 @media (max-width: 700px) {
   .knowledgePage {
     background-image: url("site-theme-bg-mobile.jpg");
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-position: center top;
+    background-size: cover;
   }
 }
