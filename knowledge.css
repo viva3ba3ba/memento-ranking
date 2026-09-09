@@ -231,30 +231,32 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  color: #2f2938;
+  color: #101010;
   font-weight: 600;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.48);
+  text-shadow: none;
+  -webkit-text-stroke: 0.55px rgba(255, 255, 255, 0.96);
+  paint-order: stroke fill;
 }
 .knowledgeHead,
 .knowledgeBranches .branch,
 .knowledgeEntry,
 .knowledgePage .term {
   background: rgba(255, 255, 255, 0.03) !important;
-  backdrop-filter: blur(1.5px);
+  backdrop-filter: none;
   border: 2px solid #554761 !important;
   box-shadow: none !important;
 }
 .knowledgeAction,
 .zoomLink {
   background: rgba(255, 255, 255, 0.03) !important;
-  color: #241e2c !important;
+  color: #050505 !important;
   border-color: #554761 !important;
   font-weight: 900;
 }
 .knowledgeHead h2,
 .knowledgeEntry h3,
 .knowledgeEntry h4 {
-  color: #241e2c !important;
+  color: #050505 !important;
   font-weight: 900;
 }
 .knowledgeEntry p,
@@ -262,7 +264,7 @@
 .knowledgePage .term span,
 .knowledgeAuthor,
 .zoomHint {
-  color: #50475b !important;
+  color: #242424 !important;
   font-weight: 700;
 }
 @media (max-width: 700px) {
