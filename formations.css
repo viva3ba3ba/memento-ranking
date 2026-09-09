@@ -405,8 +405,8 @@ dialog::backdrop {
   --panel: rgba(255, 255, 255, 0.03);
   --card: rgba(255, 255, 255, 0.03);
   --line: #554761;
-  --text: #2f2938;
-  --muted: #50475b;
+  --text: #101010;
+  --muted: #242424;
   --gold: #684a00;
 }
 html {
@@ -423,7 +423,9 @@ dialog {
   background-attachment: fixed;
   color: var(--text);
   font-weight: 600;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.48);
+  text-shadow: none;
+  -webkit-text-stroke: 0.55px rgba(255, 255, 255, 0.96);
+  paint-order: stroke fill;
 }
 header,
 .player,
@@ -440,7 +442,7 @@ header,
 .editChar input,
 .editChar select {
   background: rgba(255, 255, 255, 0.03) !important;
-  backdrop-filter: blur(1.5px);
+  backdrop-filter: none;
   box-shadow: none !important;
   border-color: var(--line) !important;
 }
@@ -464,7 +466,7 @@ a {
   color: var(--text) !important;
   border-color: var(--line) !important;
   box-shadow: none !important;
-  backdrop-filter: blur(1.5px);
+  backdrop-filter: none;
 }
 h1,
 h2,
@@ -474,7 +476,7 @@ a,
 .lv,
 .rarity,
 .formationReliability {
-  color: #241e2c !important;
+  color: #050505 !important;
   font-weight: 900 !important;
 }
 header p,
