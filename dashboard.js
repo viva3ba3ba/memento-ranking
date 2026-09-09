@@ -262,7 +262,7 @@ if (isExtension)
   });
 else if ("serviceWorker" in navigator)
   navigator.serviceWorker
-    .register("./sw.js?v=62", { updateViaCache: "none" })
+    .register("./sw.js?v=63", { updateViaCache: "none" })
     .then((reg) => reg.update())
     .catch(() => {});
 load();
