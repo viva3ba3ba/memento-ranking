@@ -670,11 +670,28 @@ dialog::backdrop {
   background: transparent;
 }
 @media (max-width: 760px) {
-  body,
+  body {
+    position: relative;
+    isolation: isolate;
+    background: transparent;
+  }
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background-color: #e9e1eb;
+    background-image: url("site-theme-bg-mobile.jpg");
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
   dialog,
   .termsPage {
     background-image: url("site-theme-bg-mobile.jpg");
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-position: center top;
+    background-size: cover;
   }
 }
