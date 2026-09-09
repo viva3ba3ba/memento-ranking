@@ -587,8 +587,13 @@ html {
   --ex: #184f78;
   --el: #1e6841;
 }
-html { min-height: 100%; background: #e9e1eb; }
-body, dialog, .termsPage {
+html {
+  min-height: 100%;
+  background: #e9e1eb;
+}
+body,
+dialog,
+.termsPage {
   background-color: #e9e1eb;
   background-image: url("site-theme-bg.jpg");
   background-position: center;
@@ -597,23 +602,79 @@ body, dialog, .termsPage {
   background-attachment: fixed;
   color: var(--text);
   font-weight: 600;
-  text-shadow: -1px 0 rgba(255,255,255,.88), 0 1px rgba(255,255,255,.88), 1px 0 rgba(255,255,255,.88), 0 -1px rgba(255,255,255,.88);
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.48);
 }
-.head, nav, .controls, .cards, article, .table, table, th, .target, .member, .dialogHead, .termsHead, .termsBranch, .termItem {
-  background: rgba(255,255,255,.03) !important;
+.head,
+nav,
+.controls,
+.cards,
+article,
+.table,
+table,
+th,
+.target,
+.member,
+.dialogHead,
+.termsHead,
+.termsBranch,
+.termItem {
+  background: rgba(255, 255, 255, 0.03) !important;
   backdrop-filter: blur(1.5px);
   box-shadow: none !important;
   border-color: var(--line) !important;
 }
-.head, nav, .controls, .cards, .table, .member, .termsBranch, .termItem { border-width: 2px !important; }
-button, input, select, nav a, .termsAction {
-  background: rgba(255,255,255,.03) !important;
+.head,
+nav,
+.controls,
+.cards,
+.table,
+.member,
+.termsBranch,
+.termItem {
+  border-width: 2px !important;
+}
+button,
+input,
+select,
+nav a,
+.termsAction {
+  background: rgba(255, 255, 255, 0.03) !important;
   color: var(--text) !important;
   border: 2px solid var(--line) !important;
   box-shadow: none !important;
   backdrop-filter: blur(1.5px);
 }
-h1, h2, h3, b, th, button, nav a, .rank, .termsBranch { color: #241e2c !important; font-weight: 900 !important; }
-small, .head p, .dialogHead p, .memberGuild, .memberPower, article small, .termItem span { color: var(--muted) !important; font-weight: 700; }
-dialog::backdrop { background: transparent; }
-@media (max-width: 760px) { body, dialog, .termsPage { background-attachment: scroll; background-position: 58% center; } }
+h1,
+h2,
+h3,
+b,
+th,
+button,
+nav a,
+.rank,
+.termsBranch {
+  color: #241e2c !important;
+  font-weight: 900 !important;
+}
+small,
+.head p,
+.dialogHead p,
+.memberGuild,
+.memberPower,
+article small,
+.termItem span {
+  color: var(--muted) !important;
+  font-weight: 700;
+}
+dialog::backdrop {
+  background: transparent;
+}
+@media (max-width: 760px) {
+  body,
+  dialog,
+  .termsPage {
+    background-image: url("site-theme-bg-mobile.jpg");
+    background-attachment: scroll;
+    background-position: center top;
+  }
+}
