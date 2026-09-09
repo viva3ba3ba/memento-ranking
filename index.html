@@ -11,11 +11,39 @@
       content="no-cache, no-store, must-revalidate"
     />
     <title>メメントモリ W177–180 統合ランキング</title>
-    <link rel="stylesheet" href="dashboard.css?v=49" />
-    <link rel="stylesheet" href="discord-fix.css?v=49" />
+    <link rel="stylesheet" href="dashboard.css?v=50" />
+    <link rel="stylesheet" href="discord-fix.css?v=50" />
     <link rel="stylesheet" href="site-auth.css?v=50" />
-    <link rel="stylesheet" href="knowledge.css?v=50" />
-    <script src="site-auth.js?v=49" defer></script>
+    <style>
+      .knowledgeButton{background:#2e7890!important}
+      .knowledgePage{display:none;position:fixed;inset:0;z-index:100;overflow-y:auto;background:#0e1117;color:#f2f5f7;font-family:system-ui,"Yu Gothic UI",sans-serif}
+      .knowledgePage:target{display:block}
+      .knowledgeHead{position:sticky;top:0;z-index:2;display:flex;justify-content:space-between;align-items:center;gap:10px;padding:14px 16px;border-bottom:1px solid #303847;background:#151b24}
+      .knowledgeHead h2{margin:0;font-size:22px}
+      .knowledgeAction{display:inline-flex;min-height:44px;align-items:center;justify-content:center;padding:10px 12px;border:1px solid #303847;border-radius:9px;color:#f2f5f7;font-weight:800;text-decoration:none;text-align:center}
+      .knowledgeClose{background:#914348}
+      .knowledgeBack{margin-bottom:14px;background:#202632}
+      .knowledgeBranches{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;width:min(900px,100%);margin:0 auto;padding:18px}
+      .knowledgeBranches .branch{display:flex;min-height:110px;align-items:center;justify-content:center;padding:18px;border:1px solid #303847;border-radius:13px;background:#171c24;color:#f2f5f7;font-size:18px;font-weight:800;text-align:center;text-decoration:none}
+      .knowledgePage .content{width:min(1100px,100%);margin:auto;padding:18px}
+      .knowledgeList{display:grid;gap:16px}
+      .knowledgeEntry{padding:14px;border:1px solid #303847;border-radius:12px;background:#171c24}
+      .knowledgeEntry h3{margin:0 0 10px;font-size:20px}
+      .knowledgeEntry h4{margin:16px 0 8px;font-size:17px}
+      .knowledgeEntry p,.knowledgeEntry li{color:#d8dee7;font-size:16px;line-height:1.75}
+      .knowledgeEntry p{margin:8px 0}
+      .knowledgeEntry ul{margin:8px 0;padding-left:22px}
+      .knowledgeEntry img{display:block;width:100%;height:auto;border-radius:8px}
+      .zoomLink{display:block;color:#f2f5f7;text-decoration:none}
+      .evidenceGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:12px}
+      .evidenceGrid.one{grid-template-columns:minmax(0,1fr)}
+      .knowledgePage .term{display:grid;gap:4px;margin-top:12px;padding:14px;border:1px solid #303847;border-radius:10px;background:#171c24}
+      .knowledgePage .term span{color:#d8dee7;font-size:16px;line-height:1.65}
+      .knowledgeAuthor{margin-top:18px;padding:14px 4px 4px;border-top:1px solid #303847;color:#9fa9b6;font-size:14px;text-align:right}
+      .knowledgeImage img{display:block;max-width:100%;height:auto;margin:auto;border-radius:8px}
+      @media(max-width:700px){.knowledgeBranches{grid-template-columns:1fr;padding:12px}.knowledgeBranches .branch{min-height:74px}.knowledgeHead{padding:10px 12px}.knowledgeHead h2{font-size:18px}.knowledgePage .content{padding:12px}.evidenceGrid{grid-template-columns:1fr}.knowledgeEntry{padding:12px}.knowledgeEntry p,.knowledgeEntry li,.knowledgePage .term span{font-size:16px}}
+    </style>
+    <script src="site-auth.js?v=50" defer></script>
   </head>
   <body>
     <main id="top">
