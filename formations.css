@@ -507,13 +507,13 @@ dialog::backdrop {
     z-index: -1;
     pointer-events: none;
     background-color: #e9e1eb;
-    background-image: url("site-theme-bg-mobile.jpg");
+    background-image: url("site-theme-bg-mobile.png");
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
   }
   dialog {
-    background-image: url("site-theme-bg-mobile.jpg");
+    background-image: url("site-theme-bg-mobile.png");
     background-attachment: fixed;
     background-position: center top;
     background-size: cover;
