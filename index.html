@@ -37,11 +37,12 @@
       .zoomLink{display:block;color:#f2f5f7;text-decoration:none}
       .evidenceGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:12px}
       .evidenceGrid.one{grid-template-columns:minmax(0,1fr)}
+      .firstKnowledgeImage{width:min(100%,320px);margin-inline:auto}
       .knowledgePage .term{display:grid;gap:4px;margin-top:12px;padding:14px;border:1px solid #303847;border-radius:10px;background:#171c24}
       .knowledgePage .term span{color:#d8dee7;font-size:16px;line-height:1.65}
       .knowledgeAuthor{margin-top:18px;padding:14px 4px 4px;border-top:1px solid #303847;color:#9fa9b6;font-size:14px;text-align:right}
       .knowledgeImage img{display:block;max-width:100%;height:auto;margin:auto;border-radius:8px}
-      @media(max-width:700px){.knowledgeBranches{grid-template-columns:1fr;padding:12px}.knowledgeBranches .branch{min-height:74px}.knowledgeHead{padding:10px 12px}.knowledgeHead h2{font-size:18px}.knowledgePage .content{padding:12px}.evidenceGrid{grid-template-columns:1fr}.knowledgeEntry{padding:12px}.knowledgeEntry p,.knowledgeEntry li,.knowledgePage .term span{font-size:16px}}
+      @media(max-width:700px){.knowledgeBranches{grid-template-columns:1fr;padding:12px}.knowledgeBranches .branch{min-height:74px}.knowledgeHead{padding:10px 12px}.knowledgeHead h2{font-size:18px}.knowledgePage .content{padding:12px}.evidenceGrid{grid-template-columns:1fr}.firstKnowledgeImage{width:min(78vw,280px)}.knowledgeEntry{padding:12px}.knowledgeEntry p,.knowledgeEntry li,.knowledgePage .term span{font-size:16px}}
     </style>
     <script src="site-auth.js?v=50" defer></script>
   </head>
@@ -457,7 +458,7 @@
               進行側はKO数に応じてスピード・攻撃力・防御力が低下し、このように疲弊します。上限は100のため、100以上はデバフが入りません。
             </p>
             <div class="evidenceGrid one">
-              <a class="zoomLink" href="#knowledgeImage1"
+              <a class="zoomLink firstKnowledgeImage" href="#knowledgeImage1"
                 ><img
                   src="knowledge-assets/1-1.png"
                   alt="進行側の疲弊表"
