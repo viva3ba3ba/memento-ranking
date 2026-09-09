@@ -1,0 +1,9 @@
+.formationSwitch{margin-top:14px;padding:10px;border:1px solid var(--line);border-radius:10px;background:#141a23}
+.formationSwitchHead{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.formationSwitchHead span{color:var(--muted);font-size:13px}
+.formationTabs{display:grid;grid-template-columns:repeat(15,minmax(42px,1fr));gap:5px}
+.formationTab{min-height:40px;padding:5px;background:#344154}
+.formationTab.active{background:#277fc1}
+.formationTab.filled::after{content:"●";display:block;color:#68d391;font-size:8px;line-height:8px}
+.bulkNote{margin:7px 0 0;color:var(--muted);font-size:13px;text-align:center}
+@media(max-width:700px){.formationTabs{grid-template-columns:repeat(5,1fr)}}
