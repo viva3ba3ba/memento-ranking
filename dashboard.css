@@ -671,6 +671,28 @@ article small,
 dialog::backdrop {
   background: transparent;
 }
+
+/* Keep the small white level label crisp; the global white outline blurs it. */
+.char .lv,
+.players .char .lv {
+  -webkit-text-stroke: 0 !important;
+  paint-order: normal !important;
+  text-shadow: none !important;
+}
+
+/* Character details must reveal the shared page background through skill cards. */
+#charDialog,
+#charDialog .charDetail,
+#charDialog .charPane,
+#charDialog .detailGrid,
+#charDialog .detailCard,
+#charDialog .skillEffect,
+#charDialog .skillLevels,
+#charDialog .detailCard details {
+  background-color: transparent !important;
+  backdrop-filter: none !important;
+  box-shadow: none !important;
+}
 @media (max-width: 760px) {
   body {
     position: relative;
