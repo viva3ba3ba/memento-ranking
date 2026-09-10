@@ -427,3 +427,30 @@
     background-position: center center !important;
   }
 }
+
+/* Shop exchange guide */
+.shopComparisonWrap { width: 100%; overflow-x: auto; margin-top: 12px; }
+.shopComparison { width: 100%; min-width: 560px; border-collapse: collapse; background: rgba(255, 255, 255, 0.76) !important; }
+.shopComparison th,
+.shopComparison td { padding: 10px; border-bottom: 1px solid #554761; color: #101010 !important; text-align: left; vertical-align: top; }
+.shopConclusion { margin-top: 12px !important; padding: 12px; border: 2px solid #684a00; background: rgba(255, 248, 205, 0.82) !important; color: #101010 !important; font-weight: 900 !important; }
+
+/* v7.4.61: keep one shared mobile background and normalize every frame. */
+.knowledgePage:target {
+  background-color: transparent !important;
+  background-image: none !important;
+  background-attachment: initial !important;
+}
+.knowledgeHead,
+.knowledgeBranches .branch,
+.knowledgeEntry,
+.knowledgePage .term,
+.knowledgeAction,
+.installGuideImage,
+.shopComparison,
+.shopConclusion {
+  background-color: rgba(255, 255, 255, 0.70) !important;
+  background-image: none !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+}
