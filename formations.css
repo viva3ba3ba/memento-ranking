@@ -308,6 +308,22 @@ dialog::backdrop {
 .playerDetails {
   margin-top: 12px;
 }
+.closePlayerDetails {
+  display: block;
+  width: min(100%, 520px);
+  min-height: 48px;
+  margin: 18px auto 2px;
+  padding: 12px 18px;
+  border: 2px solid #775f83;
+  border-radius: 12px;
+  background: rgba(74, 56, 84, 0.86);
+  color: #fff;
+  font: inherit;
+  font-weight: 900;
+  cursor: pointer;
+}
+.closePlayerDetails:hover { background: rgba(94, 72, 106, 0.94); }
+.closePlayerDetails:focus-visible { outline: 3px solid #8dc9ff; outline-offset: 3px; }
 .playerMeta {
   display: flex;
   flex-wrap: wrap;
@@ -426,6 +442,31 @@ dialog {
   text-shadow: none;
   -webkit-text-stroke: 0.85px rgba(255, 255, 255, 0.98);
   paint-order: stroke fill;
+}
+
+/* Match every registration control to the approved TOP typography. */
+.basic input,
+.basic select,
+.basic textarea,
+.editChar input,
+.editChar select {
+  color: #101010 !important;
+  caret-color: #101010;
+  font-weight: 700;
+  text-shadow: none !important;
+  -webkit-text-stroke: 0.85px rgba(255, 255, 255, 0.98);
+  paint-order: stroke fill;
+}
+.basic input::placeholder,
+.basic textarea::placeholder,
+.editChar input::placeholder {
+  color: #3b3b3b !important;
+  opacity: 1;
+}
+.basic select option,
+.editChar select option {
+  background: #f4edf6;
+  color: #101010;
 }
 header,
 .player,
