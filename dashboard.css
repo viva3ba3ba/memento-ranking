@@ -855,3 +855,61 @@ body:has(.knowledgePage:target) > main,
 body:has(#siteAuthGate:not([hidden])) > main {
   visibility: hidden !important;
 }
+
+/* v7.4.61: overlays reuse only the stable body background. */
+dialog[open],
+.termsPage:target {
+  background-color: transparent !important;
+  background-image: none !important;
+  background-attachment: initial !important;
+}
+dialog::backdrop { background: transparent !important; }
+
+/* Apply the approved 70% white surface to every framed dashboard view. */
+.head,
+nav,
+.controls,
+.cards,
+.cards article,
+.table,
+.target,
+.member,
+.dialogHead,
+.termsHead,
+.termsBranch,
+.termItem,
+.players .playerCard,
+.players .char,
+#charDialog .charDetail,
+#charDialog .charPane,
+#charDialog .detailCard,
+#charDialog .skillEffect,
+#charDialog .skillLevels,
+#charDialog .detailCard details,
+#charDialog .basicStats > div,
+#charDialog .charBadge {
+  background-color: rgba(255, 255, 255, 0.70) !important;
+  background-image: none !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+}
+
+/* v7.4.62: guild ranking rows use the approved white translucent surface.
+   Only the guild matched by the search field receives the accent color. */
+#guildSection .table,
+#guildSection table,
+#guildSection thead th,
+#guildSection tbody tr {
+  background-color: rgba(255, 255, 255, 0.70) !important;
+  background-image: none !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+}
+#guildSection tbody tr.target {
+  background-color: rgba(46, 120, 144, 0.82) !important;
+  box-shadow: inset 4px 0 0 #17566b;
+}
+#guildSection tbody tr.target td {
+  color: #050505 !important;
+  font-weight: 900;
+}
