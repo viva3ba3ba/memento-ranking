@@ -11,9 +11,17 @@
       content="no-cache, no-store, must-revalidate"
     />
     <title>メメントモリ W177–180 統合ランキング</title>
-    <link rel="stylesheet" href="dashboard.css?v=63" />
+    <meta name="theme-color" content="#554761" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Valhalla" />
+    <link rel="manifest" href="manifest.webmanifest?v=69" />
+    <link rel="apple-touch-icon" sizes="180x180" href="pwa-icon-180.png?v=69" />
+    <script src="pwa.js?v=69" defer></script>
+    <link rel="stylesheet" href="dashboard.css?v=67" />
     <link rel="stylesheet" href="discord-fix.css?v=50" />
-    <link rel="stylesheet" href="site-auth.css?v=63" />
+    <link rel="stylesheet" href="site-auth.css?v=67" />
     <style>
       .knowledgeButton{background:#2e7890!important}
       .knowledgePage{display:none;position:fixed;inset:0;z-index:100;overflow-y:auto;background:#0e1117;color:#f2f5f7;font-family:system-ui,"Yu Gothic UI",sans-serif}
@@ -49,7 +57,7 @@
       .zoomGallery img{display:block;width:auto;max-width:100%;height:auto;margin:auto;border-radius:8px}
       @media(max-width:700px){.knowledgeBranches{grid-template-columns:1fr;padding:12px}.knowledgeBranches .branch{min-height:74px}.knowledgeHead{padding:10px 12px}.knowledgeHead h2{font-size:18px}.knowledgePage .content{padding:12px}.evidenceGrid{grid-template-columns:1fr}.firstKnowledgeImage{width:min(78vw,280px)}.knowledgeEntry{padding:12px}.knowledgeEntry p,.knowledgeEntry li,.knowledgePage .term span{font-size:16px}}
     </style>
-    <link rel="stylesheet" href="knowledge.css?v=63" />
+    <link rel="stylesheet" href="knowledge.css?v=72" />
     <script src="site-auth.js?v=50" defer></script>
   </head>
   <body>
@@ -67,6 +75,7 @@
         ><a href="formations.html">⚔ みんなの編成</a
         ><a class="termsButton" href="#termsMenu">📖 ギルバト用語・略語</a
         ><a class="knowledgeButton" href="#knowledgeMenu">💧 知識の泉</a>
+        <a class="installGuideButton" href="#appInstallGuide">📱 アプリ化への手順</a>
       </nav>
       <section id="guildSection">
         <div class="controls">
@@ -432,6 +441,69 @@
         <div class="termItem"><b>WS</b><span>ウィスケルケー</span></div>
       </div>
     </section>
+    <section class="knowledgePage" id="appInstallGuide">
+      <header class="knowledgeHead">
+        <h2>アプリ化への手順</h2>
+        <a class="knowledgeAction knowledgeClose" href="#top">閉じる</a>
+      </header>
+      <p class="installDevicePrompt">使用している端末を選んでください。</p>
+      <div class="knowledgeBranches installDeviceBranches">
+        <a class="branch" href="#appInstallIos">📱 iPhone・iPad</a>
+        <a class="branch" href="#appInstallAndroid">🤖 Android</a>
+        <a class="branch" href="#appInstallPc">💻 PC</a>
+      </div>
+    </section>
+    <section class="knowledgePage" id="appInstallIos">
+      <header class="knowledgeHead"><h2>iPhone・iPad</h2><a class="knowledgeAction knowledgeClose" href="#top">閉じる</a></header>
+      <div class="content">
+        <a class="knowledgeAction knowledgeBack" href="#appInstallGuide">← 端末選択へ戻る</a>
+        <article class="knowledgeEntry">
+          <p>Safariを使って、Valhallaランキングをホーム画面へ追加します。</p>
+          <ol class="installGuideList">
+            <li>Safariでこのランキングを開きます。</li>
+            <li>画面下部の共有ボタン（四角から上向き矢印）を押します。</li>
+            <li>メニューを下へ動かし、「ホーム画面に追加」を押します。</li>
+            <li>名前を確認して、右上の「追加」を押します。</li>
+            <li>ホーム画面のValhallaアイコンから起動します。</li>
+          </ol>
+          <figure class="installGuideImage"><img src="install-guide-assets/ios.svg" alt="iPhoneとiPadでホーム画面に追加する操作図" /><figcaption>共有ボタン → ホーム画面に追加 → 追加、の順です。</figcaption></figure>
+        </article>
+        <article class="knowledgeEntry"><h3>アイコンが更新されない場合</h3><p>ホーム画面の古いアイコンを削除してから、上の手順でもう一度追加してください。登録済みの編成やランキングデータは消えません。</p><figure class="installGuideImage"><img src="install-guide-assets/refresh.svg" alt="古いアイコンを削除して再追加する流れ" /></figure></article>
+      </div>
+    </section>
+    <section class="knowledgePage" id="appInstallAndroid">
+      <header class="knowledgeHead"><h2>Android</h2><a class="knowledgeAction knowledgeClose" href="#top">閉じる</a></header>
+      <div class="content">
+        <a class="knowledgeAction knowledgeBack" href="#appInstallGuide">← 端末選択へ戻る</a>
+        <article class="knowledgeEntry">
+          <p>Google Chromeを使って、Valhallaランキングをホーム画面へ追加します。</p>
+          <ol class="installGuideList">
+            <li>Google Chromeでこのランキングを開きます。</li>
+            <li>右上の「︙」を押します。</li>
+            <li>「アプリをインストール」または「ホーム画面に追加」を押します。</li>
+            <li>確認画面で「インストール」または「追加」を押します。</li>
+            <li>ホーム画面のValhallaアイコンから起動します。</li>
+          </ol>
+          <figure class="installGuideImage"><img src="install-guide-assets/android.svg" alt="AndroidのChromeでアプリをインストールする操作図" /><figcaption>メニューの表記は機種により「アプリをインストール」または「ホーム画面に追加」です。</figcaption></figure>
+        </article>
+        <article class="knowledgeEntry"><h3>アイコンが更新されない場合</h3><p>ホーム画面の古いアイコンを削除してから、上の手順でもう一度追加してください。登録済みの編成やランキングデータは消えません。</p><figure class="installGuideImage"><img src="install-guide-assets/refresh.svg" alt="古いアイコンを削除して再追加する流れ" /></figure></article>
+      </div>
+    </section>
+    <section class="knowledgePage" id="appInstallPc">
+      <header class="knowledgeHead"><h2>PC（Chrome・Edge）</h2><a class="knowledgeAction knowledgeClose" href="#top">閉じる</a></header>
+      <div class="content">
+        <a class="knowledgeAction knowledgeBack" href="#appInstallGuide">← 端末選択へ戻る</a>
+        <article class="knowledgeEntry">
+          <p>ChromeまたはEdgeから、Valhallaランキングをアプリとしてインストールします。</p>
+          <ol class="installGuideList">
+            <li>ChromeまたはEdgeでこのランキングを開きます。</li>
+            <li>アドレスバー右側のインストールアイコンを押します。表示されない場合は、ブラウザのメニューから「アプリをインストール」を選びます。</li>
+            <li>「インストール」を押します。</li>
+          </ol>
+          <figure class="installGuideImage"><img src="install-guide-assets/pc.svg" alt="パソコンのChromeとEdgeでアプリをインストールする操作図" /><figcaption>アドレスバーにアイコンがない場合は、右上のブラウザメニューを開いてください。</figcaption></figure>
+        </article>
+      </div>
+    </section>
     <section class="knowledgePage" id="knowledgeMenu">
       <header class="knowledgeHead">
         <h2>知識の泉</h2>
@@ -789,7 +861,7 @@
         </div>
       </div>
     </section>
-    <script src="dashboard.js?v=63"></script>
-    <script src="character-detail.js?v=50"></script>
+    <script src="dashboard.js?v=68"></script>
+    <script src="character-detail.js?v=67"></script>
   </body>
 </html>
