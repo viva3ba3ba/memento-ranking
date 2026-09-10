@@ -260,9 +260,4 @@ if (isExtension)
     )
       load();
   });
-else if ("serviceWorker" in navigator)
-  navigator.serviceWorker
-    .register("./sw.js?v=63", { updateViaCache: "none" })
-    .then((reg) => reg.update())
-    .catch(() => {});
 load();
