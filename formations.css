@@ -7,6 +7,38 @@
   --muted: #aab4c2;
   --gold: #f6d56e;
 }
+
+/* v7.4.54: keep dialog changes from recalculating background-size: cover. */
+body {
+  position: relative;
+  isolation: isolate;
+  background: transparent !important;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100lvh;
+  z-index: -1;
+  pointer-events: none;
+  background: #e9e1eb url("site-theme-bg.png") center / cover no-repeat;
+}
+dialog {
+  background-color: transparent !important;
+  background-image: none !important;
+  background-attachment: initial !important;
+}
+@media (max-width: 760px) {
+  body::before {
+    background-image: url("site-theme-bg-mobile.png");
+    background-position: center center;
+    background-size: cover;
+  }
+  dialog { background-image: none !important; }
+}
 * {
   box-sizing: border-box;
 }
@@ -415,6 +447,39 @@ dialog::backdrop {
   }
 }
 
+/* Keep one fixed-size background while lists and dialogs open. */
+body {
+  position: relative;
+  isolation: isolate;
+  background: transparent !important;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  height: 100lvh;
+  pointer-events: none;
+  background-color: #e9e1eb;
+  background-image: url("site-theme-bg.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+dialog { background-color: transparent !important; background-image: none !important; }
+@media (max-width: 700px) {
+  body::before {
+    width: 100vw;
+    height: 100vh;
+    height: 100lvh;
+    background-image: url("site-theme-bg-mobile.png");
+    background-position: center center;
+  }
+}
+
 /* v7.4.34 approved MementoMori glass theme */
 :root {
   --bg: transparent;
@@ -559,4 +624,31 @@ dialog::backdrop {
     background-position: center center;
     background-size: cover;
   }
+}
+
+/* v7.4.54 final cascade guard: dialogs never resize the page background. */
+body { position: relative; isolation: isolate; background: transparent !important; }
+body::before {
+  content: ""; position: fixed; top: 0; left: 0; width: 100vw;
+  height: 100vh; height: 100lvh; z-index: -1; pointer-events: none;
+  background: #e9e1eb url("site-theme-bg.png") center / cover no-repeat;
+}
+dialog {
+  background-color: transparent !important;
+  background-image: none !important;
+  background-attachment: initial !important;
+}
+@media (max-width: 760px) {
+  body::before { background-image: url("site-theme-bg-mobile.png"); }
+  dialog { background-image: none !important; }
+}
+
+/* v7.4.56: selectable controls, 70% white, no blur. */
+button, select, input, textarea,
+a[href], [role="button"], details > summary,
+.playerToggle, .formationCard, .editChar {
+  background-color: rgba(255, 255, 255, 0.70) !important;
+  background-image: none !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
 }
