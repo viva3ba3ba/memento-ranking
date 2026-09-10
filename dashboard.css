@@ -894,19 +894,24 @@ nav,
   backdrop-filter: none !important;
 }
 
-/* v7.4.62: guild ranking rows use the approved white translucent surface.
-   Only the guild matched by the search field receives the accent color. */
-#guildSection .table,
-#guildSection table,
-#guildSection thead th,
-#guildSection tbody tr {
-  background-color: rgba(255, 255, 255, 0.70) !important;
+/* v7.4.63: one translucent layer; stacked white layers looked opaque. */
+#guildSection .table {
+  background-color: rgba(255, 255, 255, 0.52) !important;
   background-image: none !important;
   -webkit-backdrop-filter: none !important;
   backdrop-filter: none !important;
 }
+#guildSection table,
+#guildSection thead,
+#guildSection thead th,
+#guildSection tbody,
+#guildSection tbody tr,
+#guildSection tbody td {
+  background-color: transparent !important;
+  background-image: none !important;
+}
 #guildSection tbody tr.target {
-  background-color: rgba(46, 120, 144, 0.82) !important;
+  background-color: rgba(46, 120, 144, 0.68) !important;
   box-shadow: inset 4px 0 0 #17566b;
 }
 #guildSection tbody tr.target td {
