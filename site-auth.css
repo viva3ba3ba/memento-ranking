@@ -97,3 +97,38 @@
     padding: 18px;
   }
 }
+
+/* Use the same dark text with white edge as the TOP page. */
+#siteAuthGate,
+.siteAuthBox,
+.siteAuthBox h1,
+.siteAuthBox p,
+.siteAuthBox label,
+.siteAuthBox input,
+.siteAuthBox button {
+  color: #101010 !important;
+  text-shadow: none !important;
+  -webkit-text-stroke: 0.85px rgba(255, 255, 255, 0.98) !important;
+  paint-order: stroke fill;
+}
+.siteAuthBox {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: #554761;
+  box-shadow: none;
+}
+.siteAuthBox input {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border-color: #554761 !important;
+  caret-color: #101010;
+}
+.siteAuthBox input::placeholder {
+  color: #3b3b3b;
+  opacity: 1;
+}
+.siteAuthBox button {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border-color: #554761 !important;
+}
+.siteAuthMessage {
+  color: #8b1522 !important;
+}
