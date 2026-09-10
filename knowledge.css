@@ -448,6 +448,24 @@
   .subPartyComparison,.subPartyImageGrid { grid-template-columns:1fr; }
 }
 
+/* Guild battle intermediate guide */
+.matchupBlock { margin-top:14px; padding:12px; border:1px solid rgba(72,56,92,.72); border-radius:10px; background:rgba(255,255,255,.50); }
+.matchupBlock h4:first-child { margin-top:0; }
+.knowledgeWarning { padding:10px; border-left:5px solid #a45a28; background:rgba(255,238,214,.74)!important; }
+.intermediateConclusion { padding:12px; border-left:5px solid #267f91; background:rgba(224,250,255,.70)!important; font-weight:900; }
+.intermediatePoints { padding-left:28px; }
+.intermediateImageGrid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; margin:12px 0; }
+.intermediateImageGrid a { display:flex; overflow:hidden; border:2px solid rgba(72,56,92,.78); border-radius:9px; background:rgba(255,255,255,.52); }
+.intermediateImageGrid img { width:100%; height:auto; border-radius:0; }
+.intermediateViewer { display:grid; gap:16px; padding:18px; }
+.intermediateViewer img { width:min(1400px,100%); }
+.placementExample { display:grid; gap:6px; margin:10px 0; padding:12px; border:2px solid rgba(72,56,92,.72); border-radius:10px; background:rgba(255,255,255,.62); }
+.placementExample span { font-weight:900; }
+@media (max-width:700px) {
+  .intermediateImageGrid { grid-template-columns:1fr; }
+  .matchupBlock { padding:10px; }
+}
+
 @media (max-width: 700px) {
   #knowledgeShop .content { padding: 8px !important; }
   #knowledgeShop .knowledgeEntry { padding: 10px !important; }
