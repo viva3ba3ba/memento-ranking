@@ -132,3 +132,15 @@
 .siteAuthMessage {
   color: #8b1522 !important;
 }
+#siteAuthGate {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+#siteAuthGate input,
+#siteAuthGate button {
+  background-color: rgba(255, 255, 255, 0.70) !important;
+  background-image: none !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+}
