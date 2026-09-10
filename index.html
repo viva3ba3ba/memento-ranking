@@ -57,7 +57,7 @@
       .zoomGallery img{display:block;width:auto;max-width:100%;height:auto;margin:auto;border-radius:8px}
       @media(max-width:700px){.knowledgeBranches{grid-template-columns:1fr;padding:12px}.knowledgeBranches .branch{min-height:74px}.knowledgeHead{padding:10px 12px}.knowledgeHead h2{font-size:18px}.knowledgePage .content{padding:12px}.evidenceGrid{grid-template-columns:1fr}.firstKnowledgeImage{width:min(78vw,280px)}.knowledgeEntry{padding:12px}.knowledgeEntry p,.knowledgeEntry li,.knowledgePage .term span{font-size:16px}}
     </style>
-    <link rel="stylesheet" href="knowledge.css?v=81" />
+    <link rel="stylesheet" href="knowledge.css?v=82" />
     <script src="site-auth.js?v=50" defer></script>
   </head>
   <body>
@@ -807,11 +807,50 @@
       </header>
       <div class="content">
         <a class="knowledgeAction knowledgeBack" href="#knowledgeMenu">← 知識の泉へ戻る</a>
-        <div class="term">
-          <b>ギルバト知識中級編</b><span>ここに内容を掲載します。</span>
+        <div class="knowledgeList">
+          <article class="knowledgeEntry">
+            <h3>1. 編成の相性について</h3>
+            <section class="matchupBlock"><h4>①相手が翠の場合</h4><p>基本的に翠パは耐久力は高いものの、遅いことが非常に多い傾向です。相性的には紅が良く、ステが1.5倍の敵を倒すデバフの目安は、進攻時40・防衛時100と言われています。</p><p>コルフロや紅のように上から殴れる編成に弱く、特に連続で当てられることに非常に弱いです。</p><p class="knowledgeWarning"><b>注意：</b>翠パはデバフを当てると回復するので、基本的に強い翠パには連続で強い5体編成を当てる必要があります。</p></section>
+            <section class="matchupBlock"><h4>②相手が黄の場合</h4><p>基本的に黄パは攻撃力参照のシールド持ちなので、デバフが入ると脆くなりやすい傾向です。相性的には翠が良く、目安は進攻時60・防衛時60です。</p><p>デバフを当てて攻撃力が落ちたところを、翠で耐久したり、コルフロで上から殴り続けたりする攻め方に非常に弱いです。メルランが入っていない編成で、組み方が不十分な場合はベルで止められます。</p></section>
+            <section class="matchupBlock"><h4>③相手が紅パの場合</h4><p>紅パは速攻で気絶させて、上から殴り続ける編成が多い傾向です。相性的には藍が良く、目安は進攻時60・防衛時50です。</p><h4>（1）最速の紅の場合</h4><p>アムレート、団コル、エヴリンなどが入った硬い藍パを入れるか、デバフを当ててスピードを落としたところを、メリア・プリマ入りの速攻コルフロで上から殴る攻め方に非常に弱いです。</p><h4>（2）モルガナ・アーティ入りの耐久紅の場合</h4><p>1回目の編成でモルガナ・アーティ以外を倒し、2回目の編成で落とすのが良いです。</p></section>
+            <section class="matchupBlock"><h4>④相手が藍パの場合</h4><p>藍パはシールドを張り、フローレンスを守ることに特化した編成が多い傾向です。特に相性の良い色染めはなく、目安は進攻時40・防衛時100です。</p><p>団コル、エヴリン、藍マーリン、藍フィアーが優秀なため明確な弱点はなく、デバフを当てる必要があります。また、団コルが藍全員に多重バリアを張るため、連撃がない編成では落とすのに苦戦します。</p></section>
+            <section class="matchupBlock"><h4>⑤相手が冥パの場合</h4><p>ギルバトの現環境では圧倒的に強いため、黄を当てるか、おとなしくデバフを当てましょう。相性的には黄が良く、目安は進攻時40・防衛時100です。</p><p>強い冥の場合は黄以外だと、この程度デバフを入れなければ、ステがほぼ変わらなくても普通に負けることがあります。遮断と強力なスキルを持っているので、しっかりデバフを当てましょう。</p><h4>（1）最速ルナリンドの場合</h4><p>天えーに非常に弱く、ベルで止められる可能性があります。それ以外では、上から殴るしか方法がありません。</p><h4>（2）パラデアがいる場合</h4><p>パラデアが冥の耐久力を劇的に上昇させています。パラデアが落ちている場合はコルフロでも冥を落とせますが、いる場合はおとなしくデバフを当てましょう。</p><h4>（3）耐久オフィーリア</h4><p>コルフロはまず狩られ、完全にカモにされて終わります。この編成は翠や黄にはあまり強くないため、早めに当てて落としましょう。</p></section>
+            <p class="intermediateConclusion">強いギルドほど、編成相性をうまく当ててきます。</p>
+          </article>
+          <article class="knowledgeEntry">
+            <h3>2. 進攻時の当て方</h3>
+            <h4>①悪い当て方</h4>
+            <div class="intermediateImageGrid">
+              <a href="#intermediateBadImages"><img src="knowledge-assets/intermediate/IMG_3059.png" alt="悪い当て方1"></a><a href="#intermediateBadImages"><img src="knowledge-assets/intermediate/IMG_3060.png" alt="悪い当て方2"></a><a href="#intermediateBadImages"><img src="knowledge-assets/intermediate/IMG_3061.png" alt="悪い当て方3"></a><a href="#intermediateBadImages"><img src="knowledge-assets/intermediate/IMG_3062.png" alt="悪い当て方4"></a>
+            </div>
+            <p>上記のように過剰戦力で攻めるのは基本的にNGです。よほど格下の相手でなければ良くありません。</p>
+            <h4>理由</h4><ol class="intermediatePoints"><li>強い編成が無駄にデバフを喰らってしまうため</li><li>過剰戦力を出しすぎると後半が厳しくなるため</li><li>相手が編成をまだあまり出していない時は、最小デバフで止められてしまうため</li></ol>
+            <h4>②良い当て方</h4>
+            <div class="intermediateImageGrid"><a href="#intermediateGoodImages"><img src="knowledge-assets/intermediate/IMG_3063.png" alt="良い当て方1"></a><a href="#intermediateGoodImages"><img src="knowledge-assets/intermediate/IMG_3064.png" alt="良い当て方2"></a></div>
+            <p>少ないデバフで適切な編成を当てられれば、弾数の節約にもなります。強いギルドほどこれが非常に上手で、弾数が命のグラバトではここで大きな差が出ます。</p>
+            <p>強いギルドほど、メンバーの編成理解度が高い人が多いです。進攻の場合は防衛のように編成がいくつも溜まっている状態が少なく、移動などを行うことも少ないため、個々の編成理解度が試されます。</p>
+          </article>
+          <article class="knowledgeEntry">
+            <h3>3. 編成の入れ方</h3>
+            <h4>①進攻時の入れ方</h4>
+            <p><b>例：</b>自分のステが4000万。相手の1番目の編成が3000万で、20番目に1.5億の編成がいる場合。</p>
+            <p>この場合は20番目の編成で必ず止まります。現状このサーバーでは、1番目の編成を抜いて終わりという人が多いです。</p>
+            <p>この先、時間に迫られて残り10秒などの戦いになった際、それによって攻撃が何秒も止まり、負けにつながります。</p>
+            <p>間違いなく止まる強い編成がある場合は、1番目を抜いた人が40デバフを入れ、足りない場合は落とす人が追加デバフを入れるのが、非常にきれいで早い形になります。（強いサブを持つランカーは除く）</p>
+            <p>進攻時はデバフが余る人が大量に出てくるため、強い編成が先にある場合は「1メイン＋8デバフ」を先に置くと、より有利になります。</p>
+            <h4>②防衛時の入れ方</h4>
+            <p>防衛時にかなり多いのが、デバフを全選択で配置し、その後に編成を入れて終わる置き方です。しかし、それをすると移動を行っている人の負担が非常に大きくなります。</p>
+            <div class="placementExample"><b>スタミナ90の場合</b><span>20デバフ → メイン → 20デバフ</span></div>
+            <div class="placementExample"><b>編成が2つの場合</b><span>サブ → 15デバフ → メイン → 20デバフ</span></div>
+            <p>このように置くと、移動側が非常に作業しやすくなります。</p>
+            <p>防衛はリアタイ、事前、知識、移動など、すべてがあって成立します。移動担当の負担を少しでも減らすことで、より防衛の質を高められます。</p>
+          </article>
         </div>
+        <div class="knowledgeAuthor">作成者：颯</div>
       </div>
     </section>
+    <section class="knowledgePage imageViewer" id="intermediateBadImages"><header class="knowledgeHead"><h2>悪い当て方</h2><a class="knowledgeAction knowledgeClose" href="#knowledgeIntermediate">戻る</a></header><div class="knowledgeImage intermediateViewer"><img src="knowledge-assets/intermediate/IMG_3059.png" alt="悪い当て方1"><img src="knowledge-assets/intermediate/IMG_3060.png" alt="悪い当て方2"><img src="knowledge-assets/intermediate/IMG_3061.png" alt="悪い当て方3"><img src="knowledge-assets/intermediate/IMG_3062.png" alt="悪い当て方4"></div></section>
+    <section class="knowledgePage imageViewer" id="intermediateGoodImages"><header class="knowledgeHead"><h2>良い当て方</h2><a class="knowledgeAction knowledgeClose" href="#knowledgeIntermediate">戻る</a></header><div class="knowledgeImage intermediateViewer"><img src="knowledge-assets/intermediate/IMG_3063.png" alt="良い当て方1"><img src="knowledge-assets/intermediate/IMG_3064.png" alt="良い当て方2"></div></section>
     <section class="knowledgePage" id="knowledgeShop">
       <header class="knowledgeHead">
         <h2>ショップアイテムの交換及び購入について</h2>
