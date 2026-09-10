@@ -669,3 +669,12 @@ dialog::backdrop { background: #e9e1eb !important; }
     background-position: center center !important;
   }
 }
+
+
+/* v7.4.59: hide the registration list behind every open modal. */
+body:has(dialog[open]) > header,
+body:has(dialog[open]) > main,
+body:has(#siteAuthGate:not([hidden])) > header,
+body:has(#siteAuthGate:not([hidden])) > main {
+  visibility: hidden !important;
+}
