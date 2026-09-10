@@ -133,8 +133,18 @@
   color: #8b1522 !important;
 }
 #siteAuthGate {
-  background-color: transparent !important;
-  background-image: none !important;
+  /* The gate must fully cover the TOP page while authentication is pending. */
+  background-color: #e9e1eb !important;
+  background-image: url("site-theme-bg.png") !important;
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+@media (max-width: 600px) {
+  #siteAuthGate {
+    background-image: url("site-theme-bg-mobile.png") !important;
+  }
 }
 
 #siteAuthGate input,
