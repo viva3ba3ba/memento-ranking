@@ -19,9 +19,9 @@
     <link rel="manifest" href="manifest.webmanifest?v=69" />
     <link rel="apple-touch-icon" sizes="180x180" href="pwa-icon-180.png?v=69" />
     <script src="pwa.js?v=69" defer></script>
-    <link rel="stylesheet" href="dashboard.css?v=72" />
+    <link rel="stylesheet" href="dashboard.css?v=74" />
     <link rel="stylesheet" href="discord-fix.css?v=50" />
-    <link rel="stylesheet" href="site-auth.css?v=70" />
+    <link rel="stylesheet" href="site-auth.css?v=71" />
     <style>
       .knowledgeButton{background:#2e7890!important}
       .knowledgePage{display:none;position:fixed;inset:0;z-index:100;overflow-y:auto;background:#0e1117;color:#f2f5f7;font-family:system-ui,"Yu Gothic UI",sans-serif}
@@ -57,7 +57,7 @@
       .zoomGallery img{display:block;width:auto;max-width:100%;height:auto;margin:auto;border-radius:8px}
       @media(max-width:700px){.knowledgeBranches{grid-template-columns:1fr;padding:12px}.knowledgeBranches .branch{min-height:74px}.knowledgeHead{padding:10px 12px}.knowledgeHead h2{font-size:18px}.knowledgePage .content{padding:12px}.evidenceGrid{grid-template-columns:1fr}.firstKnowledgeImage{width:min(78vw,280px)}.knowledgeEntry{padding:12px}.knowledgeEntry p,.knowledgeEntry li,.knowledgePage .term span{font-size:16px}}
     </style>
-    <link rel="stylesheet" href="knowledge.css?v=78" />
+    <link rel="stylesheet" href="knowledge.css?v=80" />
     <script src="site-auth.js?v=50" defer></script>
   </head>
   <body>
@@ -513,7 +513,7 @@
         <a class="branch" href="#knowledgeBasic">ギルバト知識</a>
         <a class="branch" href="#knowledgeIntermediate">ギルバト知識中級編</a>
         <a class="branch" href="#knowledgeShop"
-          >ショップの交換及び購入について</a
+          >ショップアイテムの交換及び購入について</a
         >
         <a class="branch" href="#knowledgeSubParty">サブパについて</a>
         <a class="branch" href="#knowledgeExchange">情報交換</a>
@@ -814,15 +814,25 @@
     </section>
     <section class="knowledgePage" id="knowledgeShop">
       <header class="knowledgeHead">
-        <h2>ショップの交換及び購入について</h2>
+        <h2>ショップアイテムの交換及び購入について</h2>
         <a class="knowledgeAction knowledgeClose" href="#top">閉じる</a>
       </header>
       <div class="content">
         <a class="knowledgeAction knowledgeBack" href="#knowledgeMenu">← 知識の泉へ戻る</a>
-        <div class="term">
-          <b>ショップの交換及び購入について</b
-          ><span>ここに内容を掲載します。</span>
+        <div class="knowledgeList">
+          <article class="knowledgeEntry"><h3>1. レギュラー</h3><p>・20%オフの雫購入は、なるべくダイヤがあれば購入しましょう。購入を全くせずにいると途中から育成が進まず、かなり困ったことになります。</p><p>（割引のない雫は自由）</p><p>・コインは余るため、ナヘマの装備や180装備がコインで買える時は買っておくと、サブの編成や魔装などで使えます。</p></article>
+          <article class="knowledgeEntry"><h3>2. スペシャル</h3><p>・ボックスに上級箱が50個貯まれば、封印の鍵ギフトの購入は必須です。その他はダイヤと相談してご購入ください。</p></article>
+          <article class="knowledgeEntry"><h3>3. ルーンチケット</h3><p>・スピルンまたは貫通のみ購入してください。</p></article>
+          <article class="knowledgeEntry"><h3>4. ギルドコイン</h3><p>・ルーンチケットのみ購入してください。（貯まり次第、即購入）</p></article>
+          <article class="knowledgeEntry"><h3>5. 時空の洞窟</h3><p>・星の導きチケットを最優先！ 購入済みでコインが余る場合は更新。コルディがLR5になっていない場合は、更新せずコルディと交換でも良いです。</p></article>
+          <article class="knowledgeEntry">
+            <h3>6. バトルコイン</h3>
+            <p>・バトルコインは雫と交換される方が多いですが、1番良いのは初級鍵です。計算方法は下記になります。</p>
+            <div class="shopComparisonWrap"><table class="shopComparison"><thead><tr><th>交換品</th><th>交換内容</th><th>ダイヤ換算</th></tr></thead><tbody><tr><td>雫</td><td>5個</td><td>2,000ダイヤ<br>1個＝400ダイヤ</td></tr><tr><td>初級鍵</td><td>30本</td><td>750ダイヤ<br>1本＝25ダイヤ</td></tr><tr><td>雫</td><td>16,000コインで1個</td><td>400ダイヤ</td></tr><tr><td>初級鍵</td><td>1,300コインで5本</td><td>125ダイヤ</td></tr><tr><td>同程度のコインで比較</td><td>雫1個／初級鍵60本</td><td>400ダイヤ／1,500ダイヤ</td></tr></tbody></table></div>
+            <p class="shopConclusion">初級鍵の方が、ダイヤ換算した場合は圧倒的に良いです。初級鍵はとてつもなく余るため、交換し続けることも可能です。</p>
+          </article>
         </div>
+        <div class="knowledgeAuthor">作成者：颯</div>
       </div>
     </section>
     <section class="knowledgePage" id="knowledgeSubParty">
