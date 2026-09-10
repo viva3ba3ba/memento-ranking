@@ -10,6 +10,46 @@
   --ex: #8dc9ff;
   --el: #98e2a8;
 }
+
+/* v7.4.54: keep exactly one background layer at a stable viewport size. */
+body {
+  position: relative;
+  isolation: isolate;
+  background: transparent !important;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100lvh;
+  z-index: -1;
+  pointer-events: none;
+  background: #e9e1eb url("site-theme-bg.png") center / cover no-repeat;
+}
+dialog,
+.termsPage,
+.knowledgePage,
+#siteAuthGate {
+  background-color: transparent !important;
+  background-image: none !important;
+  background-attachment: initial !important;
+}
+@media (max-width: 760px) {
+  body::before {
+    background-image: url("site-theme-bg-mobile.png");
+    background-position: center center;
+    background-size: cover;
+  }
+  dialog,
+  .termsPage,
+  .knowledgePage,
+  #siteAuthGate {
+    background-image: none !important;
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -447,6 +487,44 @@ dialog::backdrop {
     flex-basis: auto;
   }
 }
+
+/* One stable viewport background. Hash pages and dialogs must not recalculate cover. */
+body {
+  position: relative;
+  isolation: isolate;
+  background: transparent !important;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  height: 100lvh;
+  pointer-events: none;
+  background-color: #e9e1eb;
+  background-image: url("site-theme-bg.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+dialog,
+.termsPage,
+.knowledgePage {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+@media (max-width: 760px) {
+  body::before {
+    width: 100vw;
+    height: 100vh;
+    height: 100lvh;
+    background-image: url("site-theme-bg-mobile.png");
+    background-position: center center;
+  }
+}
 html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
@@ -718,4 +796,31 @@ dialog::backdrop {
     background-position: center center;
     background-size: cover;
   }
+}
+
+/* v7.4.54 final cascade guard: overlays never own a background image. */
+body { position: relative; isolation: isolate; background: transparent !important; }
+body::before {
+  content: ""; position: fixed; top: 0; left: 0; width: 100vw;
+  height: 100vh; height: 100lvh; z-index: -1; pointer-events: none;
+  background: #e9e1eb url("site-theme-bg.png") center / cover no-repeat;
+}
+dialog, .termsPage, .knowledgePage, #siteAuthGate {
+  background-color: transparent !important;
+  background-image: none !important;
+  background-attachment: initial !important;
+}
+@media (max-width: 760px) {
+  body::before { background-image: url("site-theme-bg-mobile.png"); }
+  dialog, .termsPage, .knowledgePage, #siteAuthGate { background-image: none !important; }
+}
+
+/* v7.4.56: selectable controls, 70% white, no blur. */
+button, select, input, textarea,
+a[href], [role="button"], details > summary,
+.target, .member, .char {
+  background-color: rgba(255, 255, 255, 0.70) !important;
+  background-image: none !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
 }
