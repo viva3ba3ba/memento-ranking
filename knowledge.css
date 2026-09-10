@@ -98,6 +98,14 @@
   text-align: center;
   text-decoration: none;
 }
+
+/* Branch labels remain readable on the light translucent selection cards. */
+.knowledgePage .knowledgeBranches .branch,
+.knowledgePage .knowledgeBranches .branch small,
+.knowledgePage .knowledgeBranches .branch span {
+  color: #050505 !important;
+  font-weight: 900 !important;
+}
 .knowledgePage .content {
   width: min(1100px, 100%);
   margin: auto;
