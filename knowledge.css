@@ -411,3 +411,19 @@
   -webkit-backdrop-filter: none !important;
   backdrop-filter: none !important;
 }
+
+/* v7.4.58: knowledge/install pages fully cover the TOP page. */
+.knowledgePage:target {
+  background-color: #e9e1eb !important;
+  background-image: url("site-theme-bg.png") !important;
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+}
+@media (max-width: 760px) {
+  .knowledgePage:target {
+    background-image: url("site-theme-bg-mobile.png") !important;
+    background-position: center center !important;
+  }
+}
