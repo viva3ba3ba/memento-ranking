@@ -1,6 +1,17 @@
 .knowledgeButton {
   background: #2e7890 !important;
 }
+.installGuideButton {
+  background: #7654a8 !important;
+}
+.installGuideList {
+  margin: 8px 0 0;
+  padding-left: 1.5em;
+}
+.installGuideList li {
+  margin: 8px 0;
+  line-height: 1.7;
+}
 .knowledgePage {
   display: none;
   position: fixed;
@@ -190,6 +201,30 @@
   margin: auto;
   border-radius: 8px;
 }
+.installGuideImage {
+  max-width: 900px;
+  margin: 18px auto 4px;
+  padding: 10px;
+  border: 2px solid #554761;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.52);
+}
+.installGuideImage img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.installGuideImage figcaption {
+  margin-top: 8px;
+  color: #17131a;
+  font-size: 14px;
+  font-weight: 800;
+  text-align: center;
+  -webkit-text-stroke: 0;
+}
+.installDevicePrompt { margin: 20px 16px 0; color: #17131a; font-size: 18px; font-weight: 900; text-align: center; }
+.installDeviceBranches { max-width: 920px; margin: 0 auto; grid-template-columns: repeat(3, minmax(0, 1fr)); }
 @media (max-width: 700px) {
   .knowledgeBranches {
     grid-template-columns: 1fr;
@@ -221,6 +256,15 @@
   .knowledgePage .term span {
     font-size: 16px;
   }
+  .installGuideImage {
+    margin-top: 14px;
+    padding: 5px;
+  }
+  .installGuideImage figcaption {
+    font-size: 13px;
+  }
+  .installDevicePrompt { margin-top: 16px; font-size: 16px; }
+  .installDeviceBranches { grid-template-columns: 1fr; }
 }
 
 /* v7.4.34 approved MementoMori glass theme */
