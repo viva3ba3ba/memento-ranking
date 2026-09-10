@@ -678,3 +678,33 @@ body:has(#siteAuthGate:not([hidden])) > header,
 body:has(#siteAuthGate:not([hidden])) > main {
   visibility: hidden !important;
 }
+
+/* v7.4.61: dialogs reuse the stable body background; all frames use the
+   approved 70% white surface. */
+dialog[open] {
+  background-color: transparent !important;
+  background-image: none !important;
+  background-attachment: initial !important;
+}
+dialog::backdrop { background: transparent !important; }
+header,
+.player,
+.formation,
+.char,
+.portrait,
+.dialogHead,
+.editChar,
+.formationComment,
+.playerToggle,
+.formationSwitch,
+.resetWarning,
+.basic input,
+.basic select,
+.basic textarea,
+.editChar input,
+.editChar select {
+  background-color: rgba(255, 255, 255, 0.70) !important;
+  background-image: none !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+}
