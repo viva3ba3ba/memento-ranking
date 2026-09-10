@@ -435,6 +435,50 @@
 .shopComparison td { padding: 10px; border-bottom: 1px solid #554761; color: #101010 !important; text-align: left; vertical-align: top; }
 .shopConclusion { margin-top: 12px !important; padding: 12px; border: 2px solid #684a00; background: rgba(255, 248, 205, 0.82) !important; color: #101010 !important; font-weight: 900 !important; }
 
+.subPartyComparison { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; margin:12px 0; }
+.subPartyComparison section { padding:12px; border:2px solid rgba(72,56,92,.78); border-radius:10px; background:rgba(255,255,255,.56); }
+.subPartyConclusion { padding:12px; border-left:5px solid #267f91; background:rgba(224,250,255,.70)!important; font-weight:900; }
+.subPartyPoints { margin:10px 0; padding-left:28px; }
+.subPartyImageGrid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; margin:12px 0; }
+.subPartyImageGrid a { display:flex; align-items:center; overflow:hidden; border:2px solid rgba(72,56,92,.78); border-radius:9px; background:rgba(255,255,255,.52); }
+.subPartyImageGrid img { width:100%; height:auto; border-radius:0; }
+.subPartyViewer { display:grid; gap:16px; padding:18px; }
+.subPartyViewer img { width:min(1200px,100%); }
+@media (max-width:700px) {
+  .subPartyComparison,.subPartyImageGrid { grid-template-columns:1fr; }
+}
+
+@media (max-width: 700px) {
+  #knowledgeShop .content { padding: 8px !important; }
+  #knowledgeShop .knowledgeEntry { padding: 10px !important; }
+  #knowledgeShop .knowledgeHead h2 {
+    min-width: 0;
+    font-size: 16px !important;
+    line-height: 1.25;
+    overflow-wrap: anywhere;
+  }
+  #knowledgeShop .shopComparisonWrap {
+    overflow-x: hidden;
+  }
+  #knowledgeShop .shopComparison {
+    width: 100%;
+    min-width: 0;
+    table-layout: fixed;
+  }
+  #knowledgeShop .shopComparison th,
+  #knowledgeShop .shopComparison td {
+    padding: 6px 4px;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: normal;
+    font-size: 12px;
+    line-height: 1.4;
+  }
+  #knowledgeShop .shopComparison th:nth-child(1) { width: 22%; }
+  #knowledgeShop .shopComparison th:nth-child(2) { width: 35%; }
+  #knowledgeShop .shopComparison th:nth-child(3) { width: 43%; }
+}
+
 /* v7.4.61: keep one shared mobile background and normalize every frame. */
 .knowledgePage:target {
   background-color: transparent !important;
