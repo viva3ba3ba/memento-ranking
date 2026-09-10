@@ -846,3 +846,12 @@ dialog::backdrop { background: #e9e1eb !important; }
     background-position: center center !important;
   }
 }
+
+/* v7.4.59: remove the underlying TOP content from the paint tree while an
+   overlay is open. Translucent panels can no longer reveal its text/tables. */
+body:has(dialog[open]) > main,
+body:has(.termsPage:target) > main,
+body:has(.knowledgePage:target) > main,
+body:has(#siteAuthGate:not([hidden])) > main {
+  visibility: hidden !important;
+}
