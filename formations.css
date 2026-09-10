@@ -652,3 +652,20 @@ a[href], [role="button"], details > summary,
   -webkit-backdrop-filter: none !important;
   backdrop-filter: none !important;
 }
+
+/* v7.4.58: editor/management dialogs fully cover the list below. */
+dialog[open] {
+  background-color: #e9e1eb !important;
+  background-image: url("site-theme-bg.png") !important;
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+}
+dialog::backdrop { background: #e9e1eb !important; }
+@media (max-width: 760px) {
+  dialog[open] {
+    background-image: url("site-theme-bg-mobile.png") !important;
+    background-position: center center !important;
+  }
+}
