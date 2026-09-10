@@ -233,7 +233,7 @@ tbody tr[data-guild] {
   display: block;
   width: 100%;
   overflow: hidden;
-  color: #fff;
+  color: #242424;
   font-size: 10px;
   font-weight: 800;
   line-height: 12px;
@@ -244,7 +244,7 @@ tbody tr[data-guild] {
   display: block;
   width: 100%;
   overflow: hidden;
-  color: #f7db7c;
+  color: #242424;
   font-size: 9px;
   font-weight: 700;
   line-height: 10px;
@@ -750,15 +750,19 @@ dialog::backdrop {
   background: transparent;
 }
 
-/* Keep the small white level label crisp; the global white outline blurs it. */
+/* Keep character labels crisp and consistent with the TOP page. */
 .char .lv,
-.players .char .lv {
+.players .char .lv,
+.char .rarity,
+.players .char .rarity {
+  color: #242424 !important;
+  font-weight: 900 !important;
   -webkit-text-stroke: 0 !important;
   paint-order: normal !important;
   text-shadow: none !important;
 }
 
-/* Character details must reveal the shared page background through skill cards. */
+/* Character details need their own surface so page content cannot show through. */
 #charDialog,
 #charDialog .charDetail,
 #charDialog .charPane,
@@ -767,7 +771,7 @@ dialog::backdrop {
 #charDialog .skillEffect,
 #charDialog .skillLevels,
 #charDialog .detailCard details {
-  background-color: transparent !important;
+  background-color: rgba(255, 255, 255, 0.92) !important;
   backdrop-filter: none !important;
   box-shadow: none !important;
 }
