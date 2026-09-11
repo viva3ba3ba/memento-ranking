@@ -1,6 +1,17 @@
 (()=>{
   if(location.protocol==="chrome-extension:")return;
   const SESSION_KEY="valhalla-ranking-auth-v1";
+  const isPcHistoryMode=()=>window.matchMedia(
+    "(min-width: 761px) and (hover: hover) and (pointer: fine)"
+  ).matches;
+  const restorePcView=()=>{
+    if(!isPcHistoryMode())return;
+    document.querySelectorAll("dialog[open]").forEach(dialog=>dialog.close());
+    const gate=document.getElementById("siteAuthGate");
+    document.body.style.overflow=gate&&!gate.hidden?"hidden":"";
+  };
+  window.addEventListener("pageshow",restorePcView);
+  window.addEventListener("popstate",()=>requestAnimationFrame(restorePcView));
   const showGate=()=>{
     if(document.getElementById("siteAuthGate"))return;
     const gate=document.createElement("div");
