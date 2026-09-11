@@ -18,10 +18,10 @@
     <meta name="apple-mobile-web-app-title" content="Valhalla" />
     <link rel="manifest" href="manifest.webmanifest?v=69" />
     <link rel="apple-touch-icon" sizes="180x180" href="pwa-icon-180.png?v=69" />
-    <script src="pwa.js?v=70" defer></script>
-    <link rel="stylesheet" href="dashboard.css?v=77" />
+    <script src="pwa.js?v=69" defer></script>
+    <link rel="stylesheet" href="dashboard.css?v=75" />
     <link rel="stylesheet" href="discord-fix.css?v=50" />
-    <link rel="stylesheet" href="site-auth.css?v=67" />
+    <link rel="stylesheet" href="site-auth.css?v=71" />
     <style>
       .knowledgeButton{background:#2e7890!important}
       .knowledgePage{display:none;position:fixed;inset:0;z-index:100;overflow-y:auto;background:#0e1117;color:#f2f5f7;font-family:system-ui,"Yu Gothic UI",sans-serif}
@@ -57,7 +57,7 @@
       .zoomGallery img{display:block;width:auto;max-width:100%;height:auto;margin:auto;border-radius:8px}
       @media(max-width:700px){.knowledgeBranches{grid-template-columns:1fr;padding:12px}.knowledgeBranches .branch{min-height:74px}.knowledgeHead{padding:10px 12px}.knowledgeHead h2{font-size:18px}.knowledgePage .content{padding:12px}.evidenceGrid{grid-template-columns:1fr}.firstKnowledgeImage{width:min(78vw,280px)}.knowledgeEntry{padding:12px}.knowledgeEntry p,.knowledgeEntry li,.knowledgePage .term span{font-size:16px}}
     </style>
-    <link rel="stylesheet" href="knowledge.css?v=72" />
+    <link rel="stylesheet" href="knowledge.css?v=82" />
     <script src="site-auth.js?v=50" defer></script>
   </head>
   <body>
@@ -513,7 +513,7 @@
         <a class="branch" href="#knowledgeBasic">ギルバト知識</a>
         <a class="branch" href="#knowledgeIntermediate">ギルバト知識中級編</a>
         <a class="branch" href="#knowledgeShop"
-          >ショップの交換及び購入について</a
+          >ショップアイテムの交換及び購入について</a
         >
         <a class="branch" href="#knowledgeSubParty">サブパについて</a>
         <a class="branch" href="#knowledgeExchange">情報交換</a>
@@ -807,22 +807,71 @@
       </header>
       <div class="content">
         <a class="knowledgeAction knowledgeBack" href="#knowledgeMenu">← 知識の泉へ戻る</a>
-        <div class="term">
-          <b>ギルバト知識中級編</b><span>ここに内容を掲載します。</span>
+        <div class="knowledgeList">
+          <article class="knowledgeEntry">
+            <h3>1. 編成の相性について</h3>
+            <section class="matchupBlock"><h4>①相手が翠の場合</h4><p>基本的に翠パは耐久力は高いものの、遅いことが非常に多い傾向です。相性的には紅が良く、ステが1.5倍の敵を倒すデバフの目安は、進攻時40・防衛時100と言われています。</p><p>コルフロや紅のように上から殴れる編成に弱く、特に連続で当てられることに非常に弱いです。</p><p class="knowledgeWarning"><b>注意：</b>翠パはデバフを当てると回復するので、基本的に強い翠パには連続で強い5体編成を当てる必要があります。</p></section>
+            <section class="matchupBlock"><h4>②相手が黄の場合</h4><p>基本的に黄パは攻撃力参照のシールド持ちなので、デバフが入ると脆くなりやすい傾向です。相性的には翠が良く、目安は進攻時60・防衛時60です。</p><p>デバフを当てて攻撃力が落ちたところを、翠で耐久したり、コルフロで上から殴り続けたりする攻め方に非常に弱いです。メルランが入っていない編成で、組み方が不十分な場合はベルで止められます。</p></section>
+            <section class="matchupBlock"><h4>③相手が紅パの場合</h4><p>紅パは速攻で気絶させて、上から殴り続ける編成が多い傾向です。相性的には藍が良く、目安は進攻時60・防衛時50です。</p><h4>（1）最速の紅の場合</h4><p>アムレート、団コル、エヴリンなどが入った硬い藍パを入れるか、デバフを当ててスピードを落としたところを、メリア・プリマ入りの速攻コルフロで上から殴る攻め方に非常に弱いです。</p><h4>（2）モルガナ・アーティ入りの耐久紅の場合</h4><p>1回目の編成でモルガナ・アーティ以外を倒し、2回目の編成で落とすのが良いです。</p></section>
+            <section class="matchupBlock"><h4>④相手が藍パの場合</h4><p>藍パはシールドを張り、フローレンスを守ることに特化した編成が多い傾向です。特に相性の良い色染めはなく、目安は進攻時40・防衛時100です。</p><p>団コル、エヴリン、藍マーリン、藍フィアーが優秀なため明確な弱点はなく、デバフを当てる必要があります。また、団コルが藍全員に多重バリアを張るため、連撃がない編成では落とすのに苦戦します。</p></section>
+            <section class="matchupBlock"><h4>⑤相手が冥パの場合</h4><p>ギルバトの現環境では圧倒的に強いため、黄を当てるか、おとなしくデバフを当てましょう。相性的には黄が良く、目安は進攻時40・防衛時100です。</p><p>強い冥の場合は黄以外だと、この程度デバフを入れなければ、ステがほぼ変わらなくても普通に負けることがあります。遮断と強力なスキルを持っているので、しっかりデバフを当てましょう。</p><h4>（1）最速ルナリンドの場合</h4><p>天えーに非常に弱く、ベルで止められる可能性があります。それ以外では、上から殴るしか方法がありません。</p><h4>（2）パラデアがいる場合</h4><p>パラデアが冥の耐久力を劇的に上昇させています。パラデアが落ちている場合はコルフロでも冥を落とせますが、いる場合はおとなしくデバフを当てましょう。</p><h4>（3）耐久オフィーリア</h4><p>コルフロはまず狩られ、完全にカモにされて終わります。この編成は翠や黄にはあまり強くないため、早めに当てて落としましょう。</p></section>
+            <p class="intermediateConclusion">強いギルドほど、編成相性をうまく当ててきます。</p>
+          </article>
+          <article class="knowledgeEntry">
+            <h3>2. 進攻時の当て方</h3>
+            <h4>①悪い当て方</h4>
+            <div class="intermediateImageGrid">
+              <a href="#intermediateBadImages"><img src="knowledge-assets/intermediate/IMG_3059.png" alt="悪い当て方1"></a><a href="#intermediateBadImages"><img src="knowledge-assets/intermediate/IMG_3060.png" alt="悪い当て方2"></a><a href="#intermediateBadImages"><img src="knowledge-assets/intermediate/IMG_3061.png" alt="悪い当て方3"></a><a href="#intermediateBadImages"><img src="knowledge-assets/intermediate/IMG_3062.png" alt="悪い当て方4"></a>
+            </div>
+            <p>上記のように過剰戦力で攻めるのは基本的にNGです。よほど格下の相手でなければ良くありません。</p>
+            <h4>理由</h4><ol class="intermediatePoints"><li>強い編成が無駄にデバフを喰らってしまうため</li><li>過剰戦力を出しすぎると後半が厳しくなるため</li><li>相手が編成をまだあまり出していない時は、最小デバフで止められてしまうため</li></ol>
+            <h4>②良い当て方</h4>
+            <div class="intermediateImageGrid"><a href="#intermediateGoodImages"><img src="knowledge-assets/intermediate/IMG_3063.png" alt="良い当て方1"></a><a href="#intermediateGoodImages"><img src="knowledge-assets/intermediate/IMG_3064.png" alt="良い当て方2"></a></div>
+            <p>少ないデバフで適切な編成を当てられれば、弾数の節約にもなります。強いギルドほどこれが非常に上手で、弾数が命のグラバトではここで大きな差が出ます。</p>
+            <p>強いギルドほど、メンバーの編成理解度が高い人が多いです。進攻の場合は防衛のように編成がいくつも溜まっている状態が少なく、移動などを行うことも少ないため、個々の編成理解度が試されます。</p>
+          </article>
+          <article class="knowledgeEntry">
+            <h3>3. 編成の入れ方</h3>
+            <h4>①進攻時の入れ方</h4>
+            <p><b>例：</b>自分のステが4000万。相手の1番目の編成が3000万で、20番目に1.5億の編成がいる場合。</p>
+            <p>この場合は20番目の編成で必ず止まります。現状このサーバーでは、1番目の編成を抜いて終わりという人が多いです。</p>
+            <p>この先、時間に迫られて残り10秒などの戦いになった際、それによって攻撃が何秒も止まり、負けにつながります。</p>
+            <p>間違いなく止まる強い編成がある場合は、1番目を抜いた人が40デバフを入れ、足りない場合は落とす人が追加デバフを入れるのが、非常にきれいで早い形になります。（強いサブを持つランカーは除く）</p>
+            <p>進攻時はデバフが余る人が大量に出てくるため、強い編成が先にある場合は「1メイン＋8デバフ」を先に置くと、より有利になります。</p>
+            <h4>②防衛時の入れ方</h4>
+            <p>防衛時にかなり多いのが、デバフを全選択で配置し、その後に編成を入れて終わる置き方です。しかし、それをすると移動を行っている人の負担が非常に大きくなります。</p>
+            <div class="placementExample"><b>スタミナ90の場合</b><span>20デバフ → メイン → 20デバフ</span></div>
+            <div class="placementExample"><b>編成が2つの場合</b><span>サブ → 15デバフ → メイン → 20デバフ</span></div>
+            <p>このように置くと、移動側が非常に作業しやすくなります。</p>
+            <p>防衛はリアタイ、事前、知識、移動など、すべてがあって成立します。移動担当の負担を少しでも減らすことで、より防衛の質を高められます。</p>
+          </article>
         </div>
+        <div class="knowledgeAuthor">作成者：颯</div>
       </div>
     </section>
+    <section class="knowledgePage imageViewer" id="intermediateBadImages"><header class="knowledgeHead"><h2>悪い当て方</h2><a class="knowledgeAction knowledgeClose" href="#knowledgeIntermediate">戻る</a></header><div class="knowledgeImage intermediateViewer"><img src="knowledge-assets/intermediate/IMG_3059.png" alt="悪い当て方1"><img src="knowledge-assets/intermediate/IMG_3060.png" alt="悪い当て方2"><img src="knowledge-assets/intermediate/IMG_3061.png" alt="悪い当て方3"><img src="knowledge-assets/intermediate/IMG_3062.png" alt="悪い当て方4"></div></section>
+    <section class="knowledgePage imageViewer" id="intermediateGoodImages"><header class="knowledgeHead"><h2>良い当て方</h2><a class="knowledgeAction knowledgeClose" href="#knowledgeIntermediate">戻る</a></header><div class="knowledgeImage intermediateViewer"><img src="knowledge-assets/intermediate/IMG_3063.png" alt="良い当て方1"><img src="knowledge-assets/intermediate/IMG_3064.png" alt="良い当て方2"></div></section>
     <section class="knowledgePage" id="knowledgeShop">
       <header class="knowledgeHead">
-        <h2>ショップの交換及び購入について</h2>
+        <h2>ショップアイテムの交換及び購入について</h2>
         <a class="knowledgeAction knowledgeClose" href="#top">閉じる</a>
       </header>
       <div class="content">
         <a class="knowledgeAction knowledgeBack" href="#knowledgeMenu">← 知識の泉へ戻る</a>
-        <div class="term">
-          <b>ショップの交換及び購入について</b
-          ><span>ここに内容を掲載します。</span>
+        <div class="knowledgeList">
+          <article class="knowledgeEntry"><h3>1. レギュラー</h3><p>・20%オフの雫購入は、なるべくダイヤがあれば購入しましょう。購入を全くせずにいると途中から育成が進まず、かなり困ったことになります。</p><p>（割引のない雫は自由）</p><p>・コインは余るため、ナヘマの装備や180装備がコインで買える時は買っておくと、サブの編成や魔装などで使えます。</p></article>
+          <article class="knowledgeEntry"><h3>2. スペシャル</h3><p>・ボックスに上級箱が50個貯まれば、封印の鍵ギフトの購入は必須です。その他はダイヤと相談してご購入ください。</p></article>
+          <article class="knowledgeEntry"><h3>3. ルーンチケット</h3><p>・スピルンまたは貫通のみ購入してください。</p></article>
+          <article class="knowledgeEntry"><h3>4. ギルドコイン</h3><p>・ルーンチケットのみ購入してください。（貯まり次第、即購入）</p></article>
+          <article class="knowledgeEntry"><h3>5. 時空の洞窟</h3><p>・星の導きチケットを最優先！ 購入済みでコインが余る場合は更新。コルディがLR5になっていない場合は、更新せずコルディと交換でも良いです。</p></article>
+          <article class="knowledgeEntry">
+            <h3>6. バトルコイン</h3>
+            <p>・バトルコインは雫と交換される方が多いですが、1番良いのは初級鍵です。計算方法は下記になります。</p>
+            <div class="shopComparisonWrap"><table class="shopComparison"><thead><tr><th>交換品</th><th>交換内容</th><th>ダイヤ換算</th></tr></thead><tbody><tr><td>雫</td><td>5個</td><td>2,000ダイヤ<br>1個＝400ダイヤ</td></tr><tr><td>初級鍵</td><td>30本</td><td>750ダイヤ<br>1本＝25ダイヤ</td></tr><tr><td>雫</td><td>16,000コインで1個</td><td>400ダイヤ</td></tr><tr><td>初級鍵</td><td>1,300コインで5本</td><td>125ダイヤ</td></tr><tr><td>同程度のコインで比較</td><td>雫1個／初級鍵60本</td><td>400ダイヤ／1,500ダイヤ</td></tr></tbody></table></div>
+            <p class="shopConclusion">初級鍵の方が、ダイヤ換算した場合は圧倒的に良いです。初級鍵はとてつもなく余るため、交換し続けることも可能です。</p>
+          </article>
         </div>
+        <div class="knowledgeAuthor">作成者：颯</div>
       </div>
     </section>
     <section class="knowledgePage" id="knowledgeSubParty">
@@ -832,10 +881,72 @@
       </header>
       <div class="content">
         <a class="knowledgeAction knowledgeBack" href="#knowledgeMenu">← 知識の泉へ戻る</a>
-        <div class="term">
-          <b>サブパについて</b><span>ここに内容を掲載します。</span>
+        <div class="knowledgeList">
+          <article class="knowledgeEntry">
+            <h3>（1）サブパは何故多い方がよいのか？</h3>
+            <p>例として、AさんとBさんがいて、最大ステは同じ1億とします。</p>
+            <div class="subPartyComparison">
+              <section><h4>Aさん</h4><p><b>メインのみ：</b>1億</p><p>アタッカー：貫通11・11・11／スピード11・11・11</p></section>
+              <section><h4>Bさん</h4><p><b>メイン：</b>8000万　アタッカー：貫通10・10・10／スピード10・10・10</p><p><b>サブパ①：</b>7000万　アタッカー：貫通9・9・9／スピード9・9・9</p><p><b>サブパ②：</b>7000万　アタッカー：貫通9・9・9／スピード9・9・9</p></section>
+            </div>
+            <p class="subPartyConclusion">どちらの方がギルバトで有利か？ この場合、間違いなくBさんの方が有利です。</p>
+            <h4>何故サブパが強い方がよいのか？</h4>
+            <p>現178は過剰戦力で上からメインで叩き、無駄にメインがデバフを喰らい、簡単に落とされる傾向があります。</p>
+            <p><b>過剰戦力例</b></p>
+            <p>この攻め方をした時は、適度にルーンや装備を積んだ編成を当てれば、大体のケースでメインとほとんど変わらないデバフ数が稼げます。</p>
+            <h4>何故そんなに変わらないのか？</h4>
+            <p>相手メインやサブが連なっていることは少なく、必ず編成間にデバフがあるため、ほぼ変わらないケースが多いです。（トップランカーは除く）</p>
+            <h4>では、どうすれば多くデバフを削れるのか？</h4>
+            <p>サブパが多ければ多いほど、デバフは削れます。</p>
+            <p>例の2人で例えると、Aさんのメインは1回100KO平均で稼げ、Bさんのメインは1回80KO平均、サブパは1回20KOします。</p>
+            <p>Aさんはメイン2周で200KOを稼ぎ、活躍中プレイヤーにも名前が載るため派手に見えます。ただ、活躍中プレイヤーに載っていないBさんはトータルで240KOできます。</p>
+            <p>このように、サブパが多い方が臨機応変な対応ができ、デバフを当てれば相手のメイン編成を落とすこともできるので、編成が多い人は非常に重宝されます。</p>
+            <h4>何故サブパが多い方が良いのか？</h4>
+            <p>サブパがあれば過剰戦力を投入せずに相手の編成やデバフを削れるため、メインに当てられるデバフが少なくなり、よりメインが活躍できる環境を作れます。また、相手の編成が少ない場合は編成切れを狙えます。さらに、相手による相性の悪い編成の即当て防止にもなります。</p>
+            <ol class="subPartyPoints"><li>メインを活かすために相手のデバフを削れる</li><li>過剰戦力でのマッチアップを防げる</li><li>相手のメインを弱らせ、バトリでは勝てないマッチアップでも勝てるようになる</li></ol>
+            <p class="subPartyConclusion">上記の理由で、サブパは多い方が良いです。</p>
+          </article>
+          <article class="knowledgeEntry">
+            <h3>（2）サブパの作り方</h3>
+            <p>サブパは必ずアタッカーにルーンと装備を最低限積み、相乗効果をもたらすキャラを入れる必要があります。</p>
+            <h4>悪い編成例</h4>
+            <div class="subPartyImageGrid">
+              <a class="zoomLink" href="#subPartyBadImages"><img src="knowledge-assets/subparty/IMG_3518.png" alt="悪い編成例1"></a>
+              <a class="zoomLink" href="#subPartyBadImages"><img src="knowledge-assets/subparty/IMG_3519.png" alt="悪い編成例2"></a>
+              <a class="zoomLink" href="#subPartyBadImages"><img src="knowledge-assets/subparty/IMG_3521.png" alt="悪い編成例3"></a>
+              <a class="zoomLink" href="#subPartyBadImages"><img src="knowledge-assets/subparty/IMG_3522.png" alt="悪い編成例4"></a>
+            </div>
+            <p>レベルリンク差やまだ装備が追いついてない人が多いので、たまーに勝ててるだけで後1〜2ヶ月するとさらに勝てない、時間も稼げないゴミです。</p>
+            <p>※色合わせの編成は基本的にサブパではありません。（高レベルリンカーは除く）</p>
+            <h4>では、サブパはどうやって作るのか？</h4>
+            <p>まず、アタッカーのいない編成は、よほどレベルリンクが高いか、キャラ愛が強くガッツリ装備を積んでいない限りありえません。私がやっている簡単なサブパを紹介します。</p>
+            <p>現状キャラが出ていないので、いらないキャラもいますが、キャラとルーンです。</p>
+            <div class="subPartyImageGrid">
+              <a class="zoomLink" href="#subPartyRuneImages"><img src="knowledge-assets/subparty/IMG_3523.png" alt="キャラとルーン1"></a>
+              <a class="zoomLink" href="#subPartyRuneImages"><img src="knowledge-assets/subparty/IMG_3524.png" alt="キャラとルーン2"></a>
+              <a class="zoomLink" href="#subPartyRuneImages"><img src="knowledge-assets/subparty/IMG_3525.png" alt="キャラとルーン3"></a>
+              <a class="zoomLink" href="#subPartyRuneImages"><img src="knowledge-assets/subparty/IMG_3528.png" alt="キャラとルーン4"></a>
+            </div>
+            <p>フロパメインで、サブパのコルパと紅パはデバフを40当てれば、同ステにも相性によっては勝てます。私のギルバト編成はすべてアタッカーをサポートする編成になっています。</p>
+            <p>1枚必須キャラはほとんどアタッカーに相乗効果を与えるものなので、ギルバトのサブパでも1枚でも使えます。サブパはメインパとは違う楽しみ方もできます。</p>
+            <h4>結論：良いサブパとは？</h4>
+            <ol class="subPartyPoints"><li>アタッカーがちゃんといる</li><li>アタッカーに貫通・スピードルーンを最低8×3以上積んでいる</li><li>アタッカーに必要な装備が付いている</li><li>相乗効果のあるサポートキャラが編成にいる</li></ol>
+            <p>上記がサブパの最低条件になります。（高レベルリンカーは除く）</p>
+            <p>皆さんも良いサブパを使って、サブパでの模擬戦やKO稼ぎなど、いろいろな楽しみ方を見つけてもらえたらと思います。</p>
+            <h4>おすすめのコストが低いサブパ</h4>
+            <ol class="subPartyPoints"><li>フロパ</li><li>コルパ</li><li>回避ニーナパ</li><li>無課金冥パ</li></ol>
+          </article>
         </div>
+        <div class="knowledgeAuthor">作成者：颯</div>
       </div>
+    </section>
+    <section class="knowledgePage imageViewer" id="subPartyBadImages">
+      <header class="knowledgeHead"><h2>悪い編成例</h2><a class="knowledgeAction knowledgeClose" href="#knowledgeSubParty">戻る</a></header>
+      <div class="knowledgeImage subPartyViewer"><img src="knowledge-assets/subparty/IMG_3518.png" alt="悪い編成例1"><img src="knowledge-assets/subparty/IMG_3519.png" alt="悪い編成例2"><img src="knowledge-assets/subparty/IMG_3521.png" alt="悪い編成例3"><img src="knowledge-assets/subparty/IMG_3522.png" alt="悪い編成例4"></div>
+    </section>
+    <section class="knowledgePage imageViewer" id="subPartyRuneImages">
+      <header class="knowledgeHead"><h2>キャラとルーン</h2><a class="knowledgeAction knowledgeClose" href="#knowledgeSubParty">戻る</a></header>
+      <div class="knowledgeImage subPartyViewer"><img src="knowledge-assets/subparty/IMG_3523.png" alt="キャラとルーン1"><img src="knowledge-assets/subparty/IMG_3524.png" alt="キャラとルーン2"><img src="knowledge-assets/subparty/IMG_3525.png" alt="キャラとルーン3"><img src="knowledge-assets/subparty/IMG_3528.png" alt="キャラとルーン4"></div>
     </section>
     <section class="knowledgePage" id="knowledgeExchange">
       <header class="knowledgeHead">
