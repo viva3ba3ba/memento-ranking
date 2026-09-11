@@ -10,46 +10,6 @@
   --ex: #8dc9ff;
   --el: #98e2a8;
 }
-
-/* v7.4.54: keep exactly one background layer at a stable viewport size. */
-body {
-  position: relative;
-  isolation: isolate;
-  background: transparent !important;
-}
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  height: 100lvh;
-  z-index: -1;
-  pointer-events: none;
-  background: #e9e1eb url("site-theme-bg.png") center / cover no-repeat;
-}
-dialog,
-.termsPage,
-.knowledgePage,
-#siteAuthGate {
-  background-color: transparent !important;
-  background-image: none !important;
-  background-attachment: initial !important;
-}
-@media (max-width: 760px) {
-  body::before {
-    background-image: url("site-theme-bg-mobile.png");
-    background-position: center center;
-    background-size: cover;
-  }
-  dialog,
-  .termsPage,
-  .knowledgePage,
-  #siteAuthGate {
-    background-image: none !important;
-  }
-}
 * {
   box-sizing: border-box;
 }
@@ -233,7 +193,7 @@ tbody tr[data-guild] {
   display: block;
   width: 100%;
   overflow: hidden;
-  color: #242424;
+  color: #fff;
   font-size: 10px;
   font-weight: 800;
   line-height: 12px;
@@ -244,7 +204,7 @@ tbody tr[data-guild] {
   display: block;
   width: 100%;
   overflow: hidden;
-  color: #242424;
+  color: #f7db7c;
   font-size: 9px;
   font-weight: 700;
   line-height: 10px;
@@ -488,43 +448,6 @@ dialog::backdrop {
   }
 }
 
-/* One stable viewport background. Hash pages and dialogs must not recalculate cover. */
-body {
-  position: relative;
-  isolation: isolate;
-  background: transparent !important;
-}
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: 100vw;
-  height: 100vh;
-  height: 100lvh;
-  pointer-events: none;
-  background-color: #e9e1eb;
-  background-image: url("site-theme-bg.png");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-dialog,
-.termsPage,
-.knowledgePage {
-  background-color: transparent !important;
-  background-image: none !important;
-}
-@media (max-width: 760px) {
-  body::before {
-    width: 100vw;
-    height: 100vh;
-    height: 100lvh;
-    background-image: url("site-theme-bg-mobile.png");
-    background-position: center center;
-  }
-}
 html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
@@ -724,6 +647,27 @@ nav a,
   box-shadow: none !important;
   backdrop-filter: none;
 }
+
+/* Guild ranking: approved 30% white panels.
+   Keep parent/child layers from stacking opacity above 30%. */
+#guildSection .controls,
+#guildSection .cards {
+  background: rgba(255, 255, 255, 0.30) !important;
+}
+#guildSection .cards article {
+  background: transparent !important;
+}
+#guildSection .table,
+#guildSection table {
+  background: transparent !important;
+}
+#guildSection th,
+#guildSection td {
+  background: rgba(255, 255, 255, 0.30) !important;
+}
+#guildSection tbody tr.target td {
+  background: rgba(66, 126, 125, 0.52) !important;
+}
 h1,
 h2,
 h3,
@@ -750,19 +694,15 @@ dialog::backdrop {
   background: transparent;
 }
 
-/* Keep character labels crisp and consistent with the TOP page. */
+/* Keep the small white level label crisp; the global white outline blurs it. */
 .char .lv,
-.players .char .lv,
-.char .rarity,
-.players .char .rarity {
-  color: #242424 !important;
-  font-weight: 900 !important;
+.players .char .lv {
   -webkit-text-stroke: 0 !important;
   paint-order: normal !important;
   text-shadow: none !important;
 }
 
-/* Character details need their own surface so page content cannot show through. */
+/* Character details must reveal the shared page background through skill cards. */
 #charDialog,
 #charDialog .charDetail,
 #charDialog .charPane,
@@ -771,7 +711,7 @@ dialog::backdrop {
 #charDialog .skillEffect,
 #charDialog .skillLevels,
 #charDialog .detailCard details {
-  background-color: rgba(255, 255, 255, 0.92) !important;
+  background-color: transparent !important;
   backdrop-filter: none !important;
   box-shadow: none !important;
 }
@@ -802,125 +742,8 @@ dialog::backdrop {
   }
 }
 
-/* v7.4.54 final cascade guard: overlays never own a background image. */
-body { position: relative; isolation: isolate; background: transparent !important; }
-body::before {
-  content: ""; position: fixed; top: 0; left: 0; width: 100vw;
-  height: 100vh; height: 100lvh; z-index: -1; pointer-events: none;
-  background: #e9e1eb url("site-theme-bg.png") center / cover no-repeat;
-}
-dialog, .termsPage, .knowledgePage, #siteAuthGate {
-  background-color: transparent !important;
-  background-image: none !important;
-  background-attachment: initial !important;
-}
-@media (max-width: 760px) {
-  body::before { background-image: url("site-theme-bg-mobile.png"); }
-  dialog, .termsPage, .knowledgePage, #siteAuthGate { background-image: none !important; }
-}
-
-/* v7.4.56: selectable controls, 70% white, no blur. */
-button, select, input, textarea,
-a[href], [role="button"], details > summary,
-.target, .member, .char {
-  background-color: rgba(255, 255, 255, 0.70) !important;
-  background-image: none !important;
-  -webkit-backdrop-filter: none !important;
-  backdrop-filter: none !important;
-}
-
-/* v7.4.58: opened views cover the TOP page with a viewport-sized layer. */
-dialog[open],
-.termsPage:target {
-  background-color: #e9e1eb !important;
-  background-image: url("site-theme-bg.png") !important;
-  background-position: center center !important;
-  background-size: cover !important;
-  background-repeat: no-repeat !important;
-  background-attachment: fixed !important;
-}
-dialog::backdrop { background: #e9e1eb !important; }
-@media (max-width: 760px) {
-  dialog[open], .termsPage:target {
-    background-image: url("site-theme-bg-mobile.png") !important;
-    background-position: center center !important;
-  }
-}
-
-/* v7.4.59: remove the underlying TOP content from the paint tree while an
-   overlay is open. Translucent panels can no longer reveal its text/tables. */
-body:has(dialog[open]) > main,
-body:has(.termsPage:target) > main,
-body:has(.knowledgePage:target) > main,
-body:has(#siteAuthGate:not([hidden])) > main {
-  visibility: hidden !important;
-}
-
-/* v7.4.61: overlays reuse only the stable body background. */
-dialog[open],
-.termsPage:target {
-  background-color: transparent !important;
-  background-image: none !important;
-  background-attachment: initial !important;
-}
-dialog::backdrop { background: transparent !important; }
-
-/* Apply the approved 70% white surface to every framed dashboard view. */
-.head,
-nav,
-.controls,
-.cards,
-.cards article,
-.table,
-.target,
-.member,
-.dialogHead,
-.termsHead,
-.termsBranch,
-.termItem,
-.players .playerCard,
-.players .char,
-#charDialog .charDetail,
-#charDialog .charPane,
-#charDialog .detailCard,
-#charDialog .skillEffect,
-#charDialog .skillLevels,
-#charDialog .detailCard details,
-#charDialog .basicStats > div,
-#charDialog .charBadge {
-  background-color: rgba(255, 255, 255, 0.70) !important;
-  background-image: none !important;
-  -webkit-backdrop-filter: none !important;
-  backdrop-filter: none !important;
-}
-
-/* v7.4.63: one translucent layer; stacked white layers looked opaque. */
-#guildSection .table {
-  background-color: rgba(255, 255, 255, 0.30) !important;
-  background-image: none !important;
-  -webkit-backdrop-filter: none !important;
-  backdrop-filter: none !important;
-}
-#guildSection table,
-#guildSection thead,
-#guildSection thead th,
-#guildSection tbody,
-#guildSection tbody tr,
-#guildSection tbody td {
-  background-color: transparent !important;
-  background-image: none !important;
-}
-#guildSection tbody tr.target {
-  background-color: rgba(46, 120, 144, 0.68) !important;
-  box-shadow: inset 4px 0 0 #17566b;
-}
-#guildSection tbody tr.target td {
-  color: #050505 !important;
-  font-weight: 900;
-}
-
 /* Guild ranking: every visible surface is exactly 30% white.
-   Container layers stay transparent so opacity is not compounded. */
+   Containers remain transparent to prevent compounded opacity. */
 #guildSection .controls,
 #guildSection .cards,
 #guildSection .table,
