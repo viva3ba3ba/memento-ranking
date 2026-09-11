@@ -918,3 +918,30 @@ nav,
   color: #050505 !important;
   font-weight: 900;
 }
+
+/* Guild ranking: every visible surface is exactly 30% white.
+   Container layers stay transparent so opacity is not compounded. */
+#guildSection .controls,
+#guildSection .cards,
+#guildSection .table,
+#guildSection table,
+#guildSection thead,
+#guildSection tbody,
+#guildSection tbody tr {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+#guildSection .controls > select,
+#guildSection .controls > input,
+#guildSection .cards > article,
+#guildSection thead th,
+#guildSection tbody td {
+  background-color: rgba(255, 255, 255, 0.30) !important;
+  background-image: none !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+}
+#guildSection tbody tr.target,
+#guildSection tbody tr.target td {
+  background-color: rgba(46, 120, 144, 0.68) !important;
+}
