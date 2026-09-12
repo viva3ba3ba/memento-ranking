@@ -10,7 +10,7 @@
       http-equiv="Cache-Control"
       content="no-cache, no-store, must-revalidate"
     />
-    <title>メメントモリ W177–180 統合ランキング</title>
+    <title>メメントモリ W178 Valhalla専用アプリ</title>
     <meta name="theme-color" content="#554761" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -19,7 +19,7 @@
     <link rel="manifest" href="manifest.webmanifest?v=69" />
     <link rel="apple-touch-icon" sizes="180x180" href="pwa-icon-180.png?v=69" />
     <script src="pwa.js?v=69" defer></script>
-    <link rel="stylesheet" href="dashboard.css?v=75" />
+    <link rel="stylesheet" href="dashboard.css?v=78" />
     <link rel="stylesheet" href="discord-fix.css?v=50" />
     <link rel="stylesheet" href="site-auth.css?v=71" />
     <style>
@@ -65,7 +65,7 @@
     <main id="top">
       <div class="head">
         <div>
-          <h1>メメントモリ W177–180 統合ランキング</h1>
+          <h1>メメントモリ W178 Valhalla専用アプリ</h1>
           <p id="updated">データ未取得</p>
         </div>
         <button id="refresh">最新データを取得</button>
@@ -549,6 +549,7 @@
           >ショップアイテムの交換及び購入について</a
         >
         <a class="branch" href="#knowledgeSubParty">サブパについて</a>
+        <a class="branch" href="#knowledgeGuildBattlePoints">ギルバトポイント計算</a>
         <a class="branch" href="#knowledgeExchange">情報交換</a>
         <a class="branch" href="#knowledgeLinks">おすすめサイト、ページ</a>
       </div>
@@ -981,6 +982,66 @@
       <header class="knowledgeHead"><h2>キャラとルーン</h2><a class="knowledgeAction knowledgeClose" href="#knowledgeSubParty">戻る</a></header>
       <div class="knowledgeImage subPartyViewer"><img src="knowledge-assets/subparty/IMG_3523.png" alt="キャラとルーン1"><img src="knowledge-assets/subparty/IMG_3524.png" alt="キャラとルーン2"><img src="knowledge-assets/subparty/IMG_3525.png" alt="キャラとルーン3"><img src="knowledge-assets/subparty/IMG_3528.png" alt="キャラとルーン4"></div>
     </section>
+    <section class="knowledgePage" id="knowledgeGuildBattlePoints">
+      <header class="knowledgeHead">
+        <h2>ギルバトポイント計算</h2>
+        <a class="knowledgeAction knowledgeClose" href="#top">閉じる</a>
+      </header>
+      <div class="content">
+        <a class="knowledgeAction knowledgeBack" href="#knowledgeMenu">← 知識の泉へ戻る</a>
+        <div class="knowledgeList">
+          <article class="knowledgeEntry">
+            <h3>拠点ごとのポイント</h3>
+            <p><b>教会・城・神殿は1：5：10（盟約特権を含まない）</b></p>
+            <p>以下の（　）内数値はギルドコイン取得量です。</p>
+            <div class="term"><strong>教会</strong><span>1P × 16拠点 ＝ 最大16P（1箇所 345）</span></div>
+            <div class="term"><strong>城</strong><span>5P × 4拠点 ＝ 最大20P（1箇所 1725）</span></div>
+            <div class="term"><strong>神殿</strong><span>10P × 1拠点 ＝ 最大10P（1箇所 3450）</span></div>
+            <div class="term"><strong>全拠点ポイント合計</strong><span>46P（15870）</span></div>
+            <div class="term"><strong>月間拠点ポイント合計</strong><span>1380P（476100）</span></div>
+          </article>
+
+          <article class="knowledgeEntry">
+            <h3>ギルド別の月間獲得目安</h3>
+            <div class="term"><strong>ギルドS</strong><span>拠点占領平均値：1神殿・4城（中央制覇）</span><span>30P（10350）</span><span>月間獲得：900P（310500）</span><span>ルンチケ約770枚</span></div>
+            <div class="term"><strong>ギルドA</strong><span>拠点占領平均値：1神殿・3城</span><span>25P（8625）</span><span>月間獲得：750P（258750）</span><span>ルンチケ646枚</span></div>
+            <div class="term"><strong>ギルドB</strong><span>拠点占領平均値：1神殿・2城</span><span>20P（6900）</span><span>月間獲得：600P（207000）</span><span>ルンチケ約517枚</span></div>
+            <div class="term"><strong>ギルドC</strong><span>拠点占領平均値：1神殿</span><span>10P（3450）</span><span>月間獲得：300P（103500）</span><span>ルンチケ約258枚</span></div>
+            <div class="term"><strong>ギルドD</strong><span>拠点占領平均値：1城・2教会</span><span>7P（2415）</span><span>月間獲得：210P（72450）</span><span>ルンチケ約181枚</span></div>
+            <div class="term"><strong>ギルドE</strong><span>拠点占領平均値：1城</span><span>5P（1725）</span><span>月間獲得：150P（51750）</span><span>ルンチケ約144枚</span></div>
+            <div class="term"><strong>ギルドF</strong><span>拠点占有平均値：3教会</span><span>3P（1035）</span><span>月間獲得：90P（31050）</span><span>ルンチケ約77枚</span></div>
+            <div class="term"><strong>ギルドG</strong><span>拠点占有平均値：2教会</span><span>2P（690）</span><span>月間獲得：60P（20700）</span><span>ルンチケ約51枚</span></div>
+            <div class="term"><strong>ギルドH</strong><span>拠点占有平均値：1教会</span><span>1P（345）</span><span>月間獲得：30P（10350）</span><span>ルンチケ約25枚</span></div>
+          </article>
+
+          <article class="knowledgeEntry">
+            <h3>ギルド別の想定例</h3>
+            <div class="term"><strong>Valhalla（ギルドB）想定</strong><span>月間獲得ルンチケ517枚</span></div>
+            <div class="term"><strong>サンテラス（ギルドD）想定</strong><span>月間獲得ルンチケ171枚</span></div>
+            <div class="term"><strong>ユグドラシル（ギルドE）想定</strong><span>月間獲得ルンチケ144枚</span></div>
+            <div class="term"><strong>カルペディエム（ギルドF）想定</strong><span>月間獲得ルンチケ77枚</span></div>
+            <p><b>結果として、Valhallaは他ギルドより300枚以上ルンチケのアドバンテージが取れる。</b></p>
+          </article>
+
+          <article class="knowledgeEntry">
+            <h3>長期的な差について</h3>
+            <p>開設から半年が経ち、クエストと塔が落ち着いた時、無微課金がギルバト外で取れるルンチケの平均値が200〜500枚（幻影や箱の乱数により上振れ・下振れあり）になった際、他ギルドの人は1ヶ月で良い乱数でも9ルーンを1つ取れるか取れないかですが、Valhallaは1ヶ月で2個取れる可能性があり、大きなアドバンテージが取れます。</p>
+            <p>ルンチケが取れることにより、中間層以下に大きな差がつき、上位ギルドと下位ギルドの差がより広がり、1強が進みます。</p>
+          </article>
+
+          <article class="knowledgeEntry">
+            <h3>ポイント計測の活用</h3>
+            <ul>
+              <li>ポイント計算により、布告の形を正確に決められる。</li>
+              <li>戦闘力ではなく、実際に獲得したポイント順で強さを順位付けできる。</li>
+              <li>計測期間が1ヶ月になれば、かなり精度の高い順位を付けられる。</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
     <section class="knowledgePage" id="knowledgeExchange">
       <header class="knowledgeHead">
         <h2>情報交換</h2>
