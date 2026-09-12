@@ -58,7 +58,8 @@
       @media(max-width:700px){.knowledgeBranches{grid-template-columns:1fr;padding:12px}.knowledgeBranches .branch{min-height:74px}.knowledgeHead{padding:10px 12px}.knowledgeHead h2{font-size:18px}.knowledgePage .content{padding:12px}.evidenceGrid{grid-template-columns:1fr}.firstKnowledgeImage{width:min(78vw,280px)}.knowledgeEntry{padding:12px}.knowledgeEntry p,.knowledgeEntry li,.knowledgePage .term span{font-size:16px}}
     </style>
     <link rel="stylesheet" href="knowledge.css?v=82" />
-    <script src="site-auth.js?v=50" defer></script>
+    <link rel="stylesheet" href="territory-points.css?v=88" />
+    <script src="site-auth.js?v=51" defer></script>
   </head>
   <body>
     <main id="top">
@@ -76,6 +77,7 @@
         ><a class="termsButton" href="#termsMenu">📖 ギルバト用語・略語</a
         ><a class="knowledgeButton" href="#knowledgeMenu">💧 知識の泉</a>
         <a class="installGuideButton" href="#appInstallGuide">📱 アプリ化への手順</a>
+        <a class="territoryButton" href="#territoryPoints">🗺 177～180鯖 拠点ポイント表</a>
       </nav>
       <section id="guildSection">
         <div class="controls">
@@ -439,6 +441,37 @@
         <div class="termItem"><b>GL</b><span>グラべンスティン</span></div>
         <div class="termItem"><b>SH</b><span>シメイ</span></div>
         <div class="termItem"><b>WS</b><span>ウィスケルケー</span></div>
+      </div>
+    </section>
+    <section class="knowledgePage territoryPointsPage" id="territoryPoints">
+      <header class="knowledgeHead">
+        <h2>177～180鯖 拠点ポイント表</h2>
+        <a class="knowledgeAction knowledgeClose" href="#top">閉じる</a>
+      </header>
+      <div class="content territoryContent">
+        <section class="territorySurface territoryWorldControls" aria-label="ワールド選択">
+          <div class="territoryWorldRow">
+            <button type="button" data-territory-world="177">W177</button>
+            <button type="button" data-territory-world="178">W178</button>
+            <button type="button" data-territory-world="179">W179</button>
+            <button type="button" data-territory-world="180">W180</button>
+          </div>
+          <button type="button" class="territoryAllWorlds is-selected" data-territory-world="all">4鯖統合</button>
+        </section>
+        <section class="territorySurface territoryPeriodControls" aria-label="集計期間選択">
+          <button type="button" class="is-selected" data-territory-period="daily">当日</button>
+          <button type="button" data-territory-period="weekly">週間</button>
+          <button type="button" data-territory-period="monthly">月間</button>
+          <button type="button" data-territory-period="previous">前月ポイント結果</button>
+        </section>
+        <p class="territoryStatus" id="territoryStatus">ポイントデータを読み込んでいます。</p>
+        <section class="territorySurface territorySummary" id="territorySummary" hidden></section>
+        <div class="territoryTableWrap">
+          <table class="territoryTable">
+            <thead><tr><th>#</th><th>ギルド</th><th>教会</th><th>城</th><th>神殿</th><th>合計pt</th></tr></thead>
+            <tbody id="territoryRows"></tbody>
+          </table>
+        </div>
       </div>
     </section>
     <section class="knowledgePage" id="appInstallGuide">
@@ -974,5 +1007,6 @@
     </section>
     <script src="dashboard.js?v=68"></script>
     <script src="character-detail.js?v=67"></script>
+    <script src="territory-points.js?v=88"></script>
   </body>
 </html>
