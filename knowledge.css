@@ -412,6 +412,23 @@
   backdrop-filter: none !important;
 }
 
+/* v7.4.71: expandable new-character information. */
+.newCharacterList { display:grid; gap:12px; }
+.newCharacterEmpty { margin:0; padding:18px; border:1px solid rgba(72,56,92,.78); border-radius:11px; background:rgba(255,255,255,.70); color:#3a3142; font-weight:800; text-align:center; }
+.newCharacterEntry { overflow:hidden; border:1px solid rgba(72,56,92,.78); border-radius:11px; background:rgba(255,255,255,.70); }
+.newCharacterEntry > summary { position:relative; padding:16px 48px 16px 16px; color:#2d2337; font-size:18px; font-weight:900; line-height:1.4; cursor:pointer; list-style:none; }
+.newCharacterEntry > summary::-webkit-details-marker { display:none; }
+.newCharacterEntry > summary::after { content:"＋"; position:absolute; top:50%; right:16px; transform:translateY(-50%); font-size:24px; }
+.newCharacterEntry[open] > summary::after { content:"−"; }
+.newCharacterDetail { display:grid; gap:10px; padding:0 14px 14px; }
+.newCharacterDetail p { margin:0; padding:12px; border:1px solid rgba(72,56,92,.55); border-radius:9px; background:rgba(255,255,255,.54); color:#3a3142; line-height:1.75; }
+.newCharacterDetail .newCharacterNote { border-left:5px solid #a45a28; background:rgba(255,238,214,.74); }
+.newCharacterDetail .newCharacterClosing { font-weight:900; text-align:right; }
+@media (max-width:700px) {
+  .newCharacterEntry > summary { padding:14px 44px 14px 13px; font-size:17px; }
+  .newCharacterDetail { padding:0 10px 10px; }
+}
+
 /* v7.4.58: knowledge/install pages fully cover the TOP page. */
 .knowledgePage:target {
   background-color: #e9e1eb !important;
