@@ -184,6 +184,12 @@ main {
   border-radius: 5px;
   background: #7c2532;
 }
+.equipmentField { margin:10px 0 0; padding:9px; border:1px solid #455268; border-radius:9px; }
+.equipmentField legend { padding:0 5px; color:var(--muted); font-size:12px; font-weight:800; }
+.equipmentGrid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:7px; }
+.equipmentTotal { margin:7px 0 0; color:#98e2a8; font-size:12px; font-weight:900; text-align:right; }
+.equipmentField.is-invalid { border-color:#ff6b75; background:rgba(145,67,72,.18); }
+.equipmentField.is-invalid .equipmentTotal { color:#ff9da5; }
 dialog {
   width: min(1100px, 100vw);
   height: 100vh;
