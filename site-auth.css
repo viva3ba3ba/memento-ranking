@@ -6,7 +6,7 @@
   place-items: center;
   padding: 18px;
   background-color: #0e1117;
-  background-image: url("site-theme-bg.png?v=66");
+  background-image: url("site-theme-bg-pc-v2.png?v=1");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -135,7 +135,7 @@
 #siteAuthGate {
   /* The gate must fully cover the TOP page while authentication is pending. */
   background-color: #e9e1eb !important;
-  background-image: url("site-theme-bg.png?v=66") !important;
+  background-image: url("site-theme-bg-pc-v2.png?v=1") !important;
   background-position: center center !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
