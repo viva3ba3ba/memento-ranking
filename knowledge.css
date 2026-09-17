@@ -294,7 +294,7 @@
 /* v7.4.34 approved MementoMori glass theme */
 .knowledgePage {
   background-color: #e9e1eb;
-  background-image: url("site-theme-bg.png?v=66");
+  background-image: url("site-theme-bg-pc-v2.png?v=1");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -432,7 +432,7 @@
 /* v7.4.58: knowledge/install pages fully cover the TOP page. */
 .knowledgePage:target {
   background-color: #e9e1eb !important;
-  background-image: url("site-theme-bg.png?v=66") !important;
+  background-image: url("site-theme-bg-pc-v2.png?v=1") !important;
   background-position: center center !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
