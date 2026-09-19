@@ -6,7 +6,7 @@
   place-items: center;
   padding: 18px;
   background-color: #0e1117;
-  background-image: url("site-theme-bg-pc-birthday.png?v=1");
+  background-image: url("site-theme-bg-pc-rest.png?v=1");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -90,7 +90,7 @@
 @media (max-width: 600px) {
   #siteAuthGate {
     padding: 14px;
-    background-image: url("site-theme-bg-mobile-birthday.png?v=1");
+    background-image: url("site-theme-bg-mobile-rest.png?v=1");
     background-position: center center;
   }
   .siteAuthBox {
@@ -135,7 +135,7 @@
 #siteAuthGate {
   /* The gate must fully cover the TOP page while authentication is pending. */
   background-color: #e9e1eb !important;
-  background-image: url("site-theme-bg-pc-birthday.png?v=1") !important;
+  background-image: url("site-theme-bg-pc-rest.png?v=1") !important;
   background-position: center center !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
@@ -143,7 +143,7 @@
 
 @media (max-width: 600px) {
   #siteAuthGate {
-    background-image: url("site-theme-bg-mobile-birthday.png?v=1") !important;
+    background-image: url("site-theme-bg-mobile-rest.png?v=1") !important;
   }
 }
 
