@@ -6226,31 +6226,815 @@
     },
     "2026-09-20": {
       "177": {
-        "world": 177,
+        "base_count": 21,
         "captured_at": "2026-09-19T20:59:11.632Z",
+        "rows": [
+          {
+            "castle": 2,
+            "church": 1,
+            "guild": "タリーズ",
+            "temple": 1,
+            "total": 21
+          },
+          {
+            "castle": 1,
+            "church": 3,
+            "guild": "Ragdoll",
+            "temple": 0,
+            "total": 8
+          },
+          {
+            "castle": 1,
+            "church": 0,
+            "guild": "あつまれ陽だまりの森",
+            "temple": 0,
+            "total": 5
+          },
+          {
+            "castle": 0,
+            "church": 2,
+            "guild": "Ñëò ÅKDM軍団",
+            "temple": 0,
+            "total": 2
+          },
+          {
+            "castle": 0,
+            "church": 2,
+            "guild": "月の兎達",
+            "temple": 0,
+            "total": 2
+          },
+          {
+            "castle": 0,
+            "church": 2,
+            "guild": "天翔ノ旋律",
+            "temple": 0,
+            "total": 2
+          },
+          {
+            "castle": 0,
+            "church": 1,
+            "guild": "vivit",
+            "temple": 0,
+            "total": 1
+          },
+          {
+            "castle": 0,
+            "church": 1,
+            "guild": "ギルド難民の会",
+            "temple": 0,
+            "total": 1
+          },
+          {
+            "castle": 0,
+            "church": 1,
+            "guild": "運命を紡ぐ者たち",
+            "temple": 0,
+            "total": 1
+          },
+          {
+            "castle": 0,
+            "church": 1,
+            "guild": "幸せの猫",
+            "temple": 0,
+            "total": 1
+          },
+          {
+            "castle": 0,
+            "church": 1,
+            "guild": "小さいギルド",
+            "temple": 0,
+            "total": 1
+          },
+          {
+            "castle": 0,
+            "church": 1,
+            "guild": "白き境界を侵す円卓",
+            "temple": 0,
+            "total": 1
+          }
+        ],
+        "territories": [
+          {
+            "base": "ブラッセル",
+            "guild": "タリーズ",
+            "type": "temple"
+          },
+          {
+            "base": "ウィスケルケー",
+            "guild": "タリーズ",
+            "type": "castle"
+          },
+          {
+            "base": "モダーヴ",
+            "guild": "あつまれ陽だまりの森",
+            "type": "castle"
+          },
+          {
+            "base": "シメイ",
+            "guild": "Ragdoll",
+            "type": "castle"
+          },
+          {
+            "base": "グラベンスティン",
+            "guild": "タリーズ",
+            "type": "castle"
+          },
+          {
+            "base": "カンブル",
+            "guild": "白き境界を侵す円卓",
+            "type": "church"
+          },
+          {
+            "base": "クインティヌス",
+            "guild": "天翔ノ旋律",
+            "type": "church"
+          },
+          {
+            "base": "ランベール",
+            "guild": "ギルド難民の会",
+            "type": "church"
+          },
+          {
+            "base": "サンジャック",
+            "guild": "幸せの猫",
+            "type": "church"
+          },
+          {
+            "base": "ミヒャエル",
+            "guild": "小さいギルド",
+            "type": "church"
+          },
+          {
+            "base": "ナミュール",
+            "guild": "天翔ノ旋律",
+            "type": "church"
+          },
+          {
+            "base": "シャルルロア",
+            "guild": "運命を紡ぐ者たち",
+            "type": "church"
+          },
+          {
+            "base": "アルゼット",
+            "guild": "vivit",
+            "type": "church"
+          },
+          {
+            "base": "エノー",
+            "guild": "Ragdoll",
+            "type": "church"
+          },
+          {
+            "base": "ワーヴル",
+            "guild": "月の兎達",
+            "type": "church"
+          },
+          {
+            "base": "モンス",
+            "guild": "Ragdoll",
+            "type": "church"
+          },
+          {
+            "base": "クリストフ",
+            "guild": "Ragdoll",
+            "type": "church"
+          },
+          {
+            "base": "コルトレイク",
+            "guild": "月の兎達",
+            "type": "church"
+          },
+          {
+            "base": "イーペル",
+            "guild": "タリーズ",
+            "type": "church"
+          },
+          {
+            "base": "サルヴァトール",
+            "guild": "Ñëò ÅKDM軍団",
+            "type": "church"
+          },
+          {
+            "base": "バーフ",
+            "guild": "Ñëò ÅKDM軍団",
+            "type": "church"
+          }
+        ],
+        "total_points": 46,
+        "world": 177
+      },
+      "178": {
+        "base_count": 21,
+        "captured_at": "2026-09-19T20:59:15.941Z",
+        "rows": [
+          {
+            "castle": 3,
+            "church": 1,
+            "guild": "Valhalla",
+            "temple": 1,
+            "total": 26
+          },
+          {
+            "castle": 1,
+            "church": 3,
+            "guild": "✶ユグドラシル✶",
+            "temple": 0,
+            "total": 8
+          },
+          {
+            "castle": 0,
+            "church": 2,
+            "guild": "サンテラス",
+            "temple": 0,
+            "total": 2
+          },
+          {
+            "castle": 0,
+            "church": 2,
+            "guild": "星降る丘☆。.:*・",
+            "temple": 0,
+            "total": 2
+          },
+          {
+            "castle": 0,
+            "church": 1,
+            "guild": "lamentmori",
+            "temple": 0,
+            "total": 1
+          },
+          {
+            "castle": 0,
+            "church": 1,
+            "guild": "カルペ・ディエム",
+            "temple": 0,
+            "total": 1
+          },
+          {
+            "castle": 0,
+            "church": 1,
+            "guild": "なごやかすぎる国です",
+            "temple": 0,
+            "total": 1
+          },
+          {
+            "castle": 0,
+            "church": 1,
+            "guild": "モグラ冒険団",
+            "temple": 0,
+            "total": 1
+          },
+          {
+            "castle": 0,
+            "church": 1,
+            "guild": "もっち・ざ・ろっく!",
+            "temple": 0,
+            "total": 1
+          },
+          {
+            "castle": 0,
+            "church": 1,
+            "guild": "地雷系熟女パブ",
+            "temple": 0,
+            "total": 1
+          },
+          {
+            "castle": 0,
+            "church": 1,
+            "guild": "白狼",
+            "temple": 0,
+            "total": 1
+          },
+          {
+            "castle": 0,
+            "church": 1,
+            "guild": "片道きっぷ",
+            "temple": 0,
+            "total": 1
+          }
+        ],
+        "territories": [
+          {
+            "base": "ブラッセル",
+            "guild": "Valhalla",
+            "type": "temple"
+          },
+          {
+            "base": "ウィスケルケー",
+            "guild": "✶ユグドラシル✶",
+            "type": "castle"
+          },
+          {
+            "base": "モダーヴ",
+            "guild": "Valhalla",
+            "type": "castle"
+          },
+          {
+            "base": "シメイ",
+            "guild": "Valhalla",
+            "type": "castle"
+          },
+          {
+            "base": "グラベンスティン",
+            "guild": "Valhalla",
+            "type": "castle"
+          },
+          {
+            "base": "カンブル",
+            "guild": "✶ユグドラシル✶",
+            "type": "church"
+          },
+          {
+            "base": "クインティヌス",
+            "guild": "星降る丘☆。.:*・",
+            "type": "church"
+          },
+          {
+            "base": "ランベール",
+            "guild": "lamentmori",
+            "type": "church"
+          },
+          {
+            "base": "サンジャック",
+            "guild": "地雷系熟女パブ",
+            "type": "church"
+          },
+          {
+            "base": "ミヒャエル",
+            "guild": "片道きっぷ",
+            "type": "church"
+          },
+          {
+            "base": "ナミュール",
+            "guild": "星降る丘☆。.:*・",
+            "type": "church"
+          },
+          {
+            "base": "シャルルロア",
+            "guild": "モグラ冒険団",
+            "type": "church"
+          },
+          {
+            "base": "アルゼット",
+            "guild": "カルペ・ディエム",
+            "type": "church"
+          },
+          {
+            "base": "エノー",
+            "guild": "サンテラス",
+            "type": "church"
+          },
+          {
+            "base": "ワーヴル",
+            "guild": "Valhalla",
+            "type": "church"
+          },
+          {
+            "base": "モンス",
+            "guild": "サンテラス",
+            "type": "church"
+          },
+          {
+            "base": "クリストフ",
+            "guild": "白狼",
+            "type": "church"
+          },
+          {
+            "base": "コルトレイク",
+            "guild": "✶ユグドラシル✶",
+            "type": "church"
+          },
+          {
+            "base": "イーペル",
+            "guild": "もっち・ざ・ろっく!",
+            "type": "church"
+          },
+          {
+            "base": "サルヴァトール",
+            "guild": "なごやかすぎる国です",
+            "type": "church"
+          },
+          {
+            "base": "バーフ",
+            "guild": "✶ユグドラシル✶",
+            "type": "church"
+          }
+        ],
+        "total_points": 46,
+        "world": 178
+      },
+      "179": {
+        "base_count": 21,
+        "captured_at": "2026-09-19T20:59:20.238Z",
+        "rows": [
+          {
+            "castle": 4,
+            "church": 0,
+            "guild": "宵空のわたあめ໒꒱",
+            "temple": 1,
+            "total": 30
+          },
+          {
+            "castle": 0,
+            "church": 3,
+            "guild": "꒰ঌ天上の舞姫໒꒱",
+            "temple": 0,
+            "total": 3
+          },
+          {
+            "castle": 0,
+            "church": 3,
+            "guild": "もっちゅりん部",
+            "temple": 0,
+            "total": 3
+          },
+          {
+            "castle": 0,
+            "church": 2,
+            "guild": "Megingjörð",
+            "temple": 0,
+            "total": 2
+          },
+          {
+            "castle": 0,
+            "church": 2,
+            "guild": "ファーストペンギン",
+            "temple": 0,
+            "total": 2
+          },
+          {
+            "castle": 0,
+            "church": 1,
+            "guild": "❀眠れる桜もち❀",
+            "temple": 0,
+            "total": 1
+          },
+          {
+            "castle": 0,
+            "church": 1,
+            "guild": "POLARIS",
+            "temple": 0,
+            "total": 1
+          },
+          {
+            "castle": 0,
+            "church": 1,
+            "guild": "青の茶柱",
+            "temple": 0,
+            "total": 1
+          },
+          {
+            "castle": 0,
+            "church": 1,
+            "guild": "木漏れ日の庭",
+            "temple": 0,
+            "total": 1
+          },
+          {
+            "castle": 0,
+            "church": 1,
+            "guild": "野原一家ファイアー",
+            "temple": 0,
+            "total": 1
+          },
+          {
+            "castle": 0,
+            "church": 1,
+            "guild": "癒しこそ真理",
+            "temple": 0,
+            "total": 1
+          }
+        ],
+        "territories": [
+          {
+            "base": "ブラッセル",
+            "guild": "宵空のわたあめ໒꒱",
+            "type": "temple"
+          },
+          {
+            "base": "ウィスケルケー",
+            "guild": "宵空のわたあめ໒꒱",
+            "type": "castle"
+          },
+          {
+            "base": "モダーヴ",
+            "guild": "宵空のわたあめ໒꒱",
+            "type": "castle"
+          },
+          {
+            "base": "シメイ",
+            "guild": "宵空のわたあめ໒꒱",
+            "type": "castle"
+          },
+          {
+            "base": "グラベンスティン",
+            "guild": "宵空のわたあめ໒꒱",
+            "type": "castle"
+          },
+          {
+            "base": "カンブル",
+            "guild": "青の茶柱",
+            "type": "church"
+          },
+          {
+            "base": "クインティヌス",
+            "guild": "木漏れ日の庭",
+            "type": "church"
+          },
+          {
+            "base": "ランベール",
+            "guild": "癒しこそ真理",
+            "type": "church"
+          },
+          {
+            "base": "サンジャック",
+            "guild": "❀眠れる桜もち❀",
+            "type": "church"
+          },
+          {
+            "base": "ミヒャエル",
+            "guild": "POLARIS",
+            "type": "church"
+          },
+          {
+            "base": "ナミュール",
+            "guild": "野原一家ファイアー",
+            "type": "church"
+          },
+          {
+            "base": "シャルルロア",
+            "guild": "ファーストペンギン",
+            "type": "church"
+          },
+          {
+            "base": "アルゼット",
+            "guild": "ファーストペンギン",
+            "type": "church"
+          },
+          {
+            "base": "エノー",
+            "guild": "꒰ঌ天上の舞姫໒꒱",
+            "type": "church"
+          },
+          {
+            "base": "ワーヴル",
+            "guild": "꒰ঌ天上の舞姫໒꒱",
+            "type": "church"
+          },
+          {
+            "base": "モンス",
+            "guild": "꒰ঌ天上の舞姫໒꒱",
+            "type": "church"
+          },
+          {
+            "base": "クリストフ",
+            "guild": "もっちゅりん部",
+            "type": "church"
+          },
+          {
+            "base": "コルトレイク",
+            "guild": "もっちゅりん部",
+            "type": "church"
+          },
+          {
+            "base": "イーペル",
+            "guild": "もっちゅりん部",
+            "type": "church"
+          },
+          {
+            "base": "サルヴァトール",
+            "guild": "Megingjörð",
+            "type": "church"
+          },
+          {
+            "base": "バーフ",
+            "guild": "Megingjörð",
+            "type": "church"
+          }
+        ],
+        "total_points": 46,
+        "world": 179
+      },
+      "180": {
+        "base_count": 21,
+        "captured_at": "2026-09-19T20:59:24.539Z",
+        "rows": [
+          {
+            "castle": 3,
+            "church": 0,
+            "guild": "南方正教会໒",
+            "temple": 1,
+            "total": 25
+          },
+          {
+            "castle": 1,
+            "church": 1,
+            "guild": "かみかみサラダ",
+            "temple": 0,
+            "total": 6
+          },
+          {
+            "castle": 0,
+            "church": 3,
+            "guild": "STAR union",
+            "temple": 0,
+            "total": 3
+          },
+          {
+            "castle": 0,
+            "church": 2,
+            "guild": "。.ʚトッポɞ .。",
+            "temple": 0,
+            "total": 2
+          },
+          {
+            "castle": 0,
+            "church": 2,
+            "guild": "Totentanz",
+            "temple": 0,
+            "total": 2
+          },
+          {
+            "castle": 0,
+            "church": 2,
+            "guild": "みるくてぃー",
+            "temple": 0,
+            "total": 2
+          },
+          {
+            "castle": 0,
+            "church": 2,
+            "guild": "追憶の書庫",
+            "temple": 0,
+            "total": 2
+          },
+          {
+            "castle": 0,
+            "church": 1,
+            "guild": "†堕天の咆哮†",
+            "temple": 0,
+            "total": 1
+          },
+          {
+            "castle": 0,
+            "church": 1,
+            "guild": "lyrical",
+            "temple": 0,
+            "total": 1
+          },
+          {
+            "castle": 0,
+            "church": 1,
+            "guild": "がーでんゔぃーず",
+            "temple": 0,
+            "total": 1
+          },
+          {
+            "castle": 0,
+            "church": 1,
+            "guild": "魔女の燈火",
+            "temple": 0,
+            "total": 1
+          }
+        ],
+        "territories": [
+          {
+            "base": "ブラッセル",
+            "guild": "南方正教会໒",
+            "type": "temple"
+          },
+          {
+            "base": "ウィスケルケー",
+            "guild": "南方正教会໒",
+            "type": "castle"
+          },
+          {
+            "base": "モダーヴ",
+            "guild": "南方正教会໒",
+            "type": "castle"
+          },
+          {
+            "base": "シメイ",
+            "guild": "南方正教会໒",
+            "type": "castle"
+          },
+          {
+            "base": "グラベンスティン",
+            "guild": "かみかみサラダ",
+            "type": "castle"
+          },
+          {
+            "base": "カンブル",
+            "guild": "かみかみサラダ",
+            "type": "church"
+          },
+          {
+            "base": "クインティヌス",
+            "guild": "魔女の燈火",
+            "type": "church"
+          },
+          {
+            "base": "ランベール",
+            "guild": "STAR union",
+            "type": "church"
+          },
+          {
+            "base": "サンジャック",
+            "guild": "STAR union",
+            "type": "church"
+          },
+          {
+            "base": "ミヒャエル",
+            "guild": "STAR union",
+            "type": "church"
+          },
+          {
+            "base": "ナミュール",
+            "guild": "†堕天の咆哮†",
+            "type": "church"
+          },
+          {
+            "base": "シャルルロア",
+            "guild": "追憶の書庫",
+            "type": "church"
+          },
+          {
+            "base": "アルゼット",
+            "guild": "追憶の書庫",
+            "type": "church"
+          },
+          {
+            "base": "エノー",
+            "guild": "Totentanz",
+            "type": "church"
+          },
+          {
+            "base": "ワーヴル",
+            "guild": "みるくてぃー",
+            "type": "church"
+          },
+          {
+            "base": "モンス",
+            "guild": "Totentanz",
+            "type": "church"
+          },
+          {
+            "base": "クリストフ",
+            "guild": "lyrical",
+            "type": "church"
+          },
+          {
+            "base": "コルトレイク",
+            "guild": "。.ʚトッポɞ .。",
+            "type": "church"
+          },
+          {
+            "base": "イーペル",
+            "guild": "みるくてぃー",
+            "type": "church"
+          },
+          {
+            "base": "サルヴァトール",
+            "guild": "。.ʚトッポɞ .。",
+            "type": "church"
+          },
+          {
+            "base": "バーフ",
+            "guild": "がーでんゔぃーず",
+            "type": "church"
+          }
+        ],
+        "total_points": 46,
+        "world": 180
+      }
+    },
+    "2026-09-21": {
+      "177": {
+        "world": 177,
+        "captured_at": "2026-09-20T21:24:18.246Z",
         "base_count": 21,
         "total_points": 46,
         "rows": [
           {
             "guild": "タリーズ",
-            "church": 1,
-            "castle": 2,
+            "church": 0,
+            "castle": 4,
             "temple": 1,
-            "total": 21
+            "total": 30
           },
           {
             "guild": "Ragdoll",
             "church": 3,
-            "castle": 1,
+            "castle": 0,
             "temple": 0,
-            "total": 8
+            "total": 3
           },
           {
-            "guild": "あつまれ陽だまりの森",
-            "church": 0,
-            "castle": 1,
+            "guild": "天翔ノ旋律",
+            "church": 3,
+            "castle": 0,
             "temple": 0,
-            "total": 5
+            "total": 3
           },
           {
             "guild": "Ñëò ÅKDM軍団",
@@ -6260,14 +7044,7 @@
             "total": 2
           },
           {
-            "guild": "月の兎達",
-            "church": 2,
-            "castle": 0,
-            "temple": 0,
-            "total": 2
-          },
-          {
-            "guild": "天翔ノ旋律",
+            "guild": "あつまれ陽だまりの森",
             "church": 2,
             "castle": 0,
             "temple": 0,
@@ -6281,14 +7058,14 @@
             "total": 1
           },
           {
-            "guild": "ギルド難民の会",
+            "guild": "ラウルストレーン",
             "church": 1,
             "castle": 0,
             "temple": 0,
             "total": 1
           },
           {
-            "guild": "運命を紡ぐ者たち",
+            "guild": "月の兎達",
             "church": 1,
             "castle": 0,
             "temple": 0,
@@ -6302,14 +7079,14 @@
             "total": 1
           },
           {
-            "guild": "小さいギルド",
+            "guild": "女神DOLLS★彡",
             "church": 1,
             "castle": 0,
             "temple": 0,
             "total": 1
           },
           {
-            "guild": "白き境界を侵す円卓",
+            "guild": "蒼月庵 夢現",
             "church": 1,
             "castle": 0,
             "temple": 0,
@@ -6330,12 +7107,12 @@
           {
             "base": "モダーヴ",
             "type": "castle",
-            "guild": "あつまれ陽だまりの森"
+            "guild": "タリーズ"
           },
           {
             "base": "シメイ",
             "type": "castle",
-            "guild": "Ragdoll"
+            "guild": "タリーズ"
           },
           {
             "base": "グラベンスティン",
@@ -6345,7 +7122,7 @@
           {
             "base": "カンブル",
             "type": "church",
-            "guild": "白き境界を侵す円卓"
+            "guild": "天翔ノ旋律"
           },
           {
             "base": "クインティヌス",
@@ -6355,7 +7132,7 @@
           {
             "base": "ランベール",
             "type": "church",
-            "guild": "ギルド難民の会"
+            "guild": "女神DOLLS★彡"
           },
           {
             "base": "サンジャック",
@@ -6365,7 +7142,7 @@
           {
             "base": "ミヒャエル",
             "type": "church",
-            "guild": "小さいギルド"
+            "guild": "蒼月庵 夢現"
           },
           {
             "base": "ナミュール",
@@ -6375,7 +7152,7 @@
           {
             "base": "シャルルロア",
             "type": "church",
-            "guild": "運命を紡ぐ者たち"
+            "guild": "あつまれ陽だまりの森"
           },
           {
             "base": "アルゼット",
@@ -6385,12 +7162,12 @@
           {
             "base": "エノー",
             "type": "church",
-            "guild": "Ragdoll"
+            "guild": "月の兎達"
           },
           {
             "base": "ワーヴル",
             "type": "church",
-            "guild": "月の兎達"
+            "guild": "あつまれ陽だまりの森"
           },
           {
             "base": "モンス",
@@ -6405,12 +7182,12 @@
           {
             "base": "コルトレイク",
             "type": "church",
-            "guild": "月の兎達"
+            "guild": "ラウルストレーン"
           },
           {
             "base": "イーペル",
             "type": "church",
-            "guild": "タリーズ"
+            "guild": "Ragdoll"
           },
           {
             "base": "サルヴァトール",
@@ -6426,47 +7203,47 @@
       },
       "178": {
         "world": 178,
-        "captured_at": "2026-09-19T20:59:15.941Z",
+        "captured_at": "2026-09-20T21:24:22.551Z",
         "base_count": 21,
         "total_points": 46,
         "rows": [
           {
             "guild": "Valhalla",
-            "church": 1,
+            "church": 0,
             "castle": 3,
             "temple": 1,
-            "total": 26
+            "total": 25
           },
           {
-            "guild": "✶ユグドラシル✶",
+            "guild": "サンテラス",
             "church": 3,
             "castle": 1,
             "temple": 0,
             "total": 8
           },
           {
-            "guild": "サンテラス",
+            "guild": "✶ユグドラシル✶",
             "church": 2,
             "castle": 0,
             "temple": 0,
             "total": 2
           },
           {
-            "guild": "星降る丘☆。.:*・",
+            "guild": "カルペ・ディエム",
             "church": 2,
             "castle": 0,
             "temple": 0,
             "total": 2
           },
           {
-            "guild": "lamentmori",
+            "guild": "LupusSilva",
             "church": 1,
             "castle": 0,
             "temple": 0,
             "total": 1
           },
           {
-            "guild": "カルペ・ディエム",
+            "guild": "ガンマン自警団",
             "church": 1,
             "castle": 0,
             "temple": 0,
@@ -6480,14 +7257,21 @@
             "total": 1
           },
           {
-            "guild": "モグラ冒険団",
+            "guild": "もっち・ざ・ろっく!",
             "church": 1,
             "castle": 0,
             "temple": 0,
             "total": 1
           },
           {
-            "guild": "もっち・ざ・ろっく!",
+            "guild": "星の導き",
+            "church": 1,
+            "castle": 0,
+            "temple": 0,
+            "total": 1
+          },
+          {
+            "guild": "星降る丘☆。.:*・",
             "church": 1,
             "castle": 0,
             "temple": 0,
@@ -6524,7 +7308,7 @@
           {
             "base": "ウィスケルケー",
             "type": "castle",
-            "guild": "✶ユグドラシル✶"
+            "guild": "Valhalla"
           },
           {
             "base": "モダーヴ",
@@ -6534,7 +7318,7 @@
           {
             "base": "シメイ",
             "type": "castle",
-            "guild": "Valhalla"
+            "guild": "サンテラス"
           },
           {
             "base": "グラベンスティン",
@@ -6549,12 +7333,12 @@
           {
             "base": "クインティヌス",
             "type": "church",
-            "guild": "星降る丘☆。.:*・"
+            "guild": "LupusSilva"
           },
           {
             "base": "ランベール",
             "type": "church",
-            "guild": "lamentmori"
+            "guild": "ガンマン自警団"
           },
           {
             "base": "サンジャック",
@@ -6574,7 +7358,7 @@
           {
             "base": "シャルルロア",
             "type": "church",
-            "guild": "モグラ冒険団"
+            "guild": "カルペ・ディエム"
           },
           {
             "base": "アルゼット",
@@ -6589,7 +7373,7 @@
           {
             "base": "ワーヴル",
             "type": "church",
-            "guild": "Valhalla"
+            "guild": "サンテラス"
           },
           {
             "base": "モンス",
@@ -6604,12 +7388,12 @@
           {
             "base": "コルトレイク",
             "type": "church",
-            "guild": "✶ユグドラシル✶"
+            "guild": "もっち・ざ・ろっく!"
           },
           {
             "base": "イーペル",
             "type": "church",
-            "guild": "もっち・ざ・ろっく!"
+            "guild": "✶ユグドラシル✶"
           },
           {
             "base": "サルヴァトール",
@@ -6619,13 +7403,13 @@
           {
             "base": "バーフ",
             "type": "church",
-            "guild": "✶ユグドラシル✶"
+            "guild": "星の導き"
           }
         ]
       },
       "179": {
         "world": 179,
-        "captured_at": "2026-09-19T20:59:20.238Z",
+        "captured_at": "2026-09-20T21:24:26.838Z",
         "base_count": 21,
         "total_points": 46,
         "rows": [
@@ -6644,14 +7428,7 @@
             "total": 3
           },
           {
-            "guild": "もっちゅりん部",
-            "church": 3,
-            "castle": 0,
-            "temple": 0,
-            "total": 3
-          },
-          {
-            "guild": "Megingjörð",
+            "guild": "POLARIS",
             "church": 2,
             "castle": 0,
             "temple": 0,
@@ -6665,21 +7442,35 @@
             "total": 2
           },
           {
-            "guild": "❀眠れる桜もち❀",
-            "church": 1,
+            "guild": "もっちゅりん部",
+            "church": 2,
             "castle": 0,
             "temple": 0,
-            "total": 1
-          },
-          {
-            "guild": "POLARIS",
-            "church": 1,
-            "castle": 0,
-            "temple": 0,
-            "total": 1
+            "total": 2
           },
           {
             "guild": "青の茶柱",
+            "church": 2,
+            "castle": 0,
+            "temple": 0,
+            "total": 2
+          },
+          {
+            "guild": "ぽめもちゃるん",
+            "church": 1,
+            "castle": 0,
+            "temple": 0,
+            "total": 1
+          },
+          {
+            "guild": "もやしフレンズ2号店",
+            "church": 1,
+            "castle": 0,
+            "temple": 0,
+            "total": 1
+          },
+          {
+            "guild": "ルミナス",
             "church": 1,
             "castle": 0,
             "temple": 0,
@@ -6687,13 +7478,6 @@
           },
           {
             "guild": "木漏れ日の庭",
-            "church": 1,
-            "castle": 0,
-            "temple": 0,
-            "total": 1
-          },
-          {
-            "guild": "野原一家ファイアー",
             "church": 1,
             "castle": 0,
             "temple": 0,
@@ -6751,7 +7535,7 @@
           {
             "base": "サンジャック",
             "type": "church",
-            "guild": "❀眠れる桜もち❀"
+            "guild": "POLARIS"
           },
           {
             "base": "ミヒャエル",
@@ -6761,7 +7545,7 @@
           {
             "base": "ナミュール",
             "type": "church",
-            "guild": "野原一家ファイアー"
+            "guild": "青の茶柱"
           },
           {
             "base": "シャルルロア",
@@ -6771,12 +7555,12 @@
           {
             "base": "アルゼット",
             "type": "church",
-            "guild": "ファーストペンギン"
+            "guild": "꒰ঌ天上の舞姫໒꒱"
           },
           {
             "base": "エノー",
             "type": "church",
-            "guild": "꒰ঌ天上の舞姫໒꒱"
+            "guild": "ファーストペンギン"
           },
           {
             "base": "ワーヴル",
@@ -6791,7 +7575,7 @@
           {
             "base": "クリストフ",
             "type": "church",
-            "guild": "もっちゅりん部"
+            "guild": "もやしフレンズ2号店"
           },
           {
             "base": "コルトレイク",
@@ -6806,58 +7590,51 @@
           {
             "base": "サルヴァトール",
             "type": "church",
-            "guild": "Megingjörð"
+            "guild": "ルミナス"
           },
           {
             "base": "バーフ",
             "type": "church",
-            "guild": "Megingjörð"
+            "guild": "ぽめもちゃるん"
           }
         ]
       },
       "180": {
         "world": 180,
-        "captured_at": "2026-09-19T20:59:24.539Z",
+        "captured_at": "2026-09-20T21:24:31.148Z",
         "base_count": 21,
         "total_points": 46,
         "rows": [
           {
             "guild": "南方正教会໒",
             "church": 0,
-            "castle": 3,
+            "castle": 2,
             "temple": 1,
-            "total": 25
-          },
-          {
-            "guild": "かみかみサラダ",
-            "church": 1,
-            "castle": 1,
-            "temple": 0,
-            "total": 6
+            "total": 20
           },
           {
             "guild": "STAR union",
+            "church": 1,
+            "castle": 2,
+            "temple": 0,
+            "total": 11
+          },
+          {
+            "guild": "。.ʚトッポɞ .。",
             "church": 3,
             "castle": 0,
             "temple": 0,
             "total": 3
           },
           {
-            "guild": "。.ʚトッポɞ .。",
+            "guild": "†堕天の咆哮†",
             "church": 2,
             "castle": 0,
             "temple": 0,
             "total": 2
           },
           {
-            "guild": "Totentanz",
-            "church": 2,
-            "castle": 0,
-            "temple": 0,
-            "total": 2
-          },
-          {
-            "guild": "みるくてぃー",
+            "guild": "幻想ヲ駆ける太陽",
             "church": 2,
             "castle": 0,
             "temple": 0,
@@ -6871,7 +7648,14 @@
             "total": 2
           },
           {
-            "guild": "†堕天の咆哮†",
+            "guild": "魔女の集い",
+            "church": 2,
+            "castle": 0,
+            "temple": 0,
+            "total": 2
+          },
+          {
+            "guild": "80",
             "church": 1,
             "castle": 0,
             "temple": 0,
@@ -6885,14 +7669,14 @@
             "total": 1
           },
           {
-            "guild": "がーでんゔぃーず",
+            "guild": "みるくてぃー",
             "church": 1,
             "castle": 0,
             "temple": 0,
             "total": 1
           },
           {
-            "guild": "魔女の燈火",
+            "guild": "華宴໒꒱",
             "church": 1,
             "castle": 0,
             "temple": 0,
@@ -6908,12 +7692,12 @@
           {
             "base": "ウィスケルケー",
             "type": "castle",
-            "guild": "南方正教会໒"
+            "guild": "STAR union"
           },
           {
             "base": "モダーヴ",
             "type": "castle",
-            "guild": "南方正教会໒"
+            "guild": "STAR union"
           },
           {
             "base": "シメイ",
@@ -6923,27 +7707,27 @@
           {
             "base": "グラベンスティン",
             "type": "castle",
-            "guild": "かみかみサラダ"
+            "guild": "南方正教会໒"
           },
           {
             "base": "カンブル",
             "type": "church",
-            "guild": "かみかみサラダ"
+            "guild": "†堕天の咆哮†"
           },
           {
             "base": "クインティヌス",
             "type": "church",
-            "guild": "魔女の燈火"
+            "guild": "魔女の集い"
           },
           {
             "base": "ランベール",
             "type": "church",
-            "guild": "STAR union"
+            "guild": "華宴໒꒱"
           },
           {
             "base": "サンジャック",
             "type": "church",
-            "guild": "STAR union"
+            "guild": "幻想ヲ駆ける太陽"
           },
           {
             "base": "ミヒャエル",
@@ -6963,12 +7747,12 @@
           {
             "base": "アルゼット",
             "type": "church",
-            "guild": "追憶の書庫"
+            "guild": "魔女の集い"
           },
           {
             "base": "エノー",
             "type": "church",
-            "guild": "Totentanz"
+            "guild": "追憶の書庫"
           },
           {
             "base": "ワーヴル",
@@ -6978,12 +7762,12 @@
           {
             "base": "モンス",
             "type": "church",
-            "guild": "Totentanz"
+            "guild": "lyrical"
           },
           {
             "base": "クリストフ",
             "type": "church",
-            "guild": "lyrical"
+            "guild": "。.ʚトッポɞ .。"
           },
           {
             "base": "コルトレイク",
@@ -6993,21 +7777,21 @@
           {
             "base": "イーペル",
             "type": "church",
-            "guild": "みるくてぃー"
+            "guild": "。.ʚトッポɞ .。"
           },
           {
             "base": "サルヴァトール",
             "type": "church",
-            "guild": "。.ʚトッポɞ .。"
+            "guild": "80"
           },
           {
             "base": "バーフ",
             "type": "church",
-            "guild": "がーでんゔぃーず"
+            "guild": "幻想ヲ駆ける太陽"
           }
         ]
       }
     }
   },
-  "updated_at": "2026-09-19T20:59:24.539Z"
+  "updated_at": "2026-09-20T21:24:31.148Z"
 }
