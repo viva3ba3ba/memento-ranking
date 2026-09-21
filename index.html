@@ -57,7 +57,7 @@
       .zoomGallery img{display:block;width:auto;max-width:100%;height:auto;margin:auto;border-radius:8px}
       @media(max-width:700px){.knowledgeBranches{grid-template-columns:1fr;padding:12px}.knowledgeBranches .branch{min-height:74px}.knowledgeHead{padding:10px 12px}.knowledgeHead h2{font-size:18px}.knowledgePage .content{padding:12px}.evidenceGrid{grid-template-columns:1fr}.firstKnowledgeImage{width:min(78vw,280px)}.knowledgeEntry{padding:12px}.knowledgeEntry p,.knowledgeEntry li,.knowledgePage .term span{font-size:16px}}
     </style>
-    <link rel="stylesheet" href="knowledge.css?v=90" />
+    <link rel="stylesheet" href="knowledge.css?v=91" />
     <link rel="stylesheet" href="territory-points.css?v=88" />
     <script src="site-auth.js?v=51" defer></script>
   </head>
@@ -545,6 +545,7 @@
       <div class="knowledgeBranches">
         <a class="branch" href="#knowledgeBasic">ギルバト知識</a>
         <a class="branch" href="#knowledgeIntermediate">ギルバト知識中級編</a>
+        <a class="branch" href="#knowledgeOffense">ギルバト進攻</a>
         <a class="branch" href="#knowledgeShop"
           >ショップアイテムの交換及び購入について</a
         >
@@ -887,6 +888,180 @@
     </section>
     <section class="knowledgePage imageViewer" id="intermediateBadImages"><header class="knowledgeHead"><h2>悪い当て方</h2><a class="knowledgeAction knowledgeClose" href="#knowledgeIntermediate">戻る</a></header><div class="knowledgeImage intermediateViewer"><img src="knowledge-assets/intermediate/IMG_3059.png" alt="悪い当て方1"><img src="knowledge-assets/intermediate/IMG_3060.png" alt="悪い当て方2"><img src="knowledge-assets/intermediate/IMG_3061.png" alt="悪い当て方3"><img src="knowledge-assets/intermediate/IMG_3062.png" alt="悪い当て方4"></div></section>
     <section class="knowledgePage imageViewer" id="intermediateGoodImages"><header class="knowledgeHead"><h2>良い当て方</h2><a class="knowledgeAction knowledgeClose" href="#knowledgeIntermediate">戻る</a></header><div class="knowledgeImage intermediateViewer"><img src="knowledge-assets/intermediate/IMG_3063.png" alt="良い当て方1"><img src="knowledge-assets/intermediate/IMG_3064.png" alt="良い当て方2"></div></section>
+    <section class="knowledgePage" id="knowledgeOffense">
+      <header class="knowledgeHead">
+        <h2>ギルバト進攻</h2>
+        <a class="knowledgeAction knowledgeClose" href="#top">閉じる</a>
+      </header>
+      <div class="content">
+        <a class="knowledgeAction knowledgeBack" href="#knowledgeMenu">← 知識の泉へ戻る</a>
+        <div class="knowledgeList">
+          <article class="knowledgeEntry">
+            <h3>ギルドバトル</h3>
+            <h3>[1] 過剰戦力</h3>
+            <p>「過剰戦力」という言葉を多く使用するので、確認のために先に説明します。</p>
+            <p class="knowledgeWarning"><b>※今回は「戦力」とは戦闘力ではなく、その編成が倒せるメインの戦闘力として説明します。</b></p>
+            <div class="placementExample"><b>戦闘力</b><span>目に見える数値</span></div>
+            <div class="placementExample"><b>戦力</b><span>実際に勝てる戦闘力の数値</span></div>
+            <h4>例</h4>
+            <p>戦闘力1.5億のサブ編成が、直当てで1億までしか倒せない場合、戦力は1億で計算します。</p>
+            <p>本内容では、目に見える戦闘力の方が分かりやすいため、戦闘力での計算を使用しています。</p>
+
+            <h4>①過剰戦力とは？</h4>
+            <p>過剰戦力とは、主に進攻時に多く使用する言葉です。</p>
+            <p>過剰戦力が起こりやすい例（これらに含まれないケースもあります）</p>
+            <ul>
+              <li>相手の残り編成を見ていない。</li>
+              <li>防衛側にデバフが40など入っている状態で、同戦力の編成を入れる。<br>例：防衛1億編成（メイン）40KOに、進攻1億メイン。</li>
+              <li>進攻側の編成が同戦力の編成を倒せる編成であり、防衛との戦力差が1.5倍以上（ギルドによっては2倍以上）。</li>
+            </ul>
+            <p>このように、さまざまなケースで起こります。</p>
+            <p><b>（過剰戦力　下記写真）</b></p>
+            <div class="intermediateImageGrid offenseImageStack">
+              <a href="#offenseOverkillImages"><img src="knowledge-assets/offense/overkill-1.png" alt="過剰戦力の例1"></a>
+              <a href="#offenseOverkillImages"><img src="knowledge-assets/offense/overkill-2.png" alt="過剰戦力の例2"></a>
+            </div>
+
+            <h4>②何故過剰戦力は駄目なのか？</h4>
+            <p><b>例：上記写真参照</b></p>
+            <div class="placementExample"><b>進攻1.9億</b><span>vs 防衛0.9億</span></div>
+            <div class="placementExample"><b>進攻2.6億</b><span>vs 防衛1億</span></div>
+            <ul>
+              <li>進攻合計：4.5億</li>
+              <li>防衛合計：1.9億</li>
+              <li>合計差：2.6億</li>
+            </ul>
+            <p>2つの戦闘だけで2.6億の差が生まれています。</p>
+            <p>これが5回あれば、13億の過剰が発生します。これが過剰戦力が駄目な理由です。</p>
+
+            <h4>③過剰戦力例</h4>
+            <p><b>（2つの編成の進攻結果）</b></p>
+            <div class="intermediateImageGrid offenseImageStack">
+              <a href="#offenseResultImages"><img src="knowledge-assets/offense/overkill-1.png" alt="2つの編成の進攻結果1"></a>
+              <a href="#offenseResultImages"><img src="knowledge-assets/offense/overkill-3.png" alt="2つの編成の進攻結果2"></a>
+            </div>
+            <p>左の編成は一度4000万のメインに当たっていますが、ほかはデバフのみ、右の編成はデバフのみで止められています。</p>
+            <p>この場合、2つの進攻編成は、防衛編成と同ステの編成が進攻してきた時と変わらない貢献しかしていません。</p>
+            <ul>
+              <li>写真左：9000万の貢献</li>
+              <li>写真右：1億の貢献</li>
+            </ul>
+            <p>この差が戦力過剰分になります。</p>
+
+            <h4>④戦力過剰が推奨されるケース</h4>
+            <ul>
+              <li>進攻時に時間がなく、編成に余裕がある時。</li>
+              <li>相手の5体編成が複数固まっており、多く撃ち抜ける時。</li>
+              <li>相手に止める戦力がない時。</li>
+            </ul>
+            <p>こういったケースでは、逆に過剰戦力が推奨されます。</p>
+          </article>
+
+          <article class="knowledgeEntry">
+            <h3>[2] 進攻</h3>
+            <h4>①削り</h4>
+            <p>拠点を落とさないように進攻を行います。</p>
+            <p>相手の防衛編成がすべて見えている状態なので、過剰戦力は基本的にNGです。</p>
+            <p class="knowledgeWarning"><b>※相手のランカー編成が連なっている際など、状況によっては過剰戦力が有効な時があります。</b></p>
+
+            <h4>②攻撃時の編成の入れ方</h4>
+            <p>自ギルドが進攻を行っている際、次に止まる防衛編成を見て入れます。</p>
+            <p><b>例</b></p>
+            <div class="intermediateImageGrid offenseImageStack">
+              <a href="#offenseOrderImages"><img src="knowledge-assets/offense/offense-order-1.jpg" alt="攻撃時の編成の入れ方1"></a>
+              <a href="#offenseOrderImages"><img src="knowledge-assets/offense/offense-order-2.jpg" alt="攻撃時の編成の入れ方2"></a>
+            </div>
+            <p>1番目のもこもこさんを抜いた後に、どてちゃんで止まると想定します。</p>
+            <p>この際、次に止まる編成が分かっているので、次に入れる人は、どてちゃんの編成を抜く編成を進攻に入れて用意します。</p>
+            <p>移動で止められる編成が変わった場合は、その編成に合わせて次の編成を撃ちます。</p>
+            <p class="intermediateConclusion">進攻側は後出しジャンケンを繰り返すことが、最速かつ最も効率良く進攻を行う方法です。</p>
+
+            <h4>③編成を置く側に必要な知識</h4>
+            <ul>
+              <li>進攻のデバフ。</li>
+              <li>自分の編成の戦力。</li>
+              <li>相性などの編成知識。</li>
+            </ul>
+            <p>今後、進攻側は基本的に移動を行えないケースが増えます。そのため、最低限20・40・60・80・100デバフを当てた時、相手の戦力がどれくらい落ちるかを覚えておくと良いです。</p>
+            <p>デバフによる減少量が分からないと、自分の編成の強度が分かっていても意味のないものになり、無駄なデバフが増えてしまいます。</p>
+            <p><b>例：</b>本来40デバフで良いところを分かっていないと、60や80入れてしまう。</p>
+
+            <h4>④進攻が下手なギルドの特徴</h4>
+            <h4>編成を置く側の知識不足</h4>
+            <p>防衛との一番の違いがここです。</p>
+            <p>防衛は、編成知識がある人が移動を行い、適正なデバフで落とす動きを専属で行うことが主なので、適当に入れてしまっても上手く使ってくれる環境です。</p>
+            <p>進攻は編成が貯まらないため、編成を置く側に知識がないと無駄が圧倒的に増えます。</p>
+            <p>進攻は防衛と違い、1秒間にスタミナを5消費します。進攻が下手なギルドほど、自分で自分の首を絞める形になります。</p>
+
+            <h4>自分の編成を守ろうとしない</h4>
+            <p>メインが被ってしまった際、次の防衛編成で前の編成と次の自分の編成が負けると分かっていても、何もしようとしない人が多いと苦しくなります。</p>
+            <p>では、どうすれば良いのか？ 被って入れてしまった際は、基本的に<b>後に入れた人がデバフを入れて調整を行います。</b></p>
+            <p><b>例</b></p>
+            <ul>
+              <li>進攻1番目：1億。</li>
+              <li>進攻2番目：1億。</li>
+              <li>防衛10番目：2億。</li>
+            </ul>
+            <p>2億の編成に2つとも負けるとします。この場合、2番目の人がデバフを入れるようにしてください。</p>
+            <p>この状態の時にデバフを入れてくれる人はほぼいないため、自分で守ってください。ただし、編成の多いランカーはデバフが圧倒的に少ないので、全員でフォローしましょう。</p>
+
+            <h4>進攻時の編成のキープ数</h4>
+            <p>進攻側には後出しジャンケンの権利が基本的にあるので、よほど時間が迫っていない限り、積みすぎないことが鉄則です。</p>
+            <p>基本的に2〜3編成（進攻編成を含む）が理想です。止まりそうな編成を見てデバフを入れることを繰り返すため、デバフ込みでも多くて10前後にします。または、止まる編成が来た瞬間にデバフを当て、編成で即座に落とします。</p>
+            <p>これが基本的な進攻の仕方です。</p>
+
+            <h3>5. 進攻時に主力メインを入れるタイミング</h3>
+            <p class="knowledgeWarning"><b>※まず、これを頭に入れておいてください。</b></p>
+            <ul>
+              <li>序盤に主力を置くことは、相手がジャンケンのすべての手を出せる状態で挑むこと。</li>
+              <li>中盤・終盤は、相手がジャンケンの1つを出せない状態にして挑むこと。</li>
+            </ul>
+
+            <h4>①基本的な入れ方</h4>
+            <p><b>主力のメインは終盤に撃ちましょう。</b></p>
+            <p><b>序盤に主力メインを撃った場合（主力戦力2億メイン想定）</b></p>
+            <div class="placementExample"><b>先頭</b><span>1.5億メイン</span></div>
+            <div class="placementExample"><b>↓ 40KO</b><span>20番目：1億メイン（相性有利）</span></div>
+            <p><b>防衛側の指揮官</b></p>
+            <ul>
+              <li>相手はデバフも編成も余裕があるため、相性有利な編成で最少デバフで落とすことが可能。</li>
+              <li>デバフにも余裕があるため、保険で少し多めにデバフを入れて確実に落とす選択も可能。</li>
+            </ul>
+
+            <p><b>中盤・終盤の場合（主力戦力2億）</b></p>
+            <div class="placementExample"><b>先頭</b><span>2.5億（40KO）</span></div>
+            <div class="placementExample"><b>↓ 20KO</b><span>10番目：2億（メイン）</span></div>
+            <p><b>防衛側の指揮官</b></p>
+            <ul>
+              <li>中間層の相性有利で落とせる編成が出払っているため、主力メインでしか止めるのが困難。</li>
+              <li>デバフが残っておらず、多く当てすぎることができないため、戦力有利または相性有利で当てる必要がある。</li>
+              <li>相性不利な編成しかない場合、当てミスのリスクが大きいため、戦力有利でもデバフを多めに当てなければならない。</li>
+              <li>主力メインが被ったり、デバフの一括投入をされたりすると苦しくなり、選択ミスを誘発しやすくなる。</li>
+            </ul>
+
+            <h4>②主力を置いた時の違い</h4>
+            <p><b>防衛側視点：序盤</b></p>
+            <ul>
+              <li>中間層の有利な属性を当てて落とすことができる。</li>
+              <li>間違いなく落とせるデバフ数で当てることができる。</li>
+              <li>中間層の落とせる有利な編成を、後出しで入れることが可能。</li>
+            </ul>
+            <p><b>防衛側視点：中盤・終盤</b></p>
+            <ul>
+              <li>主力メインで止めるしかなくなる。</li>
+              <li>デバフが少ないため、リスクのあるデバフ数で止めに行くしかなくなる。</li>
+              <li>主力が属性不利しか残っていない場合は、デバフを多めに入れるしかなくなる。</li>
+              <li>当てミスが絶対に許されない。</li>
+              <li>デバフの一括投入やメイン被りなど、連携の乱れが起こる可能性がある。</li>
+            </ul>
+          </article>
+        </div>
+        <div class="knowledgeAuthor"><b>作成者：颯</b></div>
+      </div>
+    </section>
+    <section class="knowledgePage imageViewer" id="offenseOverkillImages"><header class="knowledgeHead"><h2>過剰戦力</h2><a class="knowledgeAction knowledgeClose" href="#knowledgeOffense">戻る</a></header><div class="knowledgeImage intermediateViewer"><img src="knowledge-assets/offense/overkill-1.png" alt="過剰戦力の例1"><img src="knowledge-assets/offense/overkill-2.png" alt="過剰戦力の例2"></div></section>
+    <section class="knowledgePage imageViewer" id="offenseResultImages"><header class="knowledgeHead"><h2>2つの編成の進攻結果</h2><a class="knowledgeAction knowledgeClose" href="#knowledgeOffense">戻る</a></header><div class="knowledgeImage intermediateViewer"><img src="knowledge-assets/offense/overkill-1.png" alt="2つの編成の進攻結果1"><img src="knowledge-assets/offense/overkill-3.png" alt="2つの編成の進攻結果2"></div></section>
+    <section class="knowledgePage imageViewer" id="offenseOrderImages"><header class="knowledgeHead"><h2>攻撃時の編成の入れ方</h2><a class="knowledgeAction knowledgeClose" href="#knowledgeOffense">戻る</a></header><div class="knowledgeImage intermediateViewer"><img src="knowledge-assets/offense/offense-order-1.jpg" alt="攻撃時の編成の入れ方1"><img src="knowledge-assets/offense/offense-order-2.jpg" alt="攻撃時の編成の入れ方2"></div></section>
     <section class="knowledgePage" id="knowledgeShop">
       <header class="knowledgeHead">
         <h2>ショップアイテムの交換及び購入について</h2>
