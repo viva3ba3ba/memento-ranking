@@ -24,7 +24,7 @@ body::before {
   height: 100lvh;
   z-index: -1;
   pointer-events: none;
-  background: #e9e1eb url("site-theme-bg-pc-rest.png?v=1") center / cover no-repeat;
+  background: #e9e1eb url("site-theme-bg-pc-rest.png?v=2") center / cover no-repeat;
 }
 dialog {
   background-color: transparent !important;
@@ -33,7 +33,7 @@ dialog {
 }
 @media (max-width: 760px) {
   body::before {
-    background-image: url("site-theme-bg-mobile-rest.png?v=1");
+    background-image: url("site-theme-bg-mobile-rest.png?v=2");
     background-position: center center;
     background-size: cover;
   }
@@ -470,7 +470,7 @@ body::before {
   height: 100lvh;
   pointer-events: none;
   background-color: #e9e1eb;
-  background-image: url("site-theme-bg-pc-rest.png?v=1");
+  background-image: url("site-theme-bg-pc-rest.png?v=2");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -481,7 +481,7 @@ dialog { background-color: transparent !important; background-image: none !impor
     width: 100vw;
     height: 100vh;
     height: 100lvh;
-    background-image: url("site-theme-bg-mobile-rest.png?v=1");
+    background-image: url("site-theme-bg-mobile-rest.png?v=2");
     background-position: center center;
   }
 }
@@ -503,7 +503,7 @@ html {
 body,
 dialog {
   background-color: #e9e1eb;
-  background-image: url("site-theme-bg-pc-rest.png?v=1");
+  background-image: url("site-theme-bg-pc-rest.png?v=2");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -619,13 +619,13 @@ dialog::backdrop {
     z-index: -1;
     pointer-events: none;
     background-color: #e9e1eb;
-    background-image: url("site-theme-bg-mobile-rest.png?v=1");
+    background-image: url("site-theme-bg-mobile-rest.png?v=2");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
   }
   dialog {
-    background-image: url("site-theme-bg-mobile-rest.png?v=1");
+    background-image: url("site-theme-bg-mobile-rest.png?v=2");
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
@@ -637,7 +637,7 @@ body { position: relative; isolation: isolate; background: transparent !importan
 body::before {
   content: ""; position: fixed; top: 0; left: 0; width: 100vw;
   height: 100vh; height: 100lvh; z-index: -1; pointer-events: none;
-  background: #e9e1eb url("site-theme-bg-pc-rest.png?v=1") center / cover no-repeat;
+  background: #e9e1eb url("site-theme-bg-pc-rest.png?v=2") center / cover no-repeat;
 }
 dialog {
   background-color: transparent !important;
@@ -645,7 +645,7 @@ dialog {
   background-attachment: initial !important;
 }
 @media (max-width: 760px) {
-  body::before { background-image: url("site-theme-bg-mobile-rest.png?v=1"); }
+  body::before { background-image: url("site-theme-bg-mobile-rest.png?v=2"); }
   dialog { background-image: none !important; }
 }
 
@@ -662,7 +662,7 @@ a[href], [role="button"], details > summary,
 /* v7.4.58: editor/management dialogs fully cover the list below. */
 dialog[open] {
   background-color: #e9e1eb !important;
-  background-image: url("site-theme-bg-pc-rest.png?v=1") !important;
+  background-image: url("site-theme-bg-pc-rest.png?v=2") !important;
   background-position: center center !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
@@ -671,7 +671,7 @@ dialog[open] {
 dialog::backdrop { background: #e9e1eb !important; }
 @media (max-width: 760px) {
   dialog[open] {
-    background-image: url("site-theme-bg-mobile-rest.png?v=1") !important;
+    background-image: url("site-theme-bg-mobile-rest.png?v=2") !important;
     background-position: center center !important;
   }
 }
