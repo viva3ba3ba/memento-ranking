@@ -479,6 +479,23 @@
 .intermediateViewer img { width:min(1400px,100%); }
 .placementExample { display:grid; gap:6px; margin:10px 0; padding:12px; border:2px solid rgba(72,56,92,.72); border-radius:10px; background:rgba(255,255,255,.62); }
 .placementExample span { font-weight:900; }
+.exchangeBoard { width:min(820px,100%); margin:0 auto; }
+.exchangeForm { display:grid; gap:14px; }
+.exchangeForm label { display:grid; gap:6px; color:#3a3142; font-weight:900; }
+.exchangeForm input,.exchangeForm textarea { box-sizing:border-box; width:100%; padding:11px 12px; border:1px solid rgba(72,56,92,.72); border-radius:9px; background:rgba(255,255,255,.86); color:#211c27; font:inherit; }
+.exchangeForm textarea { resize:vertical; min-height:120px; }
+.exchangeFormFoot { display:flex; align-items:center; justify-content:space-between; gap:12px; }
+.exchangeFormFoot button,.exchangeDelete { min-height:42px; padding:9px 14px; border:0; border-radius:9px; background:#2e7890; color:#fff; font-weight:900; cursor:pointer; }
+.exchangeFormFoot button:disabled { opacity:.6; cursor:wait; }
+.exchangeStatus { margin:18px 0 10px!important; font-weight:900; }
+.exchangeComments { display:grid; gap:12px; }
+.exchangeComment { padding:13px; border:1px solid rgba(72,56,92,.65); border-radius:10px; background:rgba(255,255,255,.66); }
+.exchangeCommentHead { display:flex; align-items:center; justify-content:space-between; gap:12px; color:#3a3142; }
+.exchangeCommentHead time { color:#665d6d; font-size:13px; }
+.exchangeComment p { overflow-wrap:anywhere; white-space:normal; color:#3a3142!important; }
+.exchangeDelete { min-height:34px; padding:6px 10px; background:#914348; font-size:13px; }
+.exchangeEmpty { text-align:center; font-weight:800; }
+@media(max-width:700px){.exchangeFormFoot,.exchangeCommentHead{align-items:stretch;flex-direction:column}.exchangeFormFoot button{width:100%}}
 @media (max-width:700px) {
   .intermediateImageGrid { grid-template-columns:1fr; }
   .matchupBlock { padding:10px; }
