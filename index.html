@@ -57,7 +57,7 @@
       .zoomGallery img{display:block;width:auto;max-width:100%;height:auto;margin:auto;border-radius:8px}
       @media(max-width:700px){.knowledgeBranches{grid-template-columns:1fr;padding:12px}.knowledgeBranches .branch{min-height:74px}.knowledgeHead{padding:10px 12px}.knowledgeHead h2{font-size:18px}.knowledgePage .content{padding:12px}.evidenceGrid{grid-template-columns:1fr}.firstKnowledgeImage{width:min(78vw,280px)}.knowledgeEntry{padding:12px}.knowledgeEntry p,.knowledgeEntry li,.knowledgePage .term span{font-size:16px}}
     </style>
-    <link rel="stylesheet" href="knowledge.css?v=91" />
+    <link rel="stylesheet" href="knowledge.css?v=92" />
     <link rel="stylesheet" href="territory-points.css?v=88" />
     <script src="site-auth.js?v=51" defer></script>
   </head>
@@ -1428,9 +1428,18 @@
       </header>
       <div class="content">
         <a class="knowledgeAction knowledgeBack" href="#knowledgeMenu">← 知識の泉へ戻る</a>
-        <div class="term">
-          <b>情報交換</b><span>ここに内容を掲載します。</span>
-        </div>
+        <article class="knowledgeEntry exchangeBoard">
+          <h3>みんなのコメント</h3>
+          <p>ギルド内で共有したい情報や質問を自由に投稿できます。</p>
+          <form id="exchangeForm" class="exchangeForm">
+            <label>プレイヤー名<input name="playerName" maxlength="30" autocomplete="nickname" required></label>
+            <label>コメント<textarea name="body" maxlength="500" rows="5" required></textarea></label>
+            <label>Valhalla共通パスワード<input name="guildPassword" type="password" autocomplete="current-password" required></label>
+            <div class="exchangeFormFoot"><small>500文字以内・連続投稿不可</small><button id="exchangeSubmit" type="submit">コメントを投稿</button></div>
+          </form>
+          <p id="exchangeStatus" class="exchangeStatus" aria-live="polite">コメントを読み込んでいます…</p>
+          <div id="exchangeComments" class="exchangeComments"></div>
+        </article>
       </div>
     </section>
     <section class="knowledgePage" id="knowledgeLinks">
@@ -1487,5 +1496,6 @@
     <script src="dashboard.js?v=68"></script>
     <script src="character-detail.js?v=67"></script>
     <script src="territory-points.js?v=88"></script>
+    <script src="exchange.js?v=1"></script>
   </body>
 </html>
