@@ -294,7 +294,7 @@
 /* v7.4.34 approved MementoMori glass theme */
 .knowledgePage {
   background-color: #e9e1eb;
-  background-image: url("site-theme-bg-pc-rest.png?v=2");
+  background-image: url("site-theme-bg.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -337,7 +337,7 @@
 }
 @media (max-width: 700px) {
   .knowledgePage {
-    background-image: url("site-theme-bg-mobile-rest.png?v=2");
+    background-image: url("site-theme-bg-mobile.png");
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
@@ -412,27 +412,10 @@
   backdrop-filter: none !important;
 }
 
-/* v7.4.71: expandable new-character information. */
-.newCharacterList { display:grid; gap:12px; }
-.newCharacterEmpty { margin:0; padding:18px; border:1px solid rgba(72,56,92,.78); border-radius:11px; background:rgba(255,255,255,.70); color:#3a3142; font-weight:800; text-align:center; }
-.newCharacterEntry { overflow:hidden; border:1px solid rgba(72,56,92,.78); border-radius:11px; background:rgba(255,255,255,.70); }
-.newCharacterEntry > summary { position:relative; padding:16px 48px 16px 16px; color:#2d2337; font-size:18px; font-weight:900; line-height:1.4; cursor:pointer; list-style:none; }
-.newCharacterEntry > summary::-webkit-details-marker { display:none; }
-.newCharacterEntry > summary::after { content:"＋"; position:absolute; top:50%; right:16px; transform:translateY(-50%); font-size:24px; }
-.newCharacterEntry[open] > summary::after { content:"−"; }
-.newCharacterDetail { display:grid; gap:10px; padding:0 14px 14px; }
-.newCharacterDetail p { margin:0; padding:12px; border:1px solid rgba(72,56,92,.55); border-radius:9px; background:rgba(255,255,255,.54); color:#3a3142; line-height:1.75; }
-.newCharacterDetail .newCharacterNote { border-left:5px solid #a45a28; background:rgba(255,238,214,.74); }
-.newCharacterDetail .newCharacterClosing { font-weight:900; text-align:right; }
-@media (max-width:700px) {
-  .newCharacterEntry > summary { padding:14px 44px 14px 13px; font-size:17px; }
-  .newCharacterDetail { padding:0 10px 10px; }
-}
-
 /* v7.4.58: knowledge/install pages fully cover the TOP page. */
 .knowledgePage:target {
   background-color: #e9e1eb !important;
-  background-image: url("site-theme-bg-pc-rest.png?v=2") !important;
+  background-image: url("site-theme-bg.png") !important;
   background-position: center center !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
@@ -440,7 +423,7 @@
 }
 @media (max-width: 760px) {
   .knowledgePage:target {
-    background-image: url("site-theme-bg-mobile-rest.png?v=2") !important;
+    background-image: url("site-theme-bg-mobile.png") !important;
     background-position: center center !important;
   }
 }
@@ -472,30 +455,12 @@
 .intermediateConclusion { padding:12px; border-left:5px solid #267f91; background:rgba(224,250,255,.70)!important; font-weight:900; }
 .intermediatePoints { padding-left:28px; }
 .intermediateImageGrid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; margin:12px 0; }
-.intermediateImageGrid.offenseImageStack { grid-template-columns:1fr; }
 .intermediateImageGrid a { display:flex; overflow:hidden; border:2px solid rgba(72,56,92,.78); border-radius:9px; background:rgba(255,255,255,.52); }
 .intermediateImageGrid img { width:100%; height:auto; border-radius:0; }
 .intermediateViewer { display:grid; gap:16px; padding:18px; }
 .intermediateViewer img { width:min(1400px,100%); }
 .placementExample { display:grid; gap:6px; margin:10px 0; padding:12px; border:2px solid rgba(72,56,92,.72); border-radius:10px; background:rgba(255,255,255,.62); }
 .placementExample span { font-weight:900; }
-.exchangeBoard { width:min(820px,100%); margin:0 auto; }
-.exchangeForm { display:grid; gap:14px; }
-.exchangeForm label { display:grid; gap:6px; color:#3a3142; font-weight:900; }
-.exchangeForm input,.exchangeForm textarea { box-sizing:border-box; width:100%; padding:11px 12px; border:1px solid rgba(72,56,92,.72); border-radius:9px; background:rgba(255,255,255,.86); color:#211c27; font:inherit; }
-.exchangeForm textarea { resize:vertical; min-height:120px; }
-.exchangeFormFoot { display:flex; align-items:center; justify-content:space-between; gap:12px; }
-.exchangeFormFoot button,.exchangeDelete { min-height:42px; padding:9px 14px; border:0; border-radius:9px; background:#2e7890; color:#fff; font-weight:900; cursor:pointer; }
-.exchangeFormFoot button:disabled { opacity:.6; cursor:wait; }
-.exchangeStatus { margin:18px 0 10px!important; font-weight:900; }
-.exchangeComments { display:grid; gap:12px; }
-.exchangeComment { padding:13px; border:1px solid rgba(72,56,92,.65); border-radius:10px; background:rgba(255,255,255,.66); }
-.exchangeCommentHead { display:flex; align-items:center; justify-content:space-between; gap:12px; color:#3a3142; }
-.exchangeCommentHead time { color:#665d6d; font-size:13px; }
-.exchangeComment p { overflow-wrap:anywhere; white-space:normal; color:#3a3142!important; }
-.exchangeDelete { min-height:34px; padding:6px 10px; background:#914348; font-size:13px; }
-.exchangeEmpty { text-align:center; font-weight:800; }
-@media(max-width:700px){.exchangeFormFoot,.exchangeCommentHead{align-items:stretch;flex-direction:column}.exchangeFormFoot button{width:100%}}
 @media (max-width:700px) {
   .intermediateImageGrid { grid-template-columns:1fr; }
   .matchupBlock { padding:10px; }
