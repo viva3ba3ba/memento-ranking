@@ -1,7 +1,7 @@
 {
   "data": {
     "Hit": 100,
-    "Player": 18371,
+    "Player": 18373,
     "PlayerData": [
       {
         "BackgroundId": 97,
@@ -49,7 +49,7 @@
       },
       {
         "BackgroundId": 60,
-        "BattlePower": 413749234,
+        "BattlePower": 413767646,
         "DeckCharacterInfoList": [
           {
             "CharacterId": 151,
@@ -82,7 +82,7 @@
             "RarityName": "LR5"
           }
         ],
-        "GuildName": "POLARIS",
+        "GuildName": "꒰ঌ天上の舞姫໒꒱",
         "GuildPositionType": 2,
         "IconEffectId": 0,
         "IconId": 60,
@@ -258,7 +258,7 @@
             "RarityName": "SR+"
           }
         ],
-        "GuildName": "青の茶柱",
+        "GuildName": "マルハン 179鯖店",
         "GuildPositionType": 2,
         "IconEffectId": 0,
         "IconId": 93,
@@ -302,7 +302,7 @@
             "RarityName": "LR"
           }
         ],
-        "GuildName": "青の茶柱",
+        "GuildName": "マルハン 179鯖店",
         "GuildPositionType": 2,
         "IconEffectId": 0,
         "IconId": 96,
@@ -357,7 +357,7 @@
       },
       {
         "BackgroundId": 21,
-        "BattlePower": 258826558,
+        "BattlePower": 258841928,
         "DeckCharacterInfoList": [
           {
             "CharacterId": 6,
@@ -445,7 +445,7 @@
       },
       {
         "BackgroundId": 113,
-        "BattlePower": 241671973,
+        "BattlePower": 241729958,
         "DeckCharacterInfoList": [
           {
             "CharacterId": 86,
@@ -478,7 +478,7 @@
             "RarityName": "LR"
           }
         ],
-        "GuildName": "青の茶柱",
+        "GuildName": "マルハン 179鯖店",
         "GuildPositionType": 2,
         "IconEffectId": 0,
         "IconId": 113,
@@ -664,7 +664,7 @@
       },
       {
         "BackgroundId": 88,
-        "BattlePower": 233586288,
+        "BattlePower": 233611551,
         "DeckCharacterInfoList": [
           {
             "CharacterId": 101,
@@ -882,15 +882,53 @@
         "isIconSP": false
       },
       {
-        "BackgroundId": 123,
-        "BattlePower": 191328819,
+        "BackgroundId": 8,
+        "BattlePower": 192266366,
         "DeckCharacterInfoList": [
           {
-            "CharacterId": 97,
-            "Level": 318,
+            "CharacterId": 8,
+            "Level": 331,
+            "RarityFlags": 16384,
+            "RarityName": "LR5"
+          },
+          {
+            "CharacterId": 26,
+            "Level": 331,
+            "RarityFlags": 16384,
+            "RarityName": "LR5"
+          },
+          {
+            "CharacterId": 27,
+            "Level": 331,
+            "RarityFlags": 16384,
+            "RarityName": "LR5"
+          },
+          {
+            "CharacterId": 150,
+            "Level": 331,
             "RarityFlags": 512,
             "RarityName": "LR"
           },
+          {
+            "CharacterId": 124,
+            "Level": 331,
+            "RarityFlags": 32,
+            "RarityName": "SSR"
+          }
+        ],
+        "GuildName": "マルハン 179鯖店",
+        "GuildPositionType": 2,
+        "IconEffectId": 0,
+        "IconId": 8,
+        "LegendLeagueClass": 0,
+        "PlayerId": 543823570179,
+        "PlayerName": "こおひい",
+        "isIconSP": false
+      },
+      {
+        "BackgroundId": 123,
+        "BattlePower": 191685115,
+        "DeckCharacterInfoList": [
           {
             "CharacterId": 101,
             "Level": 318,
@@ -898,10 +936,10 @@
             "RarityName": "LR"
           },
           {
-            "CharacterId": 149,
+            "CharacterId": 123,
             "Level": 318,
-            "RarityFlags": 16384,
-            "RarityName": "LR5"
+            "RarityFlags": 512,
+            "RarityName": "LR"
           },
           {
             "CharacterId": 52,
@@ -910,7 +948,13 @@
             "RarityName": "SR"
           },
           {
-            "CharacterId": 123,
+            "CharacterId": 149,
+            "Level": 318,
+            "RarityFlags": 16384,
+            "RarityName": "LR5"
+          },
+          {
+            "CharacterId": 97,
             "Level": 318,
             "RarityFlags": 512,
             "RarityName": "LR"
@@ -966,52 +1010,8 @@
         "isIconSP": false
       },
       {
-        "BackgroundId": 8,
-        "BattlePower": 190934768,
-        "DeckCharacterInfoList": [
-          {
-            "CharacterId": 8,
-            "Level": 331,
-            "RarityFlags": 16384,
-            "RarityName": "LR5"
-          },
-          {
-            "CharacterId": 26,
-            "Level": 331,
-            "RarityFlags": 16384,
-            "RarityName": "LR5"
-          },
-          {
-            "CharacterId": 27,
-            "Level": 331,
-            "RarityFlags": 16384,
-            "RarityName": "LR5"
-          },
-          {
-            "CharacterId": 61,
-            "Level": 331,
-            "RarityFlags": 32,
-            "RarityName": "SSR"
-          },
-          {
-            "CharacterId": 39,
-            "Level": 331,
-            "RarityFlags": 512,
-            "RarityName": "LR"
-          }
-        ],
-        "GuildName": "青の茶柱",
-        "GuildPositionType": 2,
-        "IconEffectId": 0,
-        "IconId": 8,
-        "LegendLeagueClass": 0,
-        "PlayerId": 543823570179,
-        "PlayerName": "こおひい",
-        "isIconSP": false
-      },
-      {
         "BackgroundId": 27,
-        "BattlePower": 189812683,
+        "BattlePower": 189815518,
         "DeckCharacterInfoList": [
           {
             "CharacterId": 8,
@@ -1243,7 +1243,7 @@
       },
       {
         "BackgroundId": 49,
-        "BattlePower": 170945092,
+        "BattlePower": 170948822,
         "DeckCharacterInfoList": [
           {
             "CharacterId": 26,
@@ -1364,7 +1364,7 @@
             "RarityName": "R"
           }
         ],
-        "GuildName": "青の茶柱",
+        "GuildName": "マルハン 179鯖店",
         "GuildPositionType": 1,
         "IconEffectId": 0,
         "IconId": 140,
@@ -1660,7 +1660,7 @@
             "RarityName": "LR"
           }
         ],
-        "GuildName": "青の茶柱",
+        "GuildName": "マルハン 179鯖店",
         "GuildPositionType": 2,
         "IconEffectId": 0,
         "IconId": 17,
@@ -1712,7 +1712,7 @@
             "RarityName": "UR"
           }
         ],
-        "GuildName": "青の茶柱",
+        "GuildName": "マルハン 179鯖店",
         "GuildPositionType": 2,
         "IconEffectId": 0,
         "IconId": 96,
@@ -1875,7 +1875,7 @@
       },
       {
         "BackgroundId": 27,
-        "BattlePower": 135494589,
+        "BattlePower": 136667811,
         "DeckCharacterInfoList": [
           {
             "CharacterId": 28,
@@ -1902,10 +1902,10 @@
             "RarityName": "LR"
           },
           {
-            "CharacterId": 111,
+            "CharacterId": 39,
             "Level": 300,
-            "RarityFlags": 64,
-            "RarityName": "SSR+"
+            "RarityFlags": 1024,
+            "RarityName": "LR1"
           }
         ],
         "GuildName": "❀眠れる桜もち❀",
@@ -1919,7 +1919,7 @@
       },
       {
         "BackgroundId": 149,
-        "BattlePower": 135464667,
+        "BattlePower": 135469684,
         "DeckCharacterInfoList": [
           {
             "CharacterId": 153,
@@ -1952,7 +1952,7 @@
             "RarityName": "LR4"
           }
         ],
-        "GuildName": "青の茶柱",
+        "GuildName": "マルハン 179鯖店",
         "GuildPositionType": 2,
         "IconEffectId": 0,
         "IconId": 149,
@@ -1963,7 +1963,7 @@
       },
       {
         "BackgroundId": 3,
-        "BattlePower": 134658130,
+        "BattlePower": 134151683,
         "DeckCharacterInfoList": [
           {
             "CharacterId": 153,
@@ -2092,7 +2092,7 @@
             "RarityName": "UR"
           }
         ],
-        "GuildName": "青の茶柱",
+        "GuildName": "マルハン",
         "GuildPositionType": 5,
         "IconEffectId": 0,
         "IconId": 92,
@@ -2304,50 +2304,6 @@
         "isIconSP": false
       },
       {
-        "BackgroundId": 79,
-        "BattlePower": 127412302,
-        "DeckCharacterInfoList": [
-          {
-            "CharacterId": 8,
-            "Level": 290,
-            "RarityFlags": 8192,
-            "RarityName": "LR4"
-          },
-          {
-            "CharacterId": 26,
-            "Level": 290,
-            "RarityFlags": 1024,
-            "RarityName": "LR1"
-          },
-          {
-            "CharacterId": 27,
-            "Level": 290,
-            "RarityFlags": 8192,
-            "RarityName": "LR4"
-          },
-          {
-            "CharacterId": 28,
-            "Level": 290,
-            "RarityFlags": 4096,
-            "RarityName": "LR3"
-          },
-          {
-            "CharacterId": 39,
-            "Level": 290,
-            "RarityFlags": 512,
-            "RarityName": "LR"
-          }
-        ],
-        "GuildName": "青の茶柱",
-        "GuildPositionType": 2,
-        "IconEffectId": 0,
-        "IconId": 28,
-        "LegendLeagueClass": 0,
-        "PlayerId": 283150192179,
-        "PlayerName": "さかなぎ",
-        "isIconSP": false
-      },
-      {
         "BackgroundId": 109,
         "BattlePower": 123911071,
         "DeckCharacterInfoList": [
@@ -2437,7 +2393,7 @@
       },
       {
         "BackgroundId": 66,
-        "BattlePower": 123339425,
+        "BattlePower": 123355913,
         "DeckCharacterInfoList": [
           {
             "CharacterId": 115,
@@ -2796,50 +2752,6 @@
         "isIconSP": false
       },
       {
-        "BackgroundId": 41,
-        "BattlePower": 120835200,
-        "DeckCharacterInfoList": [
-          {
-            "CharacterId": 39,
-            "Level": 303,
-            "RarityFlags": 1024,
-            "RarityName": "LR1"
-          },
-          {
-            "CharacterId": 8,
-            "Level": 303,
-            "RarityFlags": 16384,
-            "RarityName": "LR5"
-          },
-          {
-            "CharacterId": 26,
-            "Level": 303,
-            "RarityFlags": 512,
-            "RarityName": "LR"
-          },
-          {
-            "CharacterId": 101,
-            "Level": 303,
-            "RarityFlags": 8,
-            "RarityName": "SR"
-          },
-          {
-            "CharacterId": 97,
-            "Level": 303,
-            "RarityFlags": 8,
-            "RarityName": "SR"
-          }
-        ],
-        "GuildName": "꒰ঌ天上の舞姫໒꒱",
-        "GuildPositionType": 2,
-        "IconEffectId": 0,
-        "IconId": 41,
-        "LegendLeagueClass": 0,
-        "PlayerId": 623996208179,
-        "PlayerName": "怒夢",
-        "isIconSP": false
-      },
-      {
         "BackgroundId": 123,
         "BattlePower": 120689519,
         "DeckCharacterInfoList": [
@@ -3104,8 +3016,52 @@
         "isIconSP": false
       },
       {
+        "BackgroundId": 41,
+        "BattlePower": 117027248,
+        "DeckCharacterInfoList": [
+          {
+            "CharacterId": 128,
+            "Level": 303,
+            "RarityFlags": 8,
+            "RarityName": "SR"
+          },
+          {
+            "CharacterId": 8,
+            "Level": 303,
+            "RarityFlags": 16384,
+            "RarityName": "LR5"
+          },
+          {
+            "CharacterId": 101,
+            "Level": 303,
+            "RarityFlags": 8,
+            "RarityName": "SR"
+          },
+          {
+            "CharacterId": 151,
+            "Level": 303,
+            "RarityFlags": 8,
+            "RarityName": "SR"
+          },
+          {
+            "CharacterId": 117,
+            "Level": 303,
+            "RarityFlags": 8,
+            "RarityName": "SR"
+          }
+        ],
+        "GuildName": "꒰ঌ天上の舞姫໒꒱",
+        "GuildPositionType": 2,
+        "IconEffectId": 0,
+        "IconId": 41,
+        "LegendLeagueClass": 0,
+        "PlayerId": 623996208179,
+        "PlayerName": "怒夢",
+        "isIconSP": false
+      },
+      {
         "BackgroundId": 44,
-        "BattlePower": 116718562,
+        "BattlePower": 116819904,
         "DeckCharacterInfoList": [
           {
             "CharacterId": 44,
@@ -3138,7 +3094,7 @@
             "RarityName": "UR"
           }
         ],
-        "GuildName": "青の茶柱",
+        "GuildName": "マルハン 179鯖店",
         "GuildPositionType": 2,
         "IconEffectId": 0,
         "IconId": 151,
@@ -3189,6 +3145,50 @@
         "LegendLeagueClass": 0,
         "PlayerId": 890664295179,
         "PlayerName": "フローラのしもべ",
+        "isIconSP": false
+      },
+      {
+        "BackgroundId": 113,
+        "BattlePower": 116320931,
+        "DeckCharacterInfoList": [
+          {
+            "CharacterId": 8,
+            "Level": 285,
+            "RarityFlags": 2048,
+            "RarityName": "LR2"
+          },
+          {
+            "CharacterId": 27,
+            "Level": 285,
+            "RarityFlags": 1024,
+            "RarityName": "LR1"
+          },
+          {
+            "CharacterId": 78,
+            "Level": 285,
+            "RarityFlags": 512,
+            "RarityName": "LR"
+          },
+          {
+            "CharacterId": 113,
+            "Level": 285,
+            "RarityFlags": 512,
+            "RarityName": "LR"
+          },
+          {
+            "CharacterId": 37,
+            "Level": 285,
+            "RarityFlags": 512,
+            "RarityName": "LR"
+          }
+        ],
+        "GuildName": "꒰ঌ天上の舞姫໒꒱",
+        "GuildPositionType": 2,
+        "IconEffectId": 0,
+        "IconId": 115,
+        "LegendLeagueClass": 0,
+        "PlayerId": 398277192179,
+        "PlayerName": "yani",
         "isIconSP": false
       },
       {
@@ -3368,50 +3368,6 @@
         "isIconSP": false
       },
       {
-        "BackgroundId": 113,
-        "BattlePower": 112566688,
-        "DeckCharacterInfoList": [
-          {
-            "CharacterId": 8,
-            "Level": 280,
-            "RarityFlags": 2048,
-            "RarityName": "LR2"
-          },
-          {
-            "CharacterId": 27,
-            "Level": 280,
-            "RarityFlags": 1024,
-            "RarityName": "LR1"
-          },
-          {
-            "CharacterId": 78,
-            "Level": 280,
-            "RarityFlags": 512,
-            "RarityName": "LR"
-          },
-          {
-            "CharacterId": 113,
-            "Level": 280,
-            "RarityFlags": 512,
-            "RarityName": "LR"
-          },
-          {
-            "CharacterId": 37,
-            "Level": 280,
-            "RarityFlags": 512,
-            "RarityName": "LR"
-          }
-        ],
-        "GuildName": "꒰ঌ天上の舞姫໒꒱",
-        "GuildPositionType": 2,
-        "IconEffectId": 0,
-        "IconId": 115,
-        "LegendLeagueClass": 0,
-        "PlayerId": 398277192179,
-        "PlayerName": "yani",
-        "isIconSP": false
-      },
-      {
         "BackgroundId": 16,
         "BattlePower": 112375953,
         "DeckCharacterInfoList": [
@@ -3501,7 +3457,7 @@
       },
       {
         "BackgroundId": 153,
-        "BattlePower": 111584149,
+        "BattlePower": 111597073,
         "DeckCharacterInfoList": [
           {
             "CharacterId": 8,
@@ -3541,32 +3497,6 @@
         "LegendLeagueClass": 0,
         "PlayerId": 148178920179,
         "PlayerName": "ʚのありちんらいすɞ",
-        "isIconSP": false
-      },
-      {
-        "BackgroundId": 103,
-        "BattlePower": 109994917,
-        "DeckCharacterInfoList": [
-          {
-            "CharacterId": 27,
-            "Level": 290,
-            "RarityFlags": 16384,
-            "RarityName": "LR5"
-          },
-          {
-            "CharacterId": 153,
-            "Level": 290,
-            "RarityFlags": 512,
-            "RarityName": "LR"
-          }
-        ],
-        "GuildName": "POLARIS",
-        "GuildPositionType": 2,
-        "IconEffectId": 0,
-        "IconId": 56,
-        "LegendLeagueClass": 0,
-        "PlayerId": 716580656179,
-        "PlayerName": "珠翠",
         "isIconSP": false
       },
       {
@@ -3790,6 +3720,32 @@
         "isIconSP": false
       },
       {
+        "BackgroundId": 103,
+        "BattlePower": 106302365,
+        "DeckCharacterInfoList": [
+          {
+            "CharacterId": 27,
+            "Level": 290,
+            "RarityFlags": 16384,
+            "RarityName": "LR5"
+          },
+          {
+            "CharacterId": 153,
+            "Level": 290,
+            "RarityFlags": 512,
+            "RarityName": "LR"
+          }
+        ],
+        "GuildName": "POLARIS",
+        "GuildPositionType": 2,
+        "IconEffectId": 0,
+        "IconId": 56,
+        "LegendLeagueClass": 0,
+        "PlayerId": 716580656179,
+        "PlayerName": "珠翠",
+        "isIconSP": false
+      },
+      {
         "BackgroundId": 111,
         "BattlePower": 105950273,
         "DeckCharacterInfoList": [
@@ -3835,7 +3791,7 @@
       },
       {
         "BackgroundId": 111,
-        "BattlePower": 105727651,
+        "BattlePower": 105730651,
         "DeckCharacterInfoList": [
           {
             "CharacterId": 27,
@@ -3999,7 +3955,7 @@
             "RarityName": "LR"
           }
         ],
-        "GuildName": "青の茶柱",
+        "GuildName": "マルハン 179鯖店",
         "GuildPositionType": 2,
         "IconEffectId": 0,
         "IconId": 130,
@@ -4050,6 +4006,50 @@
         "LegendLeagueClass": 0,
         "PlayerId": 848191680179,
         "PlayerName": "くろたまねぎ",
+        "isIconSP": false
+      },
+      {
+        "BackgroundId": 100,
+        "BattlePower": 104764430,
+        "DeckCharacterInfoList": [
+          {
+            "CharacterId": 100,
+            "Level": 275,
+            "RarityFlags": 256,
+            "RarityName": "UR+"
+          },
+          {
+            "CharacterId": 113,
+            "Level": 275,
+            "RarityFlags": 512,
+            "RarityName": "LR"
+          },
+          {
+            "CharacterId": 90,
+            "Level": 275,
+            "RarityFlags": 512,
+            "RarityName": "LR"
+          },
+          {
+            "CharacterId": 39,
+            "Level": 275,
+            "RarityFlags": 256,
+            "RarityName": "UR+"
+          },
+          {
+            "CharacterId": 109,
+            "Level": 275,
+            "RarityFlags": 8,
+            "RarityName": "SR"
+          }
+        ],
+        "GuildName": "꒰ঌ天上の舞姫໒꒱",
+        "GuildPositionType": 2,
+        "IconEffectId": 0,
+        "IconId": 90,
+        "LegendLeagueClass": 0,
+        "PlayerId": 124919351179,
+        "PlayerName": "少年ブレイヴ",
         "isIconSP": false
       }
     ],
