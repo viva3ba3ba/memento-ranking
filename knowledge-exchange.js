@@ -6,6 +6,7 @@
   const status = document.getElementById("exchangeStatus");
   const submit = document.getElementById("exchangeSubmit");
   const reload = document.getElementById("exchangeReload");
+  const PASSWORD_KEY = "valhalla-ranking-password";
   let api = "";
 
   const escapeHtml = value => String(value ?? "").replace(/[&<>"']/g, char => ({
@@ -63,11 +64,15 @@
     const body = {
       action: "exchangePost",
       name: String(data.get("name") || "").trim(),
-      message: String(data.get("message") || "").trim()
+      message: String(data.get("message") || "").trim(),
+      guildPassword: sessionStorage.getItem(PASSWORD_KEY) || ""
     };
     submit.disabled = true;
     status.textContent = "投稿中…";
     try {
+      if (!body.guildPassword && location.protocol !== "chrome-extension:") {
+        throw Error("ログイン情報を更新するため、アプリを一度閉じてから開き直してください。");
+      }
       const endpoint = await resolveApi();
       const result = await fetch(endpoint, {
         method: "POST",
