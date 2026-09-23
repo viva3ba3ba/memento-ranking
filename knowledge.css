@@ -423,6 +423,60 @@
 .newCharacterDetail { display:grid; gap:10px; padding:0 14px 14px; }
 .newCharacterDetail p { margin:0; padding:12px; border:1px solid rgba(72,56,92,.55); border-radius:9px; background:rgba(255,255,255,.54); color:#3a3142; line-height:1.75; }
 .newCharacterDetail .newCharacterNote { border-left:5px solid #a45a28; background:rgba(255,238,214,.74); }
+
+/* Shared information-exchange comments. */
+.exchangeForm,
+.exchangeComment,
+.exchangeEmpty {
+  border: 1px solid rgba(72, 56, 92, 0.78);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.70);
+}
+.exchangeForm {
+  position: relative;
+  z-index: 3;
+  display: grid;
+  gap: 14px;
+  margin: 16px 0;
+  padding: 16px;
+  pointer-events: auto;
+}
+.exchangeForm h3 { margin: 0; }
+.exchangeForm label { display: grid; gap: 7px; color: #17131a; font-weight: 900; }
+.exchangeForm input,
+.exchangeForm textarea {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 48px;
+  padding: 11px 12px;
+  border: 2px solid #554761;
+  border-radius: 9px;
+  color: #111;
+  font: 700 16px/1.55 system-ui, "Yu Gothic UI", sans-serif;
+  -webkit-text-stroke: 0 !important;
+  text-shadow: none !important;
+  pointer-events: auto !important;
+  touch-action: manipulation;
+  user-select: text;
+  -webkit-user-select: text;
+}
+.exchangeForm textarea { min-height: 130px; resize: vertical; }
+.exchangeFormActions { display: flex; flex-wrap: wrap; gap: 10px; }
+.exchangeFormActions button { min-height: 48px; padding: 11px 16px; border: 2px solid #554761; border-radius: 9px; color: #111; font-size: 16px; font-weight: 900; cursor: pointer; touch-action: manipulation; }
+.exchangeStatus { min-height: 1.5em; margin: 0; color: #7a1010; font-weight: 900; }
+.exchangeComments { display: grid; gap: 12px; padding-bottom: 28px; }
+.exchangeComment { padding: 14px; }
+.exchangeCommentHead { display: flex; justify-content: space-between; gap: 12px; margin-bottom: 8px; }
+.exchangeCommentName { color: #17131a; font-weight: 1000; }
+.exchangeCommentTime { color: #4b4350; font-size: 13px; font-weight: 700; }
+.exchangeCommentBody { margin: 0; color: #17131a; line-height: 1.75; white-space: pre-wrap; overflow-wrap: anywhere; -webkit-text-stroke: 0; text-shadow: none; }
+.exchangeEmpty { margin: 0; padding: 18px; color: #3a3142; font-weight: 800; text-align: center; }
+@media (max-width: 700px) {
+  .exchangeForm { margin: 12px 0; padding: 13px; }
+  .exchangeFormActions { display: grid; grid-template-columns: 1fr; }
+  .exchangeFormActions button { width: 100%; }
+  .exchangeCommentHead { display: grid; gap: 3px; }
+}
 .newCharacterDetail .newCharacterClosing { font-weight:900; text-align:right; }
 @media (max-width:700px) {
   .newCharacterEntry > summary { padding:14px 44px 14px 13px; font-size:17px; }
