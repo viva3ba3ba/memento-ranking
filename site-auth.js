@@ -1,6 +1,6 @@
 (()=>{
   if(location.protocol==="chrome-extension:")return;
-  const SESSION_KEY="valhalla-ranking-auth-v1";
+  const SESSION_KEY="valhalla-ranking-auth-v2";
   const isPcHistoryMode=()=>window.matchMedia(
     "(min-width: 761px) and (hover: hover) and (pointer: fine)"
   ).matches;
