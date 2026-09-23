@@ -8,6 +8,7 @@
   const reload = document.getElementById("exchangeReload");
   const PASSWORD_KEY = "valhalla-ranking-password";
   let api = "";
+  let capabilityPromise = null;
 
   const escapeHtml = value => String(value ?? "").replace(/[&<>"']/g, char => ({
     "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
@@ -33,6 +34,21 @@
     return api;
   }
 
+  async function requireExchangeApi() {
+    if (!capabilityPromise) capabilityPromise = (async () => {
+      const endpoint = await resolveApi();
+      const result = await fetch(`${endpoint}?action=health&t=${Date.now()}`, { cache: "no-store" }).then(response => response.json());
+      if (!result.ok || result.exchangeComments !== true || result.anonymousExchange !== true) {
+        throw Error("情報交換の保存先が旧版です。管理者が付属のgoogle-apps-script.gsへ更新し、新バージョンとして再デプロイしてください。");
+      }
+      return endpoint;
+    })().catch(error => {
+      capabilityPromise = null;
+      throw error;
+    });
+    return capabilityPromise;
+  }
+
   function render(items) {
     comments.innerHTML = items.length ? items.map(item => `
       <article class="exchangeComment">
@@ -45,7 +61,7 @@
     reload.disabled = true;
     status.textContent = "コメントを読み込んでいます…";
     try {
-      const endpoint = await resolveApi();
+      const endpoint = await requireExchangeApi();
       const result = await fetch(`${endpoint}?action=exchangeList&t=${Date.now()}`, { cache: "no-store" }).then(response => response.json());
       if (!result.ok) throw Error(result.error || "コメントを読み込めませんでした。");
       render(Array.isArray(result.comments) ? result.comments : []);
@@ -73,7 +89,7 @@
       if (!body.guildPassword && location.protocol !== "chrome-extension:") {
         throw Error("ログイン情報を更新するため、アプリを一度閉じてから開き直してください。");
       }
-      const endpoint = await resolveApi();
+      const endpoint = await requireExchangeApi();
       const result = await fetch(endpoint, {
         method: "POST",
         headers: { "Content-Type": "text/plain;charset=utf-8" },
