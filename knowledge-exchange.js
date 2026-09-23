@@ -6,9 +6,6 @@
   const status = document.getElementById("exchangeStatus");
   const submit = document.getElementById("exchangeSubmit");
   const reload = document.getElementById("exchangeReload");
-  const password = document.getElementById("exchangePassword");
-  const passwordLabel = document.getElementById("exchangePasswordLabel");
-  const PASSWORD_KEY = "valhalla-ranking-password";
   let api = "";
 
   const escapeHtml = value => String(value ?? "").replace(/[&<>"']/g, char => ({
@@ -60,20 +57,13 @@
     }
   }
 
-  const savedPassword = sessionStorage.getItem(PASSWORD_KEY) || "";
-  if (savedPassword) {
-    password.value = savedPassword;
-    passwordLabel.hidden = true;
-  }
-
   form.addEventListener("submit", async event => {
     event.preventDefault();
     const data = new FormData(form);
     const body = {
       action: "exchangePost",
       name: String(data.get("name") || "").trim(),
-      message: String(data.get("message") || "").trim(),
-      guildPassword: String(data.get("guildPassword") || savedPassword || "")
+      message: String(data.get("message") || "").trim()
     };
     submit.disabled = true;
     status.textContent = "投稿中…";
@@ -85,14 +75,11 @@
         body: JSON.stringify(body)
       }).then(response => response.json());
       if (!result.ok) throw Error(result.error || "投稿できませんでした。");
-      if (body.guildPassword) sessionStorage.setItem(PASSWORD_KEY, body.guildPassword);
       document.getElementById("exchangeMessage").value = "";
-      passwordLabel.hidden = true;
       status.textContent = "投稿しました。";
       await load();
     } catch (error) {
       status.textContent = error.message || "投稿できませんでした。";
-      passwordLabel.hidden = false;
     } finally {
       submit.disabled = false;
     }
