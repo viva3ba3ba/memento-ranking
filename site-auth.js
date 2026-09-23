@@ -29,6 +29,7 @@
         const result=await fetch(cfg.api_url,{method:"POST",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify({action:"verifyAccess",guildPassword:password})}).then(r=>r.json());
         if(!result.ok||!result.authorized)throw Error(result.error||"パスワードが違います。");
         sessionStorage.setItem(SESSION_KEY,"1");
+        sessionStorage.setItem("valhalla-ranking-password",String(password||""));
         gate.hidden=true;
         document.body.style.overflow="";
       }catch(error){message.textContent=error.message||"認証できませんでした。";form.guildPassword.select()}
