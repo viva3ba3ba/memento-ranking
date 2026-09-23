@@ -1525,9 +1525,8 @@
         <a class="knowledgeAction knowledgeBack" href="#knowledgeMenu">← 知識の泉へ戻る</a>
         <form class="exchangeForm" id="exchangeForm">
           <h3>コメントを投稿</h3>
-          <label>名前<input id="exchangeName" name="name" type="text" maxlength="30" autocomplete="nickname" required></label>
+          <label>名前（任意）<input id="exchangeName" name="name" type="text" maxlength="30" autocomplete="nickname" placeholder="未入力の場合は匿名"></label>
           <label>コメント<textarea id="exchangeMessage" name="message" rows="5" maxlength="500" required></textarea></label>
-          <label id="exchangePasswordLabel">Valhalla共通パスワード<input id="exchangePassword" name="guildPassword" type="password" autocomplete="current-password"></label>
           <div class="exchangeFormActions"><button type="submit" id="exchangeSubmit">投稿する</button><button type="button" id="exchangeReload">最新コメントを再読込</button></div>
           <p class="exchangeStatus" id="exchangeStatus" aria-live="polite"></p>
         </form>
@@ -1588,6 +1587,6 @@
     <script src="dashboard.js?v=68"></script>
     <script src="character-detail.js?v=67"></script>
     <script src="territory-points.js?v=88"></script>
-    <script src="knowledge-exchange.js?v=1"></script>
+    <script src="knowledge-exchange.js?v=2"></script>
   </body>
 </html>
