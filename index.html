@@ -18,10 +18,10 @@
     <meta name="apple-mobile-web-app-title" content="Valhalla" />
     <link rel="manifest" href="manifest.webmanifest?v=69" />
     <link rel="apple-touch-icon" sizes="180x180" href="pwa-icon-180.png?v=69" />
-    <script src="pwa.js?v=69" defer></script>
-    <link rel="stylesheet" href="dashboard.css?v=88" />
+    <script src="pwa.js?v=70" defer></script>
+    <link rel="stylesheet" href="dashboard.css?v=89" />
     <link rel="stylesheet" href="discord-fix.css?v=50" />
-    <link rel="stylesheet" href="site-auth.css?v=80" />
+    <link rel="stylesheet" href="site-auth.css?v=81" />
     <style>
       .knowledgeButton{background:#2e7890!important}
       .knowledgePage{display:none;position:fixed;inset:0;z-index:100;overflow-y:auto;background:#0e1117;color:#f2f5f7;font-family:system-ui,"Yu Gothic UI",sans-serif}
@@ -57,7 +57,7 @@
       .zoomGallery img{display:block;width:auto;max-width:100%;height:auto;margin:auto;border-radius:8px}
       @media(max-width:700px){.knowledgeBranches{grid-template-columns:1fr;padding:12px}.knowledgeBranches .branch{min-height:74px}.knowledgeHead{padding:10px 12px}.knowledgeHead h2{font-size:18px}.knowledgePage .content{padding:12px}.evidenceGrid{grid-template-columns:1fr}.firstKnowledgeImage{width:min(78vw,280px)}.knowledgeEntry{padding:12px}.knowledgeEntry p,.knowledgeEntry li,.knowledgePage .term span{font-size:16px}}
     </style>
-    <link rel="stylesheet" href="knowledge.css?v=94" />
+    <link rel="stylesheet" href="knowledge.css?v=95" />
     <link rel="stylesheet" href="territory-points.css?v=88" />
     <script src="site-auth.js?v=53" defer></script>
   </head>
@@ -76,6 +76,7 @@
         ><a href="formations.html">⚔ みんなの編成</a
         ><a class="termsButton guildKnowledgeTitle" href="#termsMenu">📖 ギルバト知識講座</a
         ><a class="knowledgeButton" href="#knowledgeMenu">💧 知識の泉</a>
+        <a class="knowledgeButton" href="#knowledgeExchange">📝 自由掲示板</a>
         <a class="installGuideButton" href="#appInstallGuide">📱 アプリ化への手順</a>
         <a class="territoryButton" href="#territoryPoints">🗺 177～180鯖 拠点ポイント表</a>
       </nav>
@@ -555,7 +556,6 @@
           >ショップアイテムの交換及び購入について</a
         >
         <a class="branch" href="#knowledgeNewCharacters">新キャラ情報</a>
-        <a class="branch" href="#knowledgeExchange">情報交換</a>
         <a class="branch" href="#knowledgeLinks">おすすめサイト、ページ</a>
       </div>
     </section>
@@ -1518,11 +1518,11 @@
 
     <section class="knowledgePage" id="knowledgeExchange">
       <header class="knowledgeHead">
-        <h2>情報交換</h2>
+        <h2>自由掲示板</h2>
         <a class="knowledgeAction knowledgeClose" href="#top">閉じる</a>
       </header>
       <div class="content">
-        <a class="knowledgeAction knowledgeBack" href="#knowledgeMenu">← 知識の泉へ戻る</a>
+        <a class="knowledgeAction knowledgeBack" href="#top">← TOPへ戻る</a>
         <form class="exchangeForm" id="exchangeForm">
           <h3>コメントを投稿</h3>
           <label>名前（任意）<input id="exchangeName" name="name" type="text" maxlength="30" autocomplete="nickname" placeholder="未入力の場合は匿名"></label>
