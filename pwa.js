@@ -4,7 +4,7 @@ if (
 ) {
   window.addEventListener("load", () => {
     navigator.serviceWorker
-      .register("./sw.js?v=69", { updateViaCache: "none" })
+      .register("./sw.js?v=70", { updateViaCache: "none" })
       .then((registration) => registration.update())
       .catch(() => {});
   });
