@@ -294,7 +294,7 @@
 /* v7.4.34 approved MementoMori glass theme */
 .knowledgePage {
   background-color: #e9e1eb;
-  background-image: url("site-theme-bg-pc-rest.png?v=4");
+  background-image: url("site-theme-bg-pc-rest.png?v=5");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -337,7 +337,7 @@
 }
 @media (max-width: 700px) {
   .knowledgePage {
-    background-image: url("site-theme-bg-mobile-rest.png?v=4");
+    background-image: url("site-theme-bg-mobile-rest.png?v=5");
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
@@ -486,7 +486,7 @@
 /* v7.4.58: knowledge/install pages fully cover the TOP page. */
 .knowledgePage:target {
   background-color: #e9e1eb !important;
-  background-image: url("site-theme-bg-pc-rest.png?v=4") !important;
+  background-image: url("site-theme-bg-pc-rest.png?v=5") !important;
   background-position: center center !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
@@ -494,7 +494,7 @@
 }
 @media (max-width: 760px) {
   .knowledgePage:target {
-    background-image: url("site-theme-bg-mobile-rest.png?v=4") !important;
+    background-image: url("site-theme-bg-mobile-rest.png?v=5") !important;
     background-position: center center !important;
   }
 }
