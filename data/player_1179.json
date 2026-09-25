@@ -1,11 +1,11 @@
 {
   "data": {
     "Hit": 100,
-    "Player": 18379,
+    "Player": 18383,
     "PlayerData": [
       {
         "BackgroundId": 21,
-        "BattlePower": 467884330,
+        "BattlePower": 547667474,
         "DeckCharacterInfoList": [
           {
             "CharacterId": 149,
@@ -14,10 +14,10 @@
             "RarityName": "LR5"
           },
           {
-            "CharacterId": 52,
+            "CharacterId": 101,
             "Level": 493,
-            "RarityFlags": 8,
-            "RarityName": "SR"
+            "RarityFlags": 512,
+            "RarityName": "LR"
           },
           {
             "CharacterId": 123,
@@ -26,16 +26,16 @@
             "RarityName": "LR"
           },
           {
-            "CharacterId": 88,
+            "CharacterId": 97,
             "Level": 493,
             "RarityFlags": 512,
             "RarityName": "LR"
           },
           {
-            "CharacterId": 101,
+            "CharacterId": 86,
             "Level": 493,
-            "RarityFlags": 512,
-            "RarityName": "LR"
+            "RarityFlags": 16384,
+            "RarityName": "LR5"
           }
         ],
         "GuildName": "宵空のわたあめ໒꒱",
@@ -49,35 +49,35 @@
       },
       {
         "BackgroundId": 60,
-        "BattlePower": 415295998,
+        "BattlePower": 420155685,
         "DeckCharacterInfoList": [
           {
             "CharacterId": 103,
-            "Level": 443,
+            "Level": 448,
             "RarityFlags": 16384,
             "RarityName": "LR5"
           },
           {
             "CharacterId": 124,
-            "Level": 443,
+            "Level": 448,
             "RarityFlags": 512,
             "RarityName": "LR"
           },
           {
             "CharacterId": 150,
-            "Level": 443,
+            "Level": 448,
             "RarityFlags": 16384,
             "RarityName": "LR5"
           },
           {
             "CharacterId": 92,
-            "Level": 443,
+            "Level": 448,
             "RarityFlags": 16384,
             "RarityName": "LR5"
           },
           {
             "CharacterId": 151,
-            "Level": 443,
+            "Level": 448,
             "RarityFlags": 16384,
             "RarityName": "LR5"
           }
@@ -137,8 +137,14 @@
       },
       {
         "BackgroundId": 140,
-        "BattlePower": 396041853,
+        "BattlePower": 396953152,
         "DeckCharacterInfoList": [
+          {
+            "CharacterId": 123,
+            "Level": 433,
+            "RarityFlags": 16384,
+            "RarityName": "LR5"
+          },
           {
             "CharacterId": 101,
             "Level": 433,
@@ -152,16 +158,10 @@
             "RarityName": "LR5"
           },
           {
-            "CharacterId": 106,
+            "CharacterId": 97,
             "Level": 433,
             "RarityFlags": 512,
             "RarityName": "LR"
-          },
-          {
-            "CharacterId": 123,
-            "Level": 433,
-            "RarityFlags": 16384,
-            "RarityName": "LR5"
           },
           {
             "CharacterId": 86,
@@ -181,35 +181,35 @@
       },
       {
         "BackgroundId": 116,
-        "BattlePower": 337631908,
+        "BattlePower": 348989784,
         "DeckCharacterInfoList": [
           {
             "CharacterId": 140,
-            "Level": 453,
+            "Level": 468,
             "RarityFlags": 512,
             "RarityName": "LR"
           },
           {
             "CharacterId": 46,
-            "Level": 453,
+            "Level": 468,
             "RarityFlags": 1024,
             "RarityName": "LR1"
           },
           {
             "CharacterId": 50,
-            "Level": 453,
+            "Level": 468,
             "RarityFlags": 16384,
             "RarityName": "LR5"
           },
           {
             "CharacterId": 61,
-            "Level": 453,
+            "Level": 468,
             "RarityFlags": 16384,
             "RarityName": "LR5"
           },
           {
             "CharacterId": 105,
-            "Level": 453,
+            "Level": 468,
             "RarityFlags": 512,
             "RarityName": "LR"
           }
@@ -225,7 +225,7 @@
       },
       {
         "BackgroundId": 93,
-        "BattlePower": 313378551,
+        "BattlePower": 314271022,
         "DeckCharacterInfoList": [
           {
             "CharacterId": 89,
@@ -269,35 +269,35 @@
       },
       {
         "BackgroundId": 58,
-        "BattlePower": 268854659,
+        "BattlePower": 273354518,
         "DeckCharacterInfoList": [
           {
             "CharacterId": 58,
-            "Level": 363,
+            "Level": 368,
             "RarityFlags": 16384,
             "RarityName": "LR5"
           },
           {
             "CharacterId": 117,
-            "Level": 363,
+            "Level": 368,
             "RarityFlags": 16384,
             "RarityName": "LR5"
           },
           {
             "CharacterId": 89,
-            "Level": 363,
+            "Level": 368,
             "RarityFlags": 512,
             "RarityName": "LR"
           },
           {
             "CharacterId": 148,
-            "Level": 363,
+            "Level": 368,
             "RarityFlags": 512,
             "RarityName": "LR"
           },
           {
             "CharacterId": 122,
-            "Level": 363,
+            "Level": 368,
             "RarityFlags": 512,
             "RarityName": "LR"
           }
@@ -356,52 +356,40 @@
         "isIconSP": false
       },
       {
-        "BackgroundId": 21,
-        "BattlePower": 258872661,
+        "BackgroundId": 153,
+        "BattlePower": 256345499,
         "DeckCharacterInfoList": [
           {
-            "CharacterId": 6,
-            "Level": 413,
-            "RarityFlags": 16384,
-            "RarityName": "LR5"
+            "CharacterId": 101,
+            "Level": 363,
+            "RarityFlags": 512,
+            "RarityName": "LR"
+          },
+          {
+            "CharacterId": 123,
+            "Level": 363,
+            "RarityFlags": 512,
+            "RarityName": "LR"
           },
           {
             "CharacterId": 149,
-            "Level": 413,
+            "Level": 363,
             "RarityFlags": 16384,
             "RarityName": "LR5"
-          },
-          {
-            "CharacterId": 7,
-            "Level": 413,
-            "RarityFlags": 8192,
-            "RarityName": "LR4"
           },
           {
             "CharacterId": 5,
-            "Level": 413,
-            "RarityFlags": 16384,
-            "RarityName": "LR5"
+            "Level": 363,
+            "RarityFlags": 512,
+            "RarityName": "LR"
           },
           {
-            "CharacterId": 27,
-            "Level": 413,
-            "RarityFlags": 32768,
-            "RarityName": "LR6"
+            "CharacterId": 97,
+            "Level": 363,
+            "RarityFlags": 512,
+            "RarityName": "LR"
           }
         ],
-        "GuildName": "宵空のわたあめ໒꒱",
-        "GuildPositionType": 2,
-        "IconEffectId": 0,
-        "IconId": 66,
-        "LegendLeagueClass": 0,
-        "PlayerId": 851538254179,
-        "PlayerName": "maina ໒꒱˚.",
-        "isIconSP": false
-      },
-      {
-        "BackgroundId": 153,
-        "BattlePower": 256345499,
         "GuildName": "宵空のわたあめ໒꒱",
         "GuildPositionType": 1,
         "IconEffectId": 0,
@@ -456,8 +444,52 @@
         "isIconSP": false
       },
       {
+        "BackgroundId": 21,
+        "BattlePower": 252964391,
+        "DeckCharacterInfoList": [
+          {
+            "CharacterId": 6,
+            "Level": 413,
+            "RarityFlags": 16384,
+            "RarityName": "LR5"
+          },
+          {
+            "CharacterId": 149,
+            "Level": 413,
+            "RarityFlags": 16384,
+            "RarityName": "LR5"
+          },
+          {
+            "CharacterId": 7,
+            "Level": 413,
+            "RarityFlags": 8192,
+            "RarityName": "LR4"
+          },
+          {
+            "CharacterId": 5,
+            "Level": 413,
+            "RarityFlags": 16384,
+            "RarityName": "LR5"
+          },
+          {
+            "CharacterId": 27,
+            "Level": 413,
+            "RarityFlags": 32768,
+            "RarityName": "LR6"
+          }
+        ],
+        "GuildName": "宵空のわたあめ໒꒱",
+        "GuildPositionType": 2,
+        "IconEffectId": 0,
+        "IconId": 66,
+        "LegendLeagueClass": 0,
+        "PlayerId": 851538254179,
+        "PlayerName": "maina ໒꒱˚.",
+        "isIconSP": false
+      },
+      {
         "BackgroundId": 88,
-        "BattlePower": 247965485,
+        "BattlePower": 249505980,
         "DeckCharacterInfoList": [
           {
             "CharacterId": 123,
@@ -501,7 +533,7 @@
       },
       {
         "BackgroundId": 150,
-        "BattlePower": 243033891,
+        "BattlePower": 243051629,
         "DeckCharacterInfoList": [
           {
             "CharacterId": 39,
@@ -545,7 +577,7 @@
       },
       {
         "BackgroundId": 27,
-        "BattlePower": 242282248,
+        "BattlePower": 242556675,
         "DeckCharacterInfoList": [
           {
             "CharacterId": 86,
@@ -588,58 +620,9 @@
         "isIconSP": false
       },
       {
-        "BattlePower": 240485566,
-        "DeckCharacterInfoList": [
-          {
-            "CharacterId": 123,
-            "Level": 373,
-            "RarityFlags": 512,
-            "RarityName": "LR"
-          },
-          {
-            "CharacterId": 8,
-            "Level": 373,
-            "RarityFlags": 16384,
-            "RarityName": "LR5"
-          },
-          {
-            "CharacterId": 5,
-            "Level": 373,
-            "RarityFlags": 16384,
-            "RarityName": "LR5"
-          },
-          {
-            "CharacterId": 86,
-            "Level": 373,
-            "RarityFlags": 512,
-            "RarityName": "LR"
-          },
-          {
-            "CharacterId": 101,
-            "Level": 373,
-            "RarityFlags": 8,
-            "RarityName": "SR"
-          }
-        ],
-        "GuildName": "とりあえず休暇",
-        "GuildPositionType": 2,
-        "IconEffectId": 0,
-        "IconId": 4,
-        "LegendLeagueClass": 0,
-        "PlayerId": 619623576179,
-        "PlayerName": "カグチ",
-        "isIconSP": false
-      },
-      {
         "BackgroundId": 13,
-        "BattlePower": 239043692,
+        "BattlePower": 240637675,
         "DeckCharacterInfoList": [
-          {
-            "CharacterId": 39,
-            "Level": 363,
-            "RarityFlags": 8192,
-            "RarityName": "LR4"
-          },
           {
             "CharacterId": 58,
             "Level": 363,
@@ -651,6 +634,12 @@
             "Level": 363,
             "RarityFlags": 16384,
             "RarityName": "LR5"
+          },
+          {
+            "CharacterId": 39,
+            "Level": 363,
+            "RarityFlags": 8192,
+            "RarityName": "LR4"
           },
           {
             "CharacterId": 153,
@@ -675,8 +664,51 @@
         "isIconSP": false
       },
       {
+        "BattlePower": 240485566,
+        "DeckCharacterInfoList": [
+          {
+            "CharacterId": 26,
+            "Level": 240,
+            "RarityFlags": 4096,
+            "RarityName": "LR3"
+          },
+          {
+            "CharacterId": 8,
+            "Level": 240,
+            "RarityFlags": 4096,
+            "RarityName": "LR3"
+          },
+          {
+            "CharacterId": 6,
+            "Level": 220,
+            "RarityFlags": 16,
+            "RarityName": "SR+"
+          },
+          {
+            "CharacterId": 39,
+            "Level": 220,
+            "RarityFlags": 1024,
+            "RarityName": "LR1"
+          },
+          {
+            "CharacterId": 5,
+            "Level": 220,
+            "RarityFlags": 8,
+            "RarityName": "SR"
+          }
+        ],
+        "GuildName": "とりあえず休暇",
+        "GuildPositionType": 2,
+        "IconEffectId": 0,
+        "IconId": 4,
+        "LegendLeagueClass": 0,
+        "PlayerId": 619623576179,
+        "PlayerName": "カグチ",
+        "isIconSP": false
+      },
+      {
         "BackgroundId": 150,
-        "BattlePower": 236339234,
+        "BattlePower": 236361377,
         "DeckCharacterInfoList": [
           {
             "CharacterId": 124,
@@ -720,7 +752,7 @@
       },
       {
         "BackgroundId": 35,
-        "BattlePower": 232100179,
+        "BattlePower": 233168450,
         "DeckCharacterInfoList": [
           {
             "CharacterId": 124,
@@ -847,7 +879,7 @@
       },
       {
         "BackgroundId": 28,
-        "BattlePower": 199868200,
+        "BattlePower": 202439056,
         "DeckCharacterInfoList": [
           {
             "CharacterId": 26,
@@ -890,8 +922,52 @@
         "isIconSP": false
       },
       {
+        "BackgroundId": 8,
+        "BattlePower": 197254166,
+        "DeckCharacterInfoList": [
+          {
+            "CharacterId": 8,
+            "Level": 338,
+            "RarityFlags": 16384,
+            "RarityName": "LR5"
+          },
+          {
+            "CharacterId": 26,
+            "Level": 338,
+            "RarityFlags": 16384,
+            "RarityName": "LR5"
+          },
+          {
+            "CharacterId": 27,
+            "Level": 338,
+            "RarityFlags": 16384,
+            "RarityName": "LR5"
+          },
+          {
+            "CharacterId": 100,
+            "Level": 338,
+            "RarityFlags": 64,
+            "RarityName": "SSR+"
+          },
+          {
+            "CharacterId": 150,
+            "Level": 338,
+            "RarityFlags": 512,
+            "RarityName": "LR"
+          }
+        ],
+        "GuildName": "青の茶柱",
+        "GuildPositionType": 2,
+        "IconEffectId": 0,
+        "IconId": 8,
+        "LegendLeagueClass": 0,
+        "PlayerId": 543823570179,
+        "PlayerName": "こおひい",
+        "isIconSP": false
+      },
+      {
         "BackgroundId": 58,
-        "BattlePower": 194727087,
+        "BattlePower": 194789489,
         "DeckCharacterInfoList": [
           {
             "CharacterId": 27,
@@ -934,52 +1010,8 @@
         "isIconSP": false
       },
       {
-        "BackgroundId": 8,
-        "BattlePower": 193979514,
-        "DeckCharacterInfoList": [
-          {
-            "CharacterId": 8,
-            "Level": 333,
-            "RarityFlags": 16384,
-            "RarityName": "LR5"
-          },
-          {
-            "CharacterId": 26,
-            "Level": 333,
-            "RarityFlags": 16384,
-            "RarityName": "LR5"
-          },
-          {
-            "CharacterId": 27,
-            "Level": 333,
-            "RarityFlags": 16384,
-            "RarityName": "LR5"
-          },
-          {
-            "CharacterId": 150,
-            "Level": 333,
-            "RarityFlags": 512,
-            "RarityName": "LR"
-          },
-          {
-            "CharacterId": 124,
-            "Level": 333,
-            "RarityFlags": 32,
-            "RarityName": "SSR"
-          }
-        ],
-        "GuildName": "青の茶柱",
-        "GuildPositionType": 2,
-        "IconEffectId": 0,
-        "IconId": 8,
-        "LegendLeagueClass": 0,
-        "PlayerId": 543823570179,
-        "PlayerName": "こおひい",
-        "isIconSP": false
-      },
-      {
         "BackgroundId": 123,
-        "BattlePower": 192670494,
+        "BattlePower": 193227109,
         "DeckCharacterInfoList": [
           {
             "CharacterId": 101,
@@ -1022,8 +1054,52 @@
         "isIconSP": false
       },
       {
+        "BackgroundId": 71,
+        "BattlePower": 191221649,
+        "DeckCharacterInfoList": [
+          {
+            "CharacterId": 27,
+            "Level": 220,
+            "RarityFlags": 1024,
+            "RarityName": "LR1"
+          },
+          {
+            "CharacterId": 26,
+            "Level": 180,
+            "RarityFlags": 64,
+            "RarityName": "SSR+"
+          },
+          {
+            "CharacterId": 28,
+            "Level": 180,
+            "RarityFlags": 64,
+            "RarityName": "SSR+"
+          },
+          {
+            "CharacterId": 60,
+            "Level": 180,
+            "RarityFlags": 256,
+            "RarityName": "UR+"
+          },
+          {
+            "CharacterId": 92,
+            "Level": 180,
+            "RarityFlags": 64,
+            "RarityName": "SSR+"
+          }
+        ],
+        "GuildName": "もちょ部",
+        "GuildPositionType": 2,
+        "IconEffectId": 0,
+        "IconId": 71,
+        "LegendLeagueClass": 0,
+        "PlayerId": 437670945179,
+        "PlayerName": "猫又",
+        "isIconSP": false
+      },
+      {
         "BackgroundId": 27,
-        "BattlePower": 190869947,
+        "BattlePower": 191061464,
         "DeckCharacterInfoList": [
           {
             "CharacterId": 8,
@@ -1066,52 +1142,8 @@
         "isIconSP": false
       },
       {
-        "BackgroundId": 71,
-        "BattlePower": 190561263,
-        "DeckCharacterInfoList": [
-          {
-            "CharacterId": 150,
-            "Level": 327,
-            "RarityFlags": 512,
-            "RarityName": "LR"
-          },
-          {
-            "CharacterId": 60,
-            "Level": 327,
-            "RarityFlags": 1024,
-            "RarityName": "LR1"
-          },
-          {
-            "CharacterId": 92,
-            "Level": 327,
-            "RarityFlags": 256,
-            "RarityName": "UR+"
-          },
-          {
-            "CharacterId": 27,
-            "Level": 327,
-            "RarityFlags": 16384,
-            "RarityName": "LR5"
-          },
-          {
-            "CharacterId": 86,
-            "Level": 327,
-            "RarityFlags": 8,
-            "RarityName": "SR"
-          }
-        ],
-        "GuildName": "もちょ部",
-        "GuildPositionType": 2,
-        "IconEffectId": 0,
-        "IconId": 71,
-        "LegendLeagueClass": 0,
-        "PlayerId": 437670945179,
-        "PlayerName": "猫又",
-        "isIconSP": false
-      },
-      {
         "BackgroundId": 92,
-        "BattlePower": 183250750,
+        "BattlePower": 188236258,
         "DeckCharacterInfoList": [
           {
             "CharacterId": 27,
@@ -1198,77 +1230,9 @@
         "isIconSP": false
       },
       {
-        "BackgroundId": 87,
-        "BattlePower": 179938182,
-        "DeckCharacterInfoList": [
-          {
-            "CharacterId": 153,
-            "Level": 318,
-            "RarityFlags": 8,
-            "RarityName": "SR"
-          },
-          {
-            "CharacterId": 27,
-            "Level": 318,
-            "RarityFlags": 16384,
-            "RarityName": "LR5"
-          },
-          {
-            "CharacterId": 26,
-            "Level": 318,
-            "RarityFlags": 4096,
-            "RarityName": "LR3"
-          },
-          {
-            "CharacterId": 8,
-            "Level": 318,
-            "RarityFlags": 2048,
-            "RarityName": "LR2"
-          },
-          {
-            "CharacterId": 86,
-            "Level": 318,
-            "RarityFlags": 8,
-            "RarityName": "SR"
-          }
-        ],
-        "GuildName": "Magic!",
-        "GuildPositionType": 2,
-        "IconEffectId": 0,
-        "IconId": 87,
-        "LegendLeagueClass": 0,
-        "PlayerId": 317933430179,
-        "PlayerName": "ゴリラアーム",
-        "isIconSP": false
-      },
-      {
-        "BackgroundId": 115,
-        "BattlePower": 178162846,
-        "GuildName": "もちょ部",
-        "GuildPositionType": 4,
-        "IconEffectId": 0,
-        "IconId": 115,
-        "LegendLeagueClass": 0,
-        "PlayerId": 542071134179,
-        "PlayerName": "あやめ",
-        "isIconSP": false
-      },
-      {
         "BackgroundId": 130,
-        "BattlePower": 177797940,
+        "BattlePower": 178555118,
         "DeckCharacterInfoList": [
-          {
-            "CharacterId": 122,
-            "Level": 321,
-            "RarityFlags": 512,
-            "RarityName": "LR"
-          },
-          {
-            "CharacterId": 148,
-            "Level": 321,
-            "RarityFlags": 256,
-            "RarityName": "UR+"
-          },
           {
             "CharacterId": 130,
             "Level": 321,
@@ -1280,6 +1244,18 @@
             "Level": 321,
             "RarityFlags": 4096,
             "RarityName": "LR3"
+          },
+          {
+            "CharacterId": 148,
+            "Level": 321,
+            "RarityFlags": 256,
+            "RarityName": "UR+"
+          },
+          {
+            "CharacterId": 122,
+            "Level": 321,
+            "RarityFlags": 512,
+            "RarityName": "LR"
           },
           {
             "CharacterId": 89,
@@ -1298,8 +1274,32 @@
         "isIconSP": false
       },
       {
+        "BackgroundId": 115,
+        "BattlePower": 178181011,
+        "GuildName": "もちょ部",
+        "GuildPositionType": 4,
+        "IconEffectId": 0,
+        "IconId": 115,
+        "LegendLeagueClass": 0,
+        "PlayerId": 542071134179,
+        "PlayerName": "あやめ",
+        "isIconSP": false
+      },
+      {
+        "BackgroundId": 60,
+        "BattlePower": 175472676,
+        "GuildName": "宵空のわたあめ໒꒱",
+        "GuildPositionType": 2,
+        "IconEffectId": 0,
+        "IconId": 60,
+        "LegendLeagueClass": 0,
+        "PlayerId": 460877835179,
+        "PlayerName": "てるる長老",
+        "isIconSP": false
+      },
+      {
         "BackgroundId": 49,
-        "BattlePower": 172043556,
+        "BattlePower": 173925096,
         "DeckCharacterInfoList": [
           {
             "CharacterId": 26,
@@ -1342,8 +1342,52 @@
         "isIconSP": false
       },
       {
+        "BackgroundId": 87,
+        "BattlePower": 171738186,
+        "DeckCharacterInfoList": [
+          {
+            "CharacterId": 153,
+            "Level": 318,
+            "RarityFlags": 8,
+            "RarityName": "SR"
+          },
+          {
+            "CharacterId": 27,
+            "Level": 318,
+            "RarityFlags": 16384,
+            "RarityName": "LR5"
+          },
+          {
+            "CharacterId": 26,
+            "Level": 318,
+            "RarityFlags": 4096,
+            "RarityName": "LR3"
+          },
+          {
+            "CharacterId": 8,
+            "Level": 318,
+            "RarityFlags": 2048,
+            "RarityName": "LR2"
+          },
+          {
+            "CharacterId": 86,
+            "Level": 318,
+            "RarityFlags": 8,
+            "RarityName": "SR"
+          }
+        ],
+        "GuildName": "Magic!",
+        "GuildPositionType": 2,
+        "IconEffectId": 0,
+        "IconId": 87,
+        "LegendLeagueClass": 0,
+        "PlayerId": 317933430179,
+        "PlayerName": "ゴリラアーム",
+        "isIconSP": false
+      },
+      {
         "BackgroundId": 64,
-        "BattlePower": 170602078,
+        "BattlePower": 170625002,
         "DeckCharacterInfoList": [
           {
             "CharacterId": 26,
@@ -1386,20 +1430,8 @@
         "isIconSP": false
       },
       {
-        "BackgroundId": 60,
-        "BattlePower": 168873222,
-        "GuildName": "宵空のわたあめ໒꒱",
-        "GuildPositionType": 2,
-        "IconEffectId": 0,
-        "IconId": 60,
-        "LegendLeagueClass": 0,
-        "PlayerId": 460877835179,
-        "PlayerName": "てるる長老",
-        "isIconSP": false
-      },
-      {
         "BackgroundId": 117,
-        "BattlePower": 165858467,
+        "BattlePower": 165868119,
         "DeckCharacterInfoList": [
           {
             "CharacterId": 7,
@@ -1450,29 +1482,73 @@
         "isIconSP": false
       },
       {
-        "BackgroundId": 111,
-        "BattlePower": 160900322,
-        "GuildName": "もちょ部",
-        "GuildPositionType": 5,
+        "BackgroundId": 101,
+        "BattlePower": 164346273,
+        "DeckCharacterInfoList": [
+          {
+            "CharacterId": 86,
+            "Level": 313,
+            "RarityFlags": 64,
+            "RarityName": "SSR+"
+          },
+          {
+            "CharacterId": 101,
+            "Level": 313,
+            "RarityFlags": 512,
+            "RarityName": "LR"
+          },
+          {
+            "CharacterId": 5,
+            "Level": 313,
+            "RarityFlags": 8192,
+            "RarityName": "LR4"
+          },
+          {
+            "CharacterId": 123,
+            "Level": 313,
+            "RarityFlags": 1024,
+            "RarityName": "LR1"
+          },
+          {
+            "CharacterId": 8,
+            "Level": 313,
+            "RarityFlags": 16384,
+            "RarityName": "LR5"
+          }
+        ],
+        "GuildName": "꒰ঌ天上の舞姫໒꒱",
+        "GuildPositionType": 2,
         "IconEffectId": 0,
-        "IconId": 111,
+        "IconId": 101,
         "LegendLeagueClass": 0,
-        "PlayerId": 899952646179,
-        "PlayerName": "あげだし",
+        "PlayerId": 444118349179,
+        "PlayerName": "じゃんれん",
         "isIconSP": false
       },
       {
         "BackgroundId": 90,
-        "BattlePower": 156477432,
+        "BattlePower": 163341305,
         "DeckCharacterInfoList": [
           {
-            "CharacterId": 153,
+            "CharacterId": 66,
             "Level": 323,
-            "RarityFlags": 16,
-            "RarityName": "SR+"
+            "RarityFlags": 8,
+            "RarityName": "SR"
           },
           {
-            "CharacterId": 109,
+            "CharacterId": 100,
+            "Level": 323,
+            "RarityFlags": 64,
+            "RarityName": "SSR+"
+          },
+          {
+            "CharacterId": 113,
+            "Level": 323,
+            "RarityFlags": 16384,
+            "RarityName": "LR5"
+          },
+          {
+            "CharacterId": 96,
             "Level": 323,
             "RarityFlags": 8,
             "RarityName": "SR"
@@ -1482,27 +1558,59 @@
             "Level": 323,
             "RarityFlags": 4096,
             "RarityName": "LR3"
-          },
-          {
-            "CharacterId": 26,
-            "Level": 323,
-            "RarityFlags": 4096,
-            "RarityName": "LR3"
-          },
-          {
-            "CharacterId": 113,
-            "Level": 323,
-            "RarityFlags": 16384,
-            "RarityName": "LR5"
           }
         ],
         "GuildName": "꒰ঌ天上の舞姫໒꒱",
         "GuildPositionType": 2,
         "IconEffectId": 0,
-        "IconId": 66,
+        "IconId": 90,
         "LegendLeagueClass": 0,
         "PlayerId": 657614604179,
         "PlayerName": "豪炎寺ニャル子",
+        "isIconSP": false
+      },
+      {
+        "BackgroundId": 111,
+        "BattlePower": 161686608,
+        "DeckCharacterInfoList": [
+          {
+            "CharacterId": 39,
+            "Level": 315,
+            "RarityFlags": 8192,
+            "RarityName": "LR4"
+          },
+          {
+            "CharacterId": 26,
+            "Level": 315,
+            "RarityFlags": 8192,
+            "RarityName": "LR4"
+          },
+          {
+            "CharacterId": 27,
+            "Level": 315,
+            "RarityFlags": 16384,
+            "RarityName": "LR5"
+          },
+          {
+            "CharacterId": 86,
+            "Level": 315,
+            "RarityFlags": 16,
+            "RarityName": "SR+"
+          },
+          {
+            "CharacterId": 124,
+            "Level": 315,
+            "RarityFlags": 512,
+            "RarityName": "LR"
+          }
+        ],
+        "GuildName": "もちょ部",
+        "GuildPositionType": 5,
+        "IconEffectId": 0,
+        "IconId": 111,
+        "LegendLeagueClass": 0,
+        "PlayerId": 899952646179,
+        "PlayerName": "あげだし",
         "isIconSP": false
       },
       {
@@ -1550,50 +1658,6 @@
         "isIconSP": false
       },
       {
-        "BackgroundId": 100,
-        "BattlePower": 156057683,
-        "DeckCharacterInfoList": [
-          {
-            "CharacterId": 93,
-            "Level": 305,
-            "RarityFlags": 512,
-            "RarityName": "LR"
-          },
-          {
-            "CharacterId": 148,
-            "Level": 305,
-            "RarityFlags": 512,
-            "RarityName": "LR"
-          },
-          {
-            "CharacterId": 39,
-            "Level": 305,
-            "RarityFlags": 16,
-            "RarityName": "SR+"
-          },
-          {
-            "CharacterId": 130,
-            "Level": 305,
-            "RarityFlags": 512,
-            "RarityName": "LR"
-          },
-          {
-            "CharacterId": 89,
-            "Level": 305,
-            "RarityFlags": 64,
-            "RarityName": "SSR+"
-          }
-        ],
-        "GuildName": "POLARIS",
-        "GuildPositionType": 2,
-        "IconEffectId": 0,
-        "IconId": 1,
-        "LegendLeagueClass": 0,
-        "PlayerId": 854567448179,
-        "PlayerName": "あまめの",
-        "isIconSP": false
-      },
-      {
         "BackgroundId": 27,
         "BattlePower": 155984801,
         "GuildName": "꒰ঌ天上の舞姫໒꒱",
@@ -1619,7 +1683,7 @@
       },
       {
         "BackgroundId": 3,
-        "BattlePower": 152997828,
+        "BattlePower": 153213359,
         "DeckCharacterInfoList": [
           {
             "CharacterId": 92,
@@ -1667,50 +1731,6 @@
         "IconId": 56,
         "PlayerId": 770849076179,
         "PlayerName": "座敷童子",
-        "isIconSP": false
-      },
-      {
-        "BackgroundId": 101,
-        "BattlePower": 151191204,
-        "DeckCharacterInfoList": [
-          {
-            "CharacterId": 8,
-            "Level": 313,
-            "RarityFlags": 16384,
-            "RarityName": "LR5"
-          },
-          {
-            "CharacterId": 26,
-            "Level": 313,
-            "RarityFlags": 512,
-            "RarityName": "LR"
-          },
-          {
-            "CharacterId": 5,
-            "Level": 313,
-            "RarityFlags": 8192,
-            "RarityName": "LR4"
-          },
-          {
-            "CharacterId": 101,
-            "Level": 313,
-            "RarityFlags": 512,
-            "RarityName": "LR"
-          },
-          {
-            "CharacterId": 86,
-            "Level": 313,
-            "RarityFlags": 64,
-            "RarityName": "SSR+"
-          }
-        ],
-        "GuildName": "꒰ঌ天上の舞姫໒꒱",
-        "GuildPositionType": 2,
-        "IconEffectId": 0,
-        "IconId": 101,
-        "LegendLeagueClass": 0,
-        "PlayerId": 444118349179,
-        "PlayerName": "じゃんれん",
         "isIconSP": false
       },
       {
@@ -1811,35 +1831,35 @@
       },
       {
         "BackgroundId": 27,
-        "BattlePower": 138189965,
+        "BattlePower": 138995961,
         "DeckCharacterInfoList": [
           {
             "CharacterId": 28,
-            "Level": 301,
+            "Level": 302,
             "RarityFlags": 1024,
             "RarityName": "LR1"
           },
           {
             "CharacterId": 27,
-            "Level": 301,
+            "Level": 302,
             "RarityFlags": 16384,
             "RarityName": "LR5"
           },
           {
             "CharacterId": 26,
-            "Level": 301,
+            "Level": 302,
             "RarityFlags": 2048,
             "RarityName": "LR2"
           },
           {
             "CharacterId": 150,
-            "Level": 301,
+            "Level": 302,
             "RarityFlags": 512,
             "RarityName": "LR"
           },
           {
             "CharacterId": 39,
-            "Level": 301,
+            "Level": 302,
             "RarityFlags": 1024,
             "RarityName": "LR1"
           }
@@ -1855,7 +1875,7 @@
       },
       {
         "BackgroundId": 149,
-        "BattlePower": 135958174,
+        "BattlePower": 136142436,
         "DeckCharacterInfoList": [
           {
             "CharacterId": 8,
@@ -1899,7 +1919,7 @@
       },
       {
         "BackgroundId": 3,
-        "BattlePower": 135461579,
+        "BattlePower": 135719938,
         "DeckCharacterInfoList": [
           {
             "CharacterId": 153,
@@ -1908,16 +1928,16 @@
             "RarityName": "SR"
           },
           {
+            "CharacterId": 35,
+            "Level": 315,
+            "RarityFlags": 256,
+            "RarityName": "UR+"
+          },
+          {
             "CharacterId": 27,
             "Level": 315,
             "RarityFlags": 8192,
             "RarityName": "LR4"
-          },
-          {
-            "CharacterId": 46,
-            "Level": 315,
-            "RarityFlags": 256,
-            "RarityName": "UR+"
           },
           {
             "CharacterId": 26,
@@ -1943,7 +1963,7 @@
       },
       {
         "BackgroundId": 87,
-        "BattlePower": 134638588,
+        "BattlePower": 134654571,
         "DeckCharacterInfoList": [
           {
             "CharacterId": 39,
@@ -2039,7 +2059,7 @@
       },
       {
         "BackgroundId": 3,
-        "BattlePower": 131467150,
+        "BattlePower": 131483529,
         "DeckCharacterInfoList": [
           {
             "CharacterId": 26,
@@ -2082,8 +2102,52 @@
         "isIconSP": false
       },
       {
+        "BackgroundId": 79,
+        "BattlePower": 130505197,
+        "DeckCharacterInfoList": [
+          {
+            "CharacterId": 8,
+            "Level": 290,
+            "RarityFlags": 8192,
+            "RarityName": "LR4"
+          },
+          {
+            "CharacterId": 26,
+            "Level": 290,
+            "RarityFlags": 1024,
+            "RarityName": "LR1"
+          },
+          {
+            "CharacterId": 27,
+            "Level": 290,
+            "RarityFlags": 8192,
+            "RarityName": "LR4"
+          },
+          {
+            "CharacterId": 28,
+            "Level": 290,
+            "RarityFlags": 4096,
+            "RarityName": "LR3"
+          },
+          {
+            "CharacterId": 39,
+            "Level": 290,
+            "RarityFlags": 512,
+            "RarityName": "LR"
+          }
+        ],
+        "GuildName": "青の茶柱",
+        "GuildPositionType": 2,
+        "IconEffectId": 0,
+        "IconId": 28,
+        "LegendLeagueClass": 0,
+        "PlayerId": 283150192179,
+        "PlayerName": "さかなぎ",
+        "isIconSP": false
+      },
+      {
         "BackgroundId": 32,
-        "BattlePower": 128491400,
+        "BattlePower": 128506542,
         "DeckCharacterInfoList": [
           {
             "CharacterId": 153,
@@ -2126,52 +2190,8 @@
         "isIconSP": false
       },
       {
-        "BackgroundId": 48,
-        "BattlePower": 127943584,
-        "DeckCharacterInfoList": [
-          {
-            "CharacterId": 27,
-            "Level": 290,
-            "RarityFlags": 16384,
-            "RarityName": "LR5"
-          },
-          {
-            "CharacterId": 26,
-            "Level": 290,
-            "RarityFlags": 512,
-            "RarityName": "LR"
-          },
-          {
-            "CharacterId": 8,
-            "Level": 290,
-            "RarityFlags": 2048,
-            "RarityName": "LR2"
-          },
-          {
-            "CharacterId": 6,
-            "Level": 290,
-            "RarityFlags": 512,
-            "RarityName": "LR"
-          },
-          {
-            "CharacterId": 5,
-            "Level": 290,
-            "RarityFlags": 512,
-            "RarityName": "LR"
-          }
-        ],
-        "GuildName": "宵空のわたあめ໒꒱",
-        "GuildPositionType": 2,
-        "IconEffectId": 0,
-        "IconId": 53,
-        "LegendLeagueClass": 0,
-        "PlayerId": 614494399179,
-        "PlayerName": "おとなしんらいす",
-        "isIconSP": false
-      },
-      {
         "BackgroundId": 87,
-        "BattlePower": 127757302,
+        "BattlePower": 127808204,
         "DeckCharacterInfoList": [
           {
             "CharacterId": 27,
@@ -2214,47 +2234,91 @@
         "isIconSP": false
       },
       {
-        "BackgroundId": 44,
-        "BattlePower": 126134768,
+        "BackgroundId": 60,
+        "BattlePower": 126862820,
         "DeckCharacterInfoList": [
           {
-            "CharacterId": 44,
-            "Level": 290,
-            "RarityFlags": 8192,
-            "RarityName": "LR4"
-          },
-          {
-            "CharacterId": 8,
-            "Level": 290,
-            "RarityFlags": 4096,
-            "RarityName": "LR3"
-          },
-          {
-            "CharacterId": 101,
-            "Level": 290,
+            "CharacterId": 46,
+            "Level": 294,
             "RarityFlags": 256,
             "RarityName": "UR+"
           },
           {
-            "CharacterId": 86,
-            "Level": 290,
-            "RarityFlags": 8,
-            "RarityName": "SR"
+            "CharacterId": 26,
+            "Level": 294,
+            "RarityFlags": 1024,
+            "RarityName": "LR1"
           },
           {
-            "CharacterId": 151,
-            "Level": 290,
-            "RarityFlags": 128,
-            "RarityName": "UR"
+            "CharacterId": 27,
+            "Level": 294,
+            "RarityFlags": 16384,
+            "RarityName": "LR5"
+          },
+          {
+            "CharacterId": 60,
+            "Level": 294,
+            "RarityFlags": 1024,
+            "RarityName": "LR1"
+          },
+          {
+            "CharacterId": 58,
+            "Level": 294,
+            "RarityFlags": 512,
+            "RarityName": "LR"
           }
         ],
-        "GuildName": "青の茶柱",
+        "GuildName": "木漏れ日の庭",
         "GuildPositionType": 2,
         "IconEffectId": 0,
-        "IconId": 151,
+        "IconId": 150,
         "LegendLeagueClass": 0,
-        "PlayerId": 886062478179,
-        "PlayerName": "Risotto",
+        "PlayerId": 998187335179,
+        "PlayerName": "ロア",
+        "isIconSP": false
+      },
+      {
+        "BackgroundId": 100,
+        "BattlePower": 125609056,
+        "DeckCharacterInfoList": [
+          {
+            "CharacterId": 26,
+            "Level": 307,
+            "RarityFlags": 16384,
+            "RarityName": "LR5"
+          },
+          {
+            "CharacterId": 8,
+            "Level": 307,
+            "RarityFlags": 8192,
+            "RarityName": "LR4"
+          },
+          {
+            "CharacterId": 39,
+            "Level": 307,
+            "RarityFlags": 1024,
+            "RarityName": "LR1"
+          },
+          {
+            "CharacterId": 86,
+            "Level": 307,
+            "RarityFlags": 32,
+            "RarityName": "SSR"
+          },
+          {
+            "CharacterId": 27,
+            "Level": 307,
+            "RarityFlags": 16384,
+            "RarityName": "LR5"
+          }
+        ],
+        "GuildName": "POLARIS",
+        "GuildPositionType": 2,
+        "IconEffectId": 0,
+        "IconId": 109,
+        "LegendLeagueClass": 0,
+        "PlayerId": 340920873179,
+        "PlayerName": "カーディナル",
         "isIconSP": false
       },
       {
@@ -2302,46 +2366,52 @@
         "isIconSP": false
       },
       {
-        "BackgroundId": 44,
-        "BattlePower": 123747240,
+        "BackgroundId": 41,
+        "BattlePower": 125085749,
         "DeckCharacterInfoList": [
           {
-            "CharacterId": 27,
-            "Level": 313,
+            "CharacterId": 39,
+            "Level": 303,
+            "RarityFlags": 1024,
+            "RarityName": "LR1"
+          },
+          {
+            "CharacterId": 8,
+            "Level": 303,
             "RarityFlags": 16384,
             "RarityName": "LR5"
           },
           {
-            "CharacterId": 35,
-            "Level": 313,
-            "RarityFlags": 512,
-            "RarityName": "LR"
+            "CharacterId": 26,
+            "Level": 303,
+            "RarityFlags": 1024,
+            "RarityName": "LR1"
           },
           {
-            "CharacterId": 113,
-            "Level": 313,
-            "RarityFlags": 512,
-            "RarityName": "LR"
+            "CharacterId": 101,
+            "Level": 303,
+            "RarityFlags": 8,
+            "RarityName": "SR"
           },
           {
             "CharacterId": 153,
-            "Level": 313,
-            "RarityFlags": 64,
-            "RarityName": "SSR+"
+            "Level": 303,
+            "RarityFlags": 8,
+            "RarityName": "SR"
           }
         ],
-        "GuildName": "POLARIS",
+        "GuildName": "꒰ঌ天上の舞姫໒꒱",
         "GuildPositionType": 2,
         "IconEffectId": 0,
-        "IconId": 61,
+        "IconId": 41,
         "LegendLeagueClass": 0,
-        "PlayerId": 878921395179,
-        "PlayerName": "特攻部隊2",
+        "PlayerId": 623996208179,
+        "PlayerName": "怒夢",
         "isIconSP": false
       },
       {
         "BackgroundId": 66,
-        "BattlePower": 123571009,
+        "BattlePower": 123757812,
         "DeckCharacterInfoList": [
           {
             "CharacterId": 115,
@@ -2384,52 +2454,8 @@
         "isIconSP": false
       },
       {
-        "BackgroundId": 60,
-        "BattlePower": 123387325,
-        "DeckCharacterInfoList": [
-          {
-            "CharacterId": 46,
-            "Level": 290,
-            "RarityFlags": 256,
-            "RarityName": "UR+"
-          },
-          {
-            "CharacterId": 26,
-            "Level": 290,
-            "RarityFlags": 1024,
-            "RarityName": "LR1"
-          },
-          {
-            "CharacterId": 27,
-            "Level": 290,
-            "RarityFlags": 16384,
-            "RarityName": "LR5"
-          },
-          {
-            "CharacterId": 60,
-            "Level": 290,
-            "RarityFlags": 512,
-            "RarityName": "LR"
-          },
-          {
-            "CharacterId": 58,
-            "Level": 290,
-            "RarityFlags": 512,
-            "RarityName": "LR"
-          }
-        ],
-        "GuildName": "木漏れ日の庭",
-        "GuildPositionType": 2,
-        "IconEffectId": 0,
-        "IconId": 150,
-        "LegendLeagueClass": 0,
-        "PlayerId": 998187335179,
-        "PlayerName": "ロア",
-        "isIconSP": false
-      },
-      {
         "BackgroundId": 151,
-        "BattlePower": 123148275,
+        "BattlePower": 123165503,
         "DeckCharacterInfoList": [
           {
             "CharacterId": 90,
@@ -2472,80 +2498,36 @@
         "isIconSP": false
       },
       {
-        "BackgroundId": 100,
-        "BattlePower": 122793534,
-        "DeckCharacterInfoList": [
-          {
-            "CharacterId": 26,
-            "Level": 307,
-            "RarityFlags": 16384,
-            "RarityName": "LR5"
-          },
-          {
-            "CharacterId": 8,
-            "Level": 307,
-            "RarityFlags": 8192,
-            "RarityName": "LR4"
-          },
-          {
-            "CharacterId": 39,
-            "Level": 307,
-            "RarityFlags": 1024,
-            "RarityName": "LR1"
-          },
-          {
-            "CharacterId": 86,
-            "Level": 307,
-            "RarityFlags": 32,
-            "RarityName": "SSR"
-          },
-          {
-            "CharacterId": 27,
-            "Level": 307,
-            "RarityFlags": 16384,
-            "RarityName": "LR5"
-          }
-        ],
-        "GuildName": "POLARIS",
-        "GuildPositionType": 2,
-        "IconEffectId": 0,
-        "IconId": 109,
-        "LegendLeagueClass": 0,
-        "PlayerId": 340920873179,
-        "PlayerName": "カーディナル",
-        "isIconSP": false
-      },
-      {
         "BackgroundId": 123,
-        "BattlePower": 122195680,
+        "BattlePower": 123021597,
         "DeckCharacterInfoList": [
           {
             "CharacterId": 26,
-            "Level": 283,
+            "Level": 284,
             "RarityFlags": 2048,
             "RarityName": "LR2"
           },
           {
             "CharacterId": 8,
-            "Level": 283,
+            "Level": 284,
             "RarityFlags": 16384,
             "RarityName": "LR5"
           },
           {
             "CharacterId": 101,
-            "Level": 283,
+            "Level": 284,
             "RarityFlags": 256,
             "RarityName": "UR+"
           },
           {
             "CharacterId": 27,
-            "Level": 283,
+            "Level": 284,
             "RarityFlags": 2048,
             "RarityName": "LR2"
           },
           {
             "CharacterId": 6,
-            "Level": 283,
+            "Level": 284,
             "RarityFlags": 2048,
             "RarityName": "LR2"
           }
@@ -2557,6 +2539,126 @@
         "LegendLeagueClass": 0,
         "PlayerId": 808865167179,
         "PlayerName": "タイガートキ",
+        "isIconSP": false
+      },
+      {
+        "BackgroundId": 44,
+        "BattlePower": 122973975,
+        "DeckCharacterInfoList": [
+          {
+            "CharacterId": 27,
+            "Level": 313,
+            "RarityFlags": 16384,
+            "RarityName": "LR5"
+          },
+          {
+            "CharacterId": 35,
+            "Level": 313,
+            "RarityFlags": 512,
+            "RarityName": "LR"
+          },
+          {
+            "CharacterId": 113,
+            "Level": 313,
+            "RarityFlags": 512,
+            "RarityName": "LR"
+          },
+          {
+            "CharacterId": 153,
+            "Level": 313,
+            "RarityFlags": 64,
+            "RarityName": "SSR+"
+          }
+        ],
+        "GuildName": "POLARIS",
+        "GuildPositionType": 2,
+        "IconEffectId": 0,
+        "IconId": 61,
+        "LegendLeagueClass": 0,
+        "PlayerId": 878921395179,
+        "PlayerName": "特攻部隊2",
+        "isIconSP": false
+      },
+      {
+        "BackgroundId": 60,
+        "BattlePower": 122550671,
+        "DeckCharacterInfoList": [
+          {
+            "CharacterId": 61,
+            "Level": 308,
+            "RarityFlags": 16384,
+            "RarityName": "LR5"
+          },
+          {
+            "CharacterId": 105,
+            "Level": 308,
+            "RarityFlags": 128,
+            "RarityName": "UR"
+          },
+          {
+            "CharacterId": 46,
+            "Level": 308,
+            "RarityFlags": 64,
+            "RarityName": "SSR+"
+          },
+          {
+            "CharacterId": 60,
+            "Level": 308,
+            "RarityFlags": 32,
+            "RarityName": "SSR"
+          }
+        ],
+        "GuildName": "もちょ部",
+        "GuildPositionType": 2,
+        "IconEffectId": 0,
+        "IconId": 61,
+        "LegendLeagueClass": 0,
+        "PlayerId": 515725251179,
+        "PlayerName": "白豚",
+        "isIconSP": false
+      },
+      {
+        "BackgroundId": 21,
+        "BattlePower": 122507783,
+        "DeckCharacterInfoList": [
+          {
+            "CharacterId": 86,
+            "Level": 290,
+            "RarityFlags": 128,
+            "RarityName": "UR"
+          },
+          {
+            "CharacterId": 8,
+            "Level": 290,
+            "RarityFlags": 4096,
+            "RarityName": "LR3"
+          },
+          {
+            "CharacterId": 26,
+            "Level": 290,
+            "RarityFlags": 1024,
+            "RarityName": "LR1"
+          },
+          {
+            "CharacterId": 27,
+            "Level": 290,
+            "RarityFlags": 16384,
+            "RarityName": "LR5"
+          },
+          {
+            "CharacterId": 39,
+            "Level": 290,
+            "RarityFlags": 1024,
+            "RarityName": "LR1"
+          }
+        ],
+        "GuildName": "ルミナス",
+        "GuildPositionType": 2,
+        "IconEffectId": 0,
+        "IconId": 21,
+        "LegendLeagueClass": 0,
+        "PlayerId": 176068512179,
+        "PlayerName": "マリモッコリ",
         "isIconSP": false
       },
       {
@@ -2601,50 +2703,6 @@
         "LegendLeagueClass": 0,
         "PlayerId": 999707404179,
         "PlayerName": "天",
-        "isIconSP": false
-      },
-      {
-        "BackgroundId": 21,
-        "BattlePower": 122147198,
-        "DeckCharacterInfoList": [
-          {
-            "CharacterId": 86,
-            "Level": 290,
-            "RarityFlags": 128,
-            "RarityName": "UR"
-          },
-          {
-            "CharacterId": 8,
-            "Level": 290,
-            "RarityFlags": 4096,
-            "RarityName": "LR3"
-          },
-          {
-            "CharacterId": 26,
-            "Level": 290,
-            "RarityFlags": 1024,
-            "RarityName": "LR1"
-          },
-          {
-            "CharacterId": 27,
-            "Level": 290,
-            "RarityFlags": 16384,
-            "RarityName": "LR5"
-          },
-          {
-            "CharacterId": 39,
-            "Level": 290,
-            "RarityFlags": 1024,
-            "RarityName": "LR1"
-          }
-        ],
-        "GuildName": "ルミナス",
-        "GuildPositionType": 2,
-        "IconEffectId": 0,
-        "IconId": 21,
-        "LegendLeagueClass": 0,
-        "PlayerId": 176068512179,
-        "PlayerName": "マリモッコリ",
         "isIconSP": false
       },
       {
@@ -2745,7 +2803,7 @@
       },
       {
         "BackgroundId": 21,
-        "BattlePower": 121124031,
+        "BattlePower": 121155032,
         "DeckCharacterInfoList": [
           {
             "CharacterId": 39,
@@ -2785,6 +2843,50 @@
         "LegendLeagueClass": 0,
         "PlayerId": 173497844179,
         "PlayerName": "みぃー茶",
+        "isIconSP": false
+      },
+      {
+        "BackgroundId": 10,
+        "BattlePower": 120682898,
+        "DeckCharacterInfoList": [
+          {
+            "CharacterId": 27,
+            "Level": 291,
+            "RarityFlags": 8192,
+            "RarityName": "LR4"
+          },
+          {
+            "CharacterId": 26,
+            "Level": 291,
+            "RarityFlags": 1024,
+            "RarityName": "LR1"
+          },
+          {
+            "CharacterId": 8,
+            "Level": 291,
+            "RarityFlags": 8192,
+            "RarityName": "LR4"
+          },
+          {
+            "CharacterId": 39,
+            "Level": 291,
+            "RarityFlags": 256,
+            "RarityName": "UR+"
+          },
+          {
+            "CharacterId": 28,
+            "Level": 291,
+            "RarityFlags": 2048,
+            "RarityName": "LR2"
+          }
+        ],
+        "GuildName": "野原一家ファイアー",
+        "GuildPositionType": 2,
+        "IconEffectId": 0,
+        "IconId": 100,
+        "LegendLeagueClass": 0,
+        "PlayerId": 896668029179,
+        "PlayerName": "jack",
         "isIconSP": false
       },
       {
@@ -2832,91 +2934,73 @@
         "isIconSP": false
       },
       {
-        "BackgroundId": 10,
-        "BattlePower": 120448805,
+        "BackgroundId": 100,
+        "BattlePower": 119268682,
         "DeckCharacterInfoList": [
           {
-            "CharacterId": 27,
-            "Level": 291,
-            "RarityFlags": 8192,
-            "RarityName": "LR4"
-          },
-          {
             "CharacterId": 26,
-            "Level": 291,
-            "RarityFlags": 1024,
-            "RarityName": "LR1"
+            "Level": 305,
+            "RarityFlags": 512,
+            "RarityName": "LR"
           },
           {
-            "CharacterId": 8,
-            "Level": 291,
-            "RarityFlags": 8192,
-            "RarityName": "LR4"
-          },
-          {
-            "CharacterId": 39,
-            "Level": 291,
-            "RarityFlags": 256,
-            "RarityName": "UR+"
-          },
-          {
-            "CharacterId": 28,
-            "Level": 291,
+            "CharacterId": 27,
+            "Level": 305,
             "RarityFlags": 2048,
             "RarityName": "LR2"
+          },
+          {
+            "CharacterId": 96,
+            "Level": 305,
+            "RarityFlags": 8,
+            "RarityName": "SR"
+          },
+          {
+            "CharacterId": 100,
+            "Level": 305,
+            "RarityFlags": 8,
+            "RarityName": "SR"
+          },
+          {
+            "CharacterId": 86,
+            "Level": 305,
+            "RarityFlags": 8,
+            "RarityName": "SR"
           }
         ],
-        "GuildName": "野原一家ファイアー",
+        "GuildName": "POLARIS",
         "GuildPositionType": 2,
         "IconEffectId": 0,
-        "IconId": 100,
+        "IconId": 1,
         "LegendLeagueClass": 0,
-        "PlayerId": 896668029179,
-        "PlayerName": "jack",
+        "PlayerId": 854567448179,
+        "PlayerName": "あまめの",
         "isIconSP": false
       },
       {
-        "BackgroundId": 60,
-        "BattlePower": 120351550,
+        "BackgroundId": 58,
+        "BattlePower": 119086553,
         "DeckCharacterInfoList": [
           {
-            "CharacterId": 61,
-            "Level": 308,
-            "RarityFlags": 16384,
-            "RarityName": "LR5"
+            "CharacterId": 27,
+            "Level": 303,
+            "RarityFlags": 8192,
+            "RarityName": "LR4"
           },
           {
-            "CharacterId": 105,
-            "Level": 308,
-            "RarityFlags": 128,
-            "RarityName": "UR"
-          },
-          {
-            "CharacterId": 49,
-            "Level": 308,
-            "RarityFlags": 64,
-            "RarityName": "SSR+"
-          },
-          {
-            "CharacterId": 137,
-            "Level": 308,
-            "RarityFlags": 16,
-            "RarityName": "SR+"
-          },
-          {
-            "CharacterId": 25,
-            "Level": 1,
-            "RarityFlags": 16,
-            "RarityName": "SR+"
+            "CharacterId": 8,
+            "Level": 303,
+            "RarityFlags": 8192,
+            "RarityName": "LR4"
           }
         ],
-        "GuildName": "もちょ部",
+        "GuildName": "POLARIS",
         "GuildPositionType": 2,
         "IconEffectId": 0,
-        "IconId": 61,
+        "IconId": 93,
         "LegendLeagueClass": 0,
-        "PlayerId": 515725251179,
-        "PlayerName": "白豚",
+        "PlayerId": 776464409179,
+        "PlayerName": "中毒ﾁｬﾝβ",
         "isIconSP": false
       },
       {
@@ -3008,52 +3092,52 @@
         "isIconSP": false
       },
       {
-        "BackgroundId": 41,
-        "BattlePower": 118558187,
+        "BackgroundId": 8,
+        "BattlePower": 118615524,
         "DeckCharacterInfoList": [
           {
-            "CharacterId": 39,
-            "Level": 303,
-            "RarityFlags": 1024,
-            "RarityName": "LR1"
+            "CharacterId": 153,
+            "Level": 289,
+            "RarityFlags": 512,
+            "RarityName": "LR"
+          },
+          {
+            "CharacterId": 86,
+            "Level": 289,
+            "RarityFlags": 16,
+            "RarityName": "SR+"
           },
           {
             "CharacterId": 8,
-            "Level": 303,
+            "Level": 289,
             "RarityFlags": 16384,
             "RarityName": "LR5"
           },
           {
-            "CharacterId": 44,
-            "Level": 303,
-            "RarityFlags": 8,
-            "RarityName": "SR"
+            "CharacterId": 26,
+            "Level": 289,
+            "RarityFlags": 4096,
+            "RarityName": "LR3"
           },
           {
-            "CharacterId": 153,
-            "Level": 303,
-            "RarityFlags": 8,
-            "RarityName": "SR"
-          },
-          {
-            "CharacterId": 101,
-            "Level": 303,
-            "RarityFlags": 8,
-            "RarityName": "SR"
+            "CharacterId": 27,
+            "Level": 289,
+            "RarityFlags": 4096,
+            "RarityName": "LR3"
           }
         ],
-        "GuildName": "꒰ঌ天上の舞姫໒꒱",
-        "GuildPositionType": 2,
+        "GuildName": "NEXUS",
+        "GuildPositionType": 1,
         "IconEffectId": 0,
-        "IconId": 41,
+        "IconId": 8,
         "LegendLeagueClass": 0,
-        "PlayerId": 623996208179,
-        "PlayerName": "怒夢",
+        "PlayerId": 501276831179,
+        "PlayerName": "やた",
         "isIconSP": false
       },
       {
         "BackgroundId": 113,
-        "BattlePower": 117405629,
+        "BattlePower": 117893655,
         "DeckCharacterInfoList": [
           {
             "CharacterId": 8,
@@ -3097,7 +3181,7 @@
       },
       {
         "BackgroundId": 3,
-        "BattlePower": 116735341,
+        "BattlePower": 116992253,
         "DeckCharacterInfoList": [
           {
             "CharacterId": 8,
@@ -3140,52 +3224,8 @@
         "isIconSP": false
       },
       {
-        "BackgroundId": 1,
-        "BattlePower": 116559083,
-        "DeckCharacterInfoList": [
-          {
-            "CharacterId": 96,
-            "Level": 282,
-            "RarityFlags": 512,
-            "RarityName": "LR"
-          },
-          {
-            "CharacterId": 39,
-            "Level": 282,
-            "RarityFlags": 2048,
-            "RarityName": "LR2"
-          },
-          {
-            "CharacterId": 95,
-            "Level": 282,
-            "RarityFlags": 2048,
-            "RarityName": "LR2"
-          },
-          {
-            "CharacterId": 38,
-            "Level": 282,
-            "RarityFlags": 2048,
-            "RarityName": "LR2"
-          },
-          {
-            "CharacterId": 5,
-            "Level": 282,
-            "RarityFlags": 2048,
-            "RarityName": "LR2"
-          }
-        ],
-        "GuildName": "ぽめもちゃるん",
-        "GuildPositionType": 2,
-        "IconEffectId": 0,
-        "IconId": 96,
-        "LegendLeagueClass": 0,
-        "PlayerId": 600276698179,
-        "PlayerName": "さかば",
-        "isIconSP": false
-      },
-      {
         "BackgroundId": 61,
-        "BattlePower": 116427616,
+        "BattlePower": 116598912,
         "DeckCharacterInfoList": [
           {
             "CharacterId": 86,
@@ -3228,8 +3268,52 @@
         "isIconSP": false
       },
       {
+        "BackgroundId": 1,
+        "BattlePower": 116590154,
+        "DeckCharacterInfoList": [
+          {
+            "CharacterId": 96,
+            "Level": 282,
+            "RarityFlags": 512,
+            "RarityName": "LR"
+          },
+          {
+            "CharacterId": 39,
+            "Level": 282,
+            "RarityFlags": 2048,
+            "RarityName": "LR2"
+          },
+          {
+            "CharacterId": 95,
+            "Level": 282,
+            "RarityFlags": 2048,
+            "RarityName": "LR2"
+          },
+          {
+            "CharacterId": 38,
+            "Level": 282,
+            "RarityFlags": 2048,
+            "RarityName": "LR2"
+          },
+          {
+            "CharacterId": 5,
+            "Level": 282,
+            "RarityFlags": 2048,
+            "RarityName": "LR2"
+          }
+        ],
+        "GuildName": "ぽめもちゃるん",
+        "GuildPositionType": 2,
+        "IconEffectId": 0,
+        "IconId": 96,
+        "LegendLeagueClass": 0,
+        "PlayerId": 600276698179,
+        "PlayerName": "さかば",
+        "isIconSP": false
+      },
+      {
         "BackgroundId": 58,
-        "BattlePower": 115290423,
+        "BattlePower": 115329710,
         "DeckCharacterInfoList": [
           {
             "CharacterId": 26,
@@ -3272,34 +3356,52 @@
         "isIconSP": false
       },
       {
-        "BackgroundId": 58,
-        "BattlePower": 115080511,
+        "BackgroundId": 44,
+        "BattlePower": 114920600,
         "DeckCharacterInfoList": [
           {
-            "CharacterId": 27,
-            "Level": 303,
+            "CharacterId": 44,
+            "Level": 290,
             "RarityFlags": 8192,
             "RarityName": "LR4"
           },
           {
             "CharacterId": 8,
-            "Level": 303,
-            "RarityFlags": 8192,
-            "RarityName": "LR4"
+            "Level": 290,
+            "RarityFlags": 4096,
+            "RarityName": "LR3"
+          },
+          {
+            "CharacterId": 101,
+            "Level": 290,
+            "RarityFlags": 256,
+            "RarityName": "UR+"
+          },
+          {
+            "CharacterId": 86,
+            "Level": 290,
+            "RarityFlags": 8,
+            "RarityName": "SR"
+          },
+          {
+            "CharacterId": 151,
+            "Level": 290,
+            "RarityFlags": 128,
+            "RarityName": "UR"
           }
         ],
-        "GuildName": "POLARIS",
+        "GuildName": "青の茶柱",
         "GuildPositionType": 2,
         "IconEffectId": 0,
-        "IconId": 93,
+        "IconId": 151,
         "LegendLeagueClass": 0,
-        "PlayerId": 776464409179,
-        "PlayerName": "中毒ﾁｬﾝβ",
+        "PlayerId": 886062478179,
+        "PlayerName": "Risotto",
         "isIconSP": false
       },
       {
         "BackgroundId": 27,
-        "BattlePower": 114731395,
+        "BattlePower": 114682352,
         "DeckCharacterInfoList": [
           {
             "CharacterId": 26,
@@ -3474,135 +3576,135 @@
         "isIconSP": false
       },
       {
-        "BackgroundId": 153,
-        "BattlePower": 112017174,
+        "BackgroundId": 1,
+        "BattlePower": 108766398,
         "DeckCharacterInfoList": [
           {
-            "CharacterId": 8,
+            "CharacterId": 46,
             "Level": 280,
+            "RarityFlags": 1024,
+            "RarityName": "LR1"
+          },
+          {
+            "CharacterId": 41,
+            "Level": 280,
+            "RarityFlags": 2048,
+            "RarityName": "LR2"
+          },
+          {
+            "CharacterId": 5,
+            "Level": 280,
+            "RarityFlags": 2048,
+            "RarityName": "LR2"
+          },
+          {
+            "CharacterId": 16,
+            "Level": 280,
+            "RarityFlags": 1024,
+            "RarityName": "LR1"
+          },
+          {
+            "CharacterId": 27,
+            "Level": 280,
+            "RarityFlags": 2048,
+            "RarityName": "LR2"
+          }
+        ],
+        "GuildName": "あおくもおそら",
+        "GuildPositionType": 3,
+        "IconEffectId": 0,
+        "IconId": 41,
+        "LegendLeagueClass": 0,
+        "PlayerId": 570956482179,
+        "PlayerName": "tofuzita",
+        "isIconSP": false
+      },
+      {
+        "BackgroundId": 111,
+        "BattlePower": 108461660,
+        "DeckCharacterInfoList": [
+          {
+            "CharacterId": 27,
+            "Level": 277,
             "RarityFlags": 4096,
             "RarityName": "LR3"
           },
           {
             "CharacterId": 26,
-            "Level": 280,
+            "Level": 277,
+            "RarityFlags": 4096,
+            "RarityName": "LR3"
+          },
+          {
+            "CharacterId": 35,
+            "Level": 277,
             "RarityFlags": 512,
             "RarityName": "LR"
           },
           {
-            "CharacterId": 27,
-            "Level": 280,
-            "RarityFlags": 1024,
-            "RarityName": "LR1"
-          },
-          {
-            "CharacterId": 6,
-            "Level": 280,
-            "RarityFlags": 1024,
-            "RarityName": "LR1"
-          },
-          {
-            "CharacterId": 123,
-            "Level": 280,
-            "RarityFlags": 32,
-            "RarityName": "SSR"
-          }
-        ],
-        "GuildName": "宵空のわたあめ໒꒱",
-        "GuildPositionType": 5,
-        "IconEffectId": 0,
-        "IconId": 86,
-        "LegendLeagueClass": 0,
-        "PlayerId": 148178920179,
-        "PlayerName": "ʚのありちんらいすɞ",
-        "isIconSP": false
-      },
-      {
-        "BackgroundId": 8,
-        "BattlePower": 111448090,
-        "DeckCharacterInfoList": [
-          {
-            "CharacterId": 153,
-            "Level": 289,
+            "CharacterId": 39,
+            "Level": 277,
             "RarityFlags": 512,
             "RarityName": "LR"
           },
           {
             "CharacterId": 86,
-            "Level": 289,
+            "Level": 277,
             "RarityFlags": 16,
             "RarityName": "SR+"
-          },
-          {
-            "CharacterId": 8,
-            "Level": 289,
-            "RarityFlags": 16384,
-            "RarityName": "LR5"
-          },
-          {
-            "CharacterId": 26,
-            "Level": 289,
-            "RarityFlags": 4096,
-            "RarityName": "LR3"
-          },
-          {
-            "CharacterId": 27,
-            "Level": 289,
-            "RarityFlags": 4096,
-            "RarityName": "LR3"
           }
         ],
-        "GuildName": "NEXUS",
-        "GuildPositionType": 1,
+        "GuildName": "POLARIS",
+        "GuildPositionType": 2,
         "IconEffectId": 0,
-        "IconId": 8,
+        "IconId": 111,
         "LegendLeagueClass": 0,
-        "PlayerId": 501276831179,
-        "PlayerName": "やた",
+        "PlayerId": 383869302179,
+        "PlayerName": "zeek03",
         "isIconSP": false
       },
       {
-        "BackgroundId": 44,
-        "BattlePower": 109748533,
+        "BackgroundId": 111,
+        "BattlePower": 108189315,
         "DeckCharacterInfoList": [
           {
-            "CharacterId": 8,
-            "Level": 276,
-            "RarityFlags": 16384,
-            "RarityName": "LR5"
-          },
-          {
-            "CharacterId": 26,
-            "Level": 276,
-            "RarityFlags": 16384,
-            "RarityName": "LR5"
-          },
-          {
-            "CharacterId": 27,
-            "Level": 276,
+            "CharacterId": 28,
+            "Level": 275,
             "RarityFlags": 8192,
             "RarityName": "LR4"
           },
           {
-            "CharacterId": 39,
-            "Level": 276,
+            "CharacterId": 27,
+            "Level": 275,
+            "RarityFlags": 16384,
+            "RarityName": "LR5"
+          },
+          {
+            "CharacterId": 26,
+            "Level": 275,
             "RarityFlags": 512,
             "RarityName": "LR"
           },
           {
-            "CharacterId": 86,
-            "Level": 276,
-            "RarityFlags": 16,
-            "RarityName": "SR+"
+            "CharacterId": 41,
+            "Level": 275,
+            "RarityFlags": 128,
+            "RarityName": "UR"
+          },
+          {
+            "CharacterId": 29,
+            "Level": 275,
+            "RarityFlags": 256,
+            "RarityName": "UR+"
           }
         ],
-        "GuildName": "Megingjörð",
+        "GuildName": "テンペスト",
         "GuildPositionType": 5,
         "IconEffectId": 0,
-        "IconId": 44,
+        "IconId": 148,
         "LegendLeagueClass": 0,
-        "PlayerId": 144145889179,
-        "PlayerName": "リンド",
+        "PlayerId": 424400744179,
+        "PlayerName": "りたま",
         "isIconSP": false
       },
       {
@@ -3694,6 +3796,50 @@
         "isIconSP": false
       },
       {
+        "BackgroundId": 97,
+        "BattlePower": 107481616,
+        "DeckCharacterInfoList": [
+          {
+            "CharacterId": 8,
+            "Level": 280,
+            "RarityFlags": 8192,
+            "RarityName": "LR4"
+          },
+          {
+            "CharacterId": 101,
+            "Level": 280,
+            "RarityFlags": 8,
+            "RarityName": "SR"
+          },
+          {
+            "CharacterId": 5,
+            "Level": 280,
+            "RarityFlags": 1024,
+            "RarityName": "LR1"
+          },
+          {
+            "CharacterId": 97,
+            "Level": 280,
+            "RarityFlags": 64,
+            "RarityName": "SSR+"
+          },
+          {
+            "CharacterId": 123,
+            "Level": 280,
+            "RarityFlags": 32,
+            "RarityName": "SSR"
+          }
+        ],
+        "GuildName": "宵空のわたあめ໒꒱",
+        "GuildPositionType": 2,
+        "IconEffectId": 0,
+        "IconId": 57,
+        "LegendLeagueClass": 0,
+        "PlayerId": 977063410179,
+        "PlayerName": "のこりあんらいす",
+        "isIconSP": false
+      },
+      {
         "BackgroundId": 148,
         "BattlePower": 107470990,
         "DeckCharacterInfoList": [
@@ -3729,7 +3875,7 @@
           }
         ],
         "GuildName": "百喜夜好",
-        "GuildPositionType": 1,
+        "GuildPositionType": 3,
         "IconEffectId": 0,
         "IconId": 6,
         "LegendLeagueClass": 0,
@@ -3738,96 +3884,78 @@
         "isIconSP": false
       },
       {
-        "BackgroundId": 111,
-        "BattlePower": 107186094,
-        "DeckCharacterInfoList": [
-          {
-            "CharacterId": 27,
-            "Level": 277,
-            "RarityFlags": 4096,
-            "RarityName": "LR3"
-          },
-          {
-            "CharacterId": 26,
-            "Level": 277,
-            "RarityFlags": 4096,
-            "RarityName": "LR3"
-          },
-          {
-            "CharacterId": 35,
-            "Level": 277,
-            "RarityFlags": 512,
-            "RarityName": "LR"
-          },
-          {
-            "CharacterId": 39,
-            "Level": 277,
-            "RarityFlags": 512,
-            "RarityName": "LR"
-          },
-          {
-            "CharacterId": 86,
-            "Level": 277,
-            "RarityFlags": 16,
-            "RarityName": "SR+"
-          }
-        ],
-        "GuildName": "POLARIS",
-        "GuildPositionType": 2,
-        "IconEffectId": 0,
-        "IconId": 111,
-        "LegendLeagueClass": 0,
-        "PlayerId": 383869302179,
-        "PlayerName": "zeek03",
-        "isIconSP": false
-      },
-      {
-        "BackgroundId": 97,
-        "BattlePower": 107079528,
+        "BackgroundId": 89,
+        "BattlePower": 107069434,
         "DeckCharacterInfoList": [
           {
             "CharacterId": 8,
             "Level": 280,
-            "RarityFlags": 8192,
-            "RarityName": "LR4"
+            "RarityFlags": 16384,
+            "RarityName": "LR5"
           },
           {
-            "CharacterId": 101,
+            "CharacterId": 26,
+            "Level": 280,
+            "RarityFlags": 512,
+            "RarityName": "LR"
+          },
+          {
+            "CharacterId": 153,
             "Level": 280,
             "RarityFlags": 8,
             "RarityName": "SR"
           },
           {
-            "CharacterId": 5,
+            "CharacterId": 39,
             "Level": 280,
             "RarityFlags": 512,
             "RarityName": "LR"
           },
           {
-            "CharacterId": 97,
+            "CharacterId": 86,
             "Level": 280,
-            "RarityFlags": 64,
-            "RarityName": "SSR+"
-          },
-          {
-            "CharacterId": 123,
-            "Level": 280,
-            "RarityFlags": 32,
-            "RarityName": "SSR"
+            "RarityFlags": 16,
+            "RarityName": "SR+"
           }
         ],
-        "GuildName": "宵空のわたあめ໒꒱",
+        "GuildName": "癒しこそ真理",
         "GuildPositionType": 2,
         "IconEffectId": 0,
-        "IconId": 57,
+        "IconId": 89,
         "LegendLeagueClass": 0,
-        "PlayerId": 977063410179,
-        "PlayerName": "のこりあんらいす",
+        "PlayerId": 164624952179,
+        "PlayerName": "J",
+        "isIconSP": false
+      },
+      {
+        "BackgroundId": 56,
+        "BattlePower": 107025592,
+        "DeckCharacterInfoList": [
+          {
+            "CharacterId": 27,
+            "Level": 290,
+            "RarityFlags": 16384,
+            "RarityName": "LR5"
+          },
+          {
+            "CharacterId": 153,
+            "Level": 290,
+            "RarityFlags": 512,
+            "RarityName": "LR"
+          }
+        ],
+        "GuildName": "POLARIS",
+        "GuildPositionType": 2,
+        "IconEffectId": 0,
+        "IconId": 103,
+        "LegendLeagueClass": 0,
+        "PlayerId": 716580656179,
+        "PlayerName": "珠翠",
         "isIconSP": false
       },
       {
         "BackgroundId": 117,
-        "BattlePower": 106683324,
+        "BattlePower": 106736149,
         "DeckCharacterInfoList": [
           {
             "CharacterId": 130,
@@ -3911,94 +4039,6 @@
         "LegendLeagueClass": 0,
         "PlayerId": 196930137179,
         "PlayerName": "shupia",
-        "isIconSP": false
-      },
-      {
-        "BackgroundId": 117,
-        "BattlePower": 106320540,
-        "DeckCharacterInfoList": [
-          {
-            "CharacterId": 8,
-            "Level": 287,
-            "RarityFlags": 16384,
-            "RarityName": "LR5"
-          },
-          {
-            "CharacterId": 26,
-            "Level": 287,
-            "RarityFlags": 2048,
-            "RarityName": "LR2"
-          },
-          {
-            "CharacterId": 39,
-            "Level": 287,
-            "RarityFlags": 1024,
-            "RarityName": "LR1"
-          },
-          {
-            "CharacterId": 128,
-            "Level": 287,
-            "RarityFlags": 16,
-            "RarityName": "SR+"
-          },
-          {
-            "CharacterId": 96,
-            "Level": 287,
-            "RarityFlags": 8,
-            "RarityName": "SR"
-          }
-        ],
-        "GuildName": "まりも愛好会",
-        "GuildPositionType": 1,
-        "IconEffectId": 0,
-        "IconId": 48,
-        "LegendLeagueClass": 0,
-        "PlayerId": 145950801179,
-        "PlayerName": "かいせい",
-        "isIconSP": false
-      },
-      {
-        "BackgroundId": 111,
-        "BattlePower": 106107245,
-        "DeckCharacterInfoList": [
-          {
-            "CharacterId": 28,
-            "Level": 275,
-            "RarityFlags": 8192,
-            "RarityName": "LR4"
-          },
-          {
-            "CharacterId": 27,
-            "Level": 275,
-            "RarityFlags": 16384,
-            "RarityName": "LR5"
-          },
-          {
-            "CharacterId": 26,
-            "Level": 275,
-            "RarityFlags": 512,
-            "RarityName": "LR"
-          },
-          {
-            "CharacterId": 41,
-            "Level": 275,
-            "RarityFlags": 64,
-            "RarityName": "SSR+"
-          },
-          {
-            "CharacterId": 29,
-            "Level": 275,
-            "RarityFlags": 128,
-            "RarityName": "UR"
-          }
-        ],
-        "GuildName": "テンペスト",
-        "GuildPositionType": 5,
-        "IconEffectId": 0,
-        "IconId": 148,
-        "LegendLeagueClass": 0,
-        "PlayerId": 424400744179,
-        "PlayerName": "りたま",
         "isIconSP": false
       }
     ],
