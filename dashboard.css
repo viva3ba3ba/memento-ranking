@@ -27,7 +27,7 @@ body::before {
   height: 100lvh;
   z-index: -1;
   pointer-events: none;
-  background: #e9e1eb url("site-theme-bg-pc-rest.png?v=5") center / cover no-repeat;
+  background: #e9e1eb url("site-theme-bg-pc-rest.png?v=6") center / cover no-repeat;
 }
 dialog,
 .termsPage,
@@ -39,7 +39,7 @@ dialog,
 }
 @media (max-width: 760px) {
   body::before {
-    background-image: url("site-theme-bg-mobile-rest.png?v=5");
+    background-image: url("site-theme-bg-mobile-rest.png?v=6");
     background-position: center center;
     background-size: cover;
   }
@@ -505,7 +505,7 @@ body::before {
   height: 100lvh;
   pointer-events: none;
   background-color: #e9e1eb;
-  background-image: url("site-theme-bg-pc-rest.png?v=5");
+  background-image: url("site-theme-bg-pc-rest.png?v=6");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -521,7 +521,7 @@ dialog,
     width: 100vw;
     height: 100vh;
     height: 100lvh;
-    background-image: url("site-theme-bg-mobile-rest.png?v=5");
+    background-image: url("site-theme-bg-mobile-rest.png?v=6");
     background-position: center center;
   }
 }
@@ -684,7 +684,7 @@ body,
 dialog,
 .termsPage {
   background-color: #e9e1eb;
-  background-image: url("site-theme-bg-pc-rest.png?v=5");
+  background-image: url("site-theme-bg-pc-rest.png?v=6");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -799,14 +799,14 @@ dialog::backdrop {
     z-index: -1;
     pointer-events: none;
     background-color: #e9e1eb;
-    background-image: url("site-theme-bg-mobile-rest.png?v=5");
+    background-image: url("site-theme-bg-mobile-rest.png?v=6");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
   }
   dialog,
   .termsPage {
-    background-image: url("site-theme-bg-mobile-rest.png?v=5");
+    background-image: url("site-theme-bg-mobile-rest.png?v=6");
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
@@ -818,7 +818,7 @@ body { position: relative; isolation: isolate; background: transparent !importan
 body::before {
   content: ""; position: fixed; top: 0; left: 0; width: 100vw;
   height: 100vh; height: 100lvh; z-index: -1; pointer-events: none;
-  background: #e9e1eb url("site-theme-bg-pc-rest.png?v=5") center / cover no-repeat;
+  background: #e9e1eb url("site-theme-bg-pc-rest.png?v=6") center / cover no-repeat;
 }
 dialog, .termsPage, .knowledgePage, #siteAuthGate {
   background-color: transparent !important;
@@ -826,7 +826,7 @@ dialog, .termsPage, .knowledgePage, #siteAuthGate {
   background-attachment: initial !important;
 }
 @media (max-width: 760px) {
-  body::before { background-image: url("site-theme-bg-mobile-rest.png?v=5"); }
+  body::before { background-image: url("site-theme-bg-mobile-rest.png?v=6"); }
   dialog, .termsPage, .knowledgePage, #siteAuthGate { background-image: none !important; }
 }
 
@@ -844,7 +844,7 @@ a[href], [role="button"], details > summary,
 dialog[open],
 .termsPage:target {
   background-color: #e9e1eb !important;
-  background-image: url("site-theme-bg-pc-rest.png?v=5") !important;
+  background-image: url("site-theme-bg-pc-rest.png?v=6") !important;
   background-position: center center !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
@@ -853,7 +853,7 @@ dialog[open],
 dialog::backdrop { background: #e9e1eb !important; }
 @media (max-width: 760px) {
   dialog[open], .termsPage:target {
-    background-image: url("site-theme-bg-mobile-rest.png?v=5") !important;
+    background-image: url("site-theme-bg-mobile-rest.png?v=6") !important;
     background-position: center center !important;
   }
 }
