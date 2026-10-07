@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-06T11:19:46.523Z",
+  "generatedAt": "2026-10-08T00:00:00.000Z",
   "basis": "Lv240時点。スキル説明・アルカナ効果はichigo Games掲載データを使用。専用武器はLRメタトロン系列。",
   "characters": {
     "1": {
@@ -23250,6 +23250,32 @@
           "source": "ichigogames"
         }
       ]
+    },
+    "154": {
+      "id": 154,
+      "name": "アルトリア",
+      "subName": "黄金色の聖剣使い",
+      "memo": "［黄金色の聖剣使い］アルトリア",
+      "element": "翠",
+      "job": "ウォーリア",
+      "slug": "artoria_golden",
+      "skillIcons": [
+        "https://ichigogames.net/static/images/skill_icon/artoria_golden_skill_1.webp",
+        "https://ichigogames.net/static/images/skill_icon/artoria_golden_skill_2.webp",
+        "https://ichigogames.net/static/images/skill_icon/artoria_golden_skill_3.webp",
+        "https://ichigogames.net/static/images/skill_icon/artoria_golden_skill_4.webp"
+      ],
+      "stats": {
+        "speed": 3272,
+        "coefficients": {},
+        "initial": {
+          "Speed": 3272
+        }
+      },
+      "active": [],
+      "passive": [],
+      "weapon": {},
+      "arcana": []
     }
   }
 }
