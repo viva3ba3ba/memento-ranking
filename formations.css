@@ -33,7 +33,7 @@ dialog {
 }
 @media (max-width: 760px) {
   body::before {
-    background-image: url("site-theme-bg-mobile-rest.webp?v=9");
+    background-image: url("site-theme-bg-mobile-rest.webp?v=10");
     background-position: center center;
     background-size: cover;
   }
@@ -481,7 +481,7 @@ dialog { background-color: transparent !important; background-image: none !impor
     width: 100vw;
     height: 100vh;
     height: 100lvh;
-    background-image: url("site-theme-bg-mobile-rest.webp?v=9");
+    background-image: url("site-theme-bg-mobile-rest.webp?v=10");
     background-position: center center;
   }
 }
@@ -619,13 +619,13 @@ dialog::backdrop {
     z-index: -1;
     pointer-events: none;
     background-color: #e9e1eb;
-    background-image: url("site-theme-bg-mobile-rest.webp?v=9");
+    background-image: url("site-theme-bg-mobile-rest.webp?v=10");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
   }
   dialog {
-    background-image: url("site-theme-bg-mobile-rest.webp?v=9");
+    background-image: url("site-theme-bg-mobile-rest.webp?v=10");
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
@@ -645,7 +645,7 @@ dialog {
   background-attachment: initial !important;
 }
 @media (max-width: 760px) {
-  body::before { background-image: url("site-theme-bg-mobile-rest.webp?v=9"); }
+  body::before { background-image: url("site-theme-bg-mobile-rest.webp?v=10"); }
   dialog { background-image: none !important; }
 }
 
@@ -671,7 +671,7 @@ dialog[open] {
 dialog::backdrop { background: #e9e1eb !important; }
 @media (max-width: 760px) {
   dialog[open] {
-    background-image: url("site-theme-bg-mobile-rest.webp?v=9") !important;
+    background-image: url("site-theme-bg-mobile-rest.webp?v=10") !important;
     background-position: center center !important;
   }
 }
