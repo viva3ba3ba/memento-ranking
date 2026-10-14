@@ -19,9 +19,56 @@
     <link rel="manifest" href="manifest.webmanifest?v=69" />
     <link rel="apple-touch-icon" sizes="180x180" href="pwa-icon-180.png?v=69" />
     <script src="pwa.js?v=73" defer></script>
+    <style id="site-auth-critical">#siteAuthGate{position:fixed;inset:0;z-index:10000;display:grid;place-items:center;padding:18px;background:#e9e1eb;color:#101010;font-family:system-ui,sans-serif}#siteAuthGate[hidden]{display:none!important}.siteAuthBox{width:min(440px,100%);padding:22px;border:2px solid #554761;border-radius:16px;background:#f6f0f6}.siteAuthBox label,.siteAuthBox input,.siteAuthBox button{display:block;width:100%}.siteAuthBox input,.siteAuthBox button{min-height:46px;margin-top:8px}</style>
+  </head>
+  <body>
+    <script>
+(()=>{
+  if(location.protocol==="chrome-extension:")return;
+  const SESSION_KEY="valhalla-ranking-auth-v2";
+  const isPcHistoryMode=()=>window.matchMedia(
+    "(min-width: 761px) and (hover: hover) and (pointer: fine)"
+  ).matches;
+  const restorePcView=()=>{
+    if(!isPcHistoryMode())return;
+    document.querySelectorAll("dialog[open]").forEach(dialog=>dialog.close());
+    const gate=document.getElementById("siteAuthGate");
+    document.body.style.overflow=gate&&!gate.hidden?"hidden":"";
+  };
+  window.addEventListener("pageshow",restorePcView);
+  window.addEventListener("popstate",()=>requestAnimationFrame(restorePcView));
+  const showGate=()=>{
+    if(document.getElementById("siteAuthGate"))return;
+    const gate=document.createElement("div");
+    gate.id="siteAuthGate";
+    gate.innerHTML='<form class="siteAuthBox" id="siteAuthForm"><h1>Valhallaランキング</h1><p>閲覧するには共通パスワードを入力してください。</p><label>Valhalla共通パスワード<input name="guildPassword" type="password" autocomplete="current-password" required autofocus></label><p class="siteAuthMessage" id="siteAuthMessage"></p><button type="submit">ランキングへ入る</button><p class="siteAuthNote">認証後は、このタブを閉じるまで入力を省略できます。</p></form>';
+    document.body.appendChild(gate);
+    document.body.style.overflow="hidden";
+    document.getElementById("siteAuthForm").onsubmit=async e=>{
+      e.preventDefault();
+      const form=e.currentTarget,message=document.getElementById("siteAuthMessage"),password=new FormData(form).get("guildPassword");
+      message.textContent="確認中…";
+      try{
+        const cfg=await fetch("./data/formations-config.json?t="+Date.now(),{cache:"no-store"}).then(r=>r.json());
+        if(!cfg.api_url)throw Error("認証機能が設定されていません。");
+        const result=await fetch(cfg.api_url,{method:"POST",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify({action:"verifyAccess",guildPassword:password})}).then(r=>r.json());
+        if(!result.ok||!result.authorized)throw Error(result.error||"パスワードが違います。");
+        sessionStorage.setItem(SESSION_KEY,"1");
+        sessionStorage.setItem("valhalla-ranking-password",String(password||""));
+        gate.hidden=true;
+        document.body.style.overflow="";
+      }catch(error){message.textContent=error.message||"認証できませんでした。";form.guildPassword.select()}
+    };
+  };
+  if(sessionStorage.getItem(SESSION_KEY)==="1")return;
+  showGate();
+})();
+    </script>
     <link rel="stylesheet" href="dashboard.css?v=93" />
     <link rel="stylesheet" href="discord-fix.css?v=50" />
     <link rel="stylesheet" href="site-auth.css?v=85" />
+    <link rel="stylesheet" href="knowledge.css?v=99" />
+    <link rel="stylesheet" href="territory-points.css?v=88" />
     <style>
       .knowledgeButton{background:#2e7890!important}
       .knowledgePage{display:none;position:fixed;inset:0;z-index:100;overflow-y:auto;background:#0e1117;color:#f2f5f7;font-family:system-ui,"Yu Gothic UI",sans-serif}
@@ -57,11 +104,6 @@
       .zoomGallery img{display:block;width:auto;max-width:100%;height:auto;margin:auto;border-radius:8px}
       @media(max-width:700px){.knowledgeBranches{grid-template-columns:1fr;padding:12px}.knowledgeBranches .branch{min-height:74px}.knowledgeHead{padding:10px 12px}.knowledgeHead h2{font-size:18px}.knowledgePage .content{padding:12px}.evidenceGrid{grid-template-columns:1fr}.firstKnowledgeImage{width:min(78vw,280px)}.knowledgeEntry{padding:12px}.knowledgeEntry p,.knowledgeEntry li,.knowledgePage .term span{font-size:16px}}
     </style>
-    <link rel="stylesheet" href="knowledge.css?v=99" />
-    <link rel="stylesheet" href="territory-points.css?v=88" />
-  </head>
-  <body>
-    <script src="site-auth.js?v=53"></script>
     <main id="top">
       <div class="head">
         <div>
