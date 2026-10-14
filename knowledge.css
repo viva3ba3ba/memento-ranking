@@ -337,7 +337,7 @@
 }
 @media (max-width: 700px) {
   .knowledgePage {
-    background-image: url("site-theme-bg-mobile-rest.webp?v=10");
+    background-image: url("site-theme-bg-mobile-rest.webp?v=9");
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
@@ -494,7 +494,7 @@
 }
 @media (max-width: 760px) {
   .knowledgePage:target {
-    background-image: url("site-theme-bg-mobile-rest.webp?v=10") !important;
+    background-image: url("site-theme-bg-mobile-rest.webp?v=9") !important;
     background-position: center center !important;
   }
 }
